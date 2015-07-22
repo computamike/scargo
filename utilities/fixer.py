@@ -192,13 +192,8 @@ def FixResources2(root, CurrentProjectPath):
     for clip in root.findall("./producer/property[@name='mlt_service']"): 
         if (clip.text == "avformat"):
             foobar = clip.getparent().find("property[@name='resource']")
-            print "* " + ET.tostring(foobar)
-            print "oi oi saveloy " + foobar.text
             (prefix, sep, suffix) = os.path.basename(foobar.text).rpartition('.')                                                    
             Fixed = foobar.text.replace(ProjectPath, CurrentProjectPath)
-            
-            
-            print "* " +Fixed            
             foobar.text = Fixed   
 
 
@@ -412,7 +407,7 @@ will just fix project resource references.
                                                                                                                                 
     # Animatic Constants                                                                                                        
     VALID_EXTENSIONS = ["SIF", "SIFZ"]  
-    IMAGE_EXTENSIONS = ["PNG"]
+    IMAGE_EXTENSIONS = ["PNG","MP3","WAV","MP4"]
     INVALID_PRODUCERTYPES = ["kdenlivetitle", "colour","avformat"]                                                                         
     WIDTH = args.width                                                                                                          
     HEIGHT = args.height                                                                                                        
@@ -478,18 +473,19 @@ will just fix project resource references.
                 ##print "walking solution : " + file
                 files = os.path.join(directoryroot,file)                                                                        
                 (prefix, sep, extension) = os.path.basename(files).rpartition('.')                                              
+                if (extension.upper() in IMAGE_EXTENSIONS):
+                    # Some Asset needs re-writing
+                    FixClip(root, files)   
+                
                 if (extension.upper() in VALID_EXTENSIONS):
                     if (RenderSynfigScene(files) == 0):                                                                         
                         (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
-                        print" - Have rendered video - now to replace any existing clip in the project."                    
                         CreateVideo(files)                                                                                      
                         ClearFrames(files)                                                                                      
                         newFilename = os.path.join(os.path.dirname(files),                                                      
                         prefix + VIDEO_FORMAT)                                                                                  
-                        print "Video created at : " + newFilename                                                               
                         animaticVideFile = os.path.join(os.getcwd(),                                                            
                                                  os.path.basename(newFilename))                                                 
-                        print animaticVideFile
                         #print "Video moved to" + animaticVideFile                                                              
                         #shutil.move(newFilename, animaticVideFile)                                                          
                         ##print " -- FIXING CLIP"
