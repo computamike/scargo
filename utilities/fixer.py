@@ -408,7 +408,7 @@ will just fix project resource references.
     # Animatic Constants                                                                                                        
     VALID_EXTENSIONS = ["SIF", "SIFZ"]  
     IMAGE_EXTENSIONS = ["PNG","MP3","WAV","MP4"]
-    INVALID_PRODUCERTYPES = ["kdenlivetitle", "colour","avformat"]                                                                         
+    INVALID_PRODUCERTYPES = ["kdenlivetitle", "colour"]                                                                         
     WIDTH = args.width                                                                                                          
     HEIGHT = args.height                                                                                                        
     FPS = args.fps                                                                                                              
@@ -474,6 +474,10 @@ will just fix project resource references.
                 files = os.path.join(directoryroot,file)                                                                        
                 (prefix, sep, extension) = os.path.basename(files).rpartition('.')                                              
                 if (extension.upper() in IMAGE_EXTENSIONS):
+                    print "== FIXING " + files
+                    print "== FIXING " + file
+                    print "================="                    
+                    
                     # Some Asset needs re-writing
                     FixClip(root, files)   
                 
