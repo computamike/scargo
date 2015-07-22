@@ -1,0 +1,67 @@
+Snail Tales - Animation Resources
+=================================
+
+Snail Tales is a collection of animation resources that hopefully provide a starting point for would be animators.  The basic idea was to take the various tools that were available under a Free and open source licence, and develop a set of complemantary technologies to open animation up to whoever wants to use it.  Snail Tales is also a company - and like most stories this has some history, and involves a pub...
+
+
+Snail Tales - The Company http://www.snailtales.org/
+====================================================
+Snail Tales is a team of oral storytellers who take the spellbinding oral tradition that has entertained and enriched lives since language began, and blend it with magic, puppetry, song... and plenty of joining in. With folktales old, new, and soon to be, look forward to a fun, creative, and unforgettable adventure.
+
+So Where's the pub fit into this?
+=================================
+Dave Hingley - Main animator and spear head of the Snail Tales project - had met up with professional storyteller and all round nice guy Chip Colquhoun (http://www.sfs.org.uk/people/chip-colquhoun).  During their discussions Dave had expressed an interest in animating one of the stories.  Chip recorded a narrative of one of the stories and this became the first resource available to the snail tales project.
+
+Dave has enhanced the range of resources, providing character design sheets, and even some rigged characters.  During the development, there were various problems that were discovered, and ideas that we wanted to examine - That's where I came in.  I developed some of the tools and technologies that allowed the various components to work together.  
+
+
+So what's in the project
+========================
+
+Synfig Model sheets
+Original Inkscape artwork for:
+	* Queen
+	* Guard 1
+	* Guard 2
+	* Cat Detective
+	* Dragon
+	* Villager 1
+	* Villager 2
+	* Villager 3
+	* Cloud Background
+	* Village Background
+	* Detective Office
+	* Castle Stairs
+	* Castle Battlements
+
+Synfig Studio models for : 
+	* Queen
+	* Guard 1
+	* Guard 2
+	* Jester
+	* Knight 1
+	* Knight 2
+	* Knight 3
+	* Cat Detective
+	* Dragon
+	* Villager 1
+	* Villager 2
+	* Villager 3
+	* Robot
+ 
+Utilities
+	* Synfig stage
+		Create scenes to animate by combining multiple models into a single synfig scene
+	* Film Fixer
+		Used for rendering and building the animatic automatically
+
+Documentation
+
+
+Licences
+========
+When Dave created the snail tales project he wanted to be sure that the licences that were chosen were suitably liberal to allow the maximum reuse without burdening the users of these resources 
+
+Where we have created programs (such as synfig-stage or FilmFixer) then these are licenced as GPL, as we believe this gives the maximum benefit to users of the system. 
+
+Where we have created resources (such as the character models) these are licensed as Creative Commons Attribution-ShareAlike 4.0 International(http://creativecommons.org/licenses/by-sa/4.0/).

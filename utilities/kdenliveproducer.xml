@@ -1,0 +1,25 @@
+<kdenlive_producer 
+audio_max="0" 
+id="{{Producer.id}}" 
+pix_fmt="{{Producer.streams[0].pix_fmt}}" 
+default_video="0" 
+fps="25" 
+analysisdata="" 
+name="{{Producer.resourcename}}" 
+videocodecid="{{Producer.streams[0].codec_name}}" 
+colorspace="601" 
+videocodec="{{Producer.streams[0].codec_long_name}}" 
+resource="{{Producer.resource}}" 
+default_audio="-1" 
+duration="{{Producer.NumerofFrames}}" 
+file_hash="{{Producer.FileHash}}" 
+aspect_ratio="1" 
+video_max="0" 
+progressive="1" type="2" 
+frame_size="{{Producer.streams[0].width}}x{{Producer.streams[0].height}}" 
+file_size="131145">
+   <metaproperty tool="" name="meta.attr.compatible_brands">{{Producer.format.tagscompatible_brands}}</metaproperty>
+   <metaproperty tool="" name="meta.attr.encoder">{{Producer.format.tags.encoder}}</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">{{Producer.format.tags.major_brand}}</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">{{Producer.format.tags.minor_version}}</metaproperty>
+  </kdenlive_producer>

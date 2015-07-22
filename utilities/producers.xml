@@ -1,0 +1,37 @@
+ <producer id="{{Producer.id}}" in="{{Producer.in}}" out="{{Producer.out}}" >
+  <property name="mlt_type">producer</property>
+  <property name="length">{{Producer.NumerofFrames}}</property>
+  <property name="eof">pause</property>
+  <property name="resource">{{Producer.resource}}</property>
+  <property name="meta.media.nb_streams">{{Producer.streams|length}}</property>
+  <property name="meta.media.0.stream.type">{{Producer.streams[0].codec_type}}</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">{{Producer.streams[0].width}}</property>
+  <property name="meta.media.0.codec.height">{{Producer.streams[0].height}}</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">{{Producer.streams[0].pix_fmt}}</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.colorspace">601</property>
+  <property name="meta.media.0.codec.name">{{Producer.streams[0].codec_name}}</property>
+  <property name="meta.media.0.codec.long_name">{{Producer.streams[0].codec_long_name}}</property>
+  <property name="meta.media.0.codec.bit_rate">121252</property>
+  <property name="meta.attr.major_brand.markup">{{Producer.format.tags.major_brand}}</property>
+  <property name="meta.attr.minor_version.markup">{{Producer.format.tags.minor_version}}</property>
+  <property name="meta.attr.compatible_brands.markup">{{Producer.format.tagscompatible_brands}}</property>
+  <property name="meta.attr.encoder.markup">{{Producer.format.tags.encoder}}</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">-1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">601</property>
+  <property name="meta.media.width">{{Producer.streams[0].width}}</property>
+  <property name="meta.media.height">{{Producer.streams[0].height}}</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">1</property>
+ </producer>

@@ -1,0 +1,11 @@
+#! /bin/sh
+
+SOURCE="{{source.Source}}"
+TARGET="{{source.Target}}"
+RENDERER="{{source.Renderer}}"
+MELT="{{source.Melt}}"
+#PARAMETERS="-pid:2725 $MELT dv_pal avformat - consumer:$SOURCE $TARGET f=mp4 acodec=libmp3lame ab=128k ar=44100 vcodec=mpeg4 minrate=0 vb=800k s={{source.Width}}x{{source.Height}} aspect=@{{source.AspectRatio}} mbd=2 trellis=1 mv4=1 subq=7 qmin=10 qcomp=0.6 qdiff=4 qmax=51 pass=1 threads=1 real_time=-1"
+PARAMETERS="-pid:5196 $MELT dv_pal avformat - consumer:$SOURCE $TARGET properties=x264-medium g=120 crf=20 ab=160k threads=1 real_time=-1 s={{source.Width}}x{{source.Height}}"
+$RENDERER $PARAMETERS
+
+
