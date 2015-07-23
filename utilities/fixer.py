@@ -345,10 +345,9 @@ try:
     parser = argparse.ArgumentParser(                                                                                           
         prog='Fixer',                                                                                                           
         description='Jenkins / KDE animatic production utilities',                                                              
-        epilog="""                                                                                                              
-This script builds Synfig scenes into animations, and regenerates a KdenLive \n                                                 
-project.  If bzrto or bzrfrom is not passed, or is passed as 0, then %(prog)s\n                                                 
-will just fix project resource references.                                                                                      
+        epilog="""
+        This script builds Synfig scenes into animations, and regenerates a KdenLive \n
+        project.                                                                                     
         """)                                                                                                                    
                                                                                                                                 
     parser.add_argument('-width', type=int, help=('width of the generated '                                                     
@@ -417,18 +416,15 @@ will just fix project resource references.
     print ("CurrentProjectPath :" + CurrentProjectPath)                                                                         
     print ("mltRoot            :" + mltRoot)                                                                                    
     SetProjectRoot(root, CurrentProjectPath) 
-    if(FIX_ONLY):
-        FixResources2(root, CurrentProjectPath)                                                                                     
-        tree.write(os.path.join(CurrentProjectPath,filename))  
+    FixResources2(root, CurrentProjectPath)                                                                                     
+    tree.write(os.path.join(CurrentProjectPath,filename))  
     if (FIX_ONLY == False):
-        FixResources2(root, CurrentProjectPath)     
-        tree.write(os.path.join(CurrentProjectPath,filename))
         for directoryroot,dirs,sourcefiles in os.walk(os.path.join(NewRoot, NewPath)):                                                             
             for file in sourcefiles: 
                 files = os.path.join(directoryroot,file)                                                                        
                 (prefix, sep, extension) = os.path.basename(files).rpartition('.')                                              
-                if (extension.upper() in IMAGE_EXTENSIONS):
-                    FixClip(root, files)   
+                #if (extension.upper() in IMAGE_EXTENSIONS):
+                    #FixClip(root, files)   
                 
                 if (extension.upper() in VALID_EXTENSIONS):
                     if (RenderSynfigScene(files) == 0):                                                                         
@@ -437,8 +433,7 @@ will just fix project resource references.
                         ClearFrames(files)                                                                                      
                         newFilename = os.path.join(os.path.dirname(files),                                                      
                         prefix + VIDEO_FORMAT)                                                                                  
-                        animaticVideFile = os.path.join(os.getcwd(),                                                            
-                                                 os.path.basename(newFilename))                                                 
+                        animaticVideFile = os.path.join(os.getcwd(),os.path.basename(newFilename))                                                 
                         FixClip(root, newFilename)   
     tree.write(os.path.join(CurrentProjectPath,filename))                                                                                                        
  
