@@ -108,14 +108,14 @@ def ClearFrames(Scene):
                                                                                                                                 
 def CreateProducer(MediaInfoObject):                                                                                            
     """Creates a Producer xml object for insertion into the                                                                     
-       kdenlive project file"""                                                                                                 
+       kdenlive project file"""               
     templatePath = os.path.dirname(os.path.realpath(__file__))                                                                  
     templateLoader = jinja2.FileSystemLoader(searchpath=str(templatePath))                                                      
     templateEnv = jinja2.Environment(loader=templateLoader)                                                                     
     TEMPLATE_FILE = "producers.xml"                                                                                             
     template = templateEnv.get_template(TEMPLATE_FILE)                                                                          
-    templateVars = {"Producer": MediaInfoObject}                                                                                
-    outputText = template.render(templateVars)                                                                                  
+    templateVars = {"Producer": MediaInfoObject}      
+    outputText = template.render(templateVars)  
     return outputText                                                                                                           
                                                                                                                                 
                                                                                                                                 
@@ -153,8 +153,6 @@ def GetMediaInformation(File, ID, _in, _out, resource, name):
     data['resource'] = resource                                                                                                 
     data['NumerofFrames'] = _out                                                                                                
     data['resourcename'] = name  
-    print "----  VERY IMPORTANT ---- "
-    print " CALCULATING HASH OF FILE " + File
     hash = CalculateFileHash(File)
     data['FileHash'] = hash
     return data                                                                                                                 
@@ -231,26 +229,14 @@ def SetMltRoot(root, Val):
                                                                                                                                 
 def FixClip(root, newFilename):                                                                                                 
     """Replaces a animatic frame with a rendered video - if required."""     
-    print " -- INFO :Replacing the animcatic frame with rendered video"
     (destprefix, destsep, destsuffix) = os.path.basename(newFilename).rpartition('.')                                                 
     
     for Producers in root.findall("./producer"):  
         foo2 = Producers.find("property[@name='mlt_service']").text
-        #print " -- THIS IS THE TEXT OF THE PRODUCER "+foo2
         if (Producers.find("property[@name='mlt_service']").text not in INVALID_PRODUCERTYPES): 
-            #print "Producer in file : " + str(Producers.text)
-            #print "Producer Type : " + Producers.find("property[@name='mlt_service']").text
             clip = Producers.find("property[@name='resource']")                                                                 
             (prefix, sep, suffix) = os.path.basename(clip.text).rpartition('.')                                                 
-            print "====="
-            print "clip      :" + ET.tostring(clip)
-            #print "Resource  :" 
-            print "prefix    :" + prefix
-            #print "sep       :" + sep
-            #print "suffix    :" + suffix
-            print "destprefix:"+destprefix
             mltRoot = GetMltRoot(root)           
-            #print "mltRoot   :"+mltRoot
                        
             if (prefix.upper() == destprefix.upper()): 
                 #print mltRoot+prefix
@@ -258,7 +244,6 @@ def FixClip(root, newFilename):
                 _id = parent.attrib["id"]                                                                                       
                 _in = parent.attrib["in"]                                                                                       
                 _out = parent.attrib["out"]  
-                print "Found Producer..." 
                 foo = ET.fromstring(                                                                                            
                     CreateProducer                                                                                              
                     (                                                                                                           
@@ -272,51 +257,29 @@ def FixClip(root, newFilename):
                         )                                                                                                       
                     )                                                                                                           
                 )    
-                print "=== NEW PRODUCER ==="
-                print ET.tostring(foo)
-                print "===================="
                 parent.getparent().replace(parent, foo)   
-                print ET.tostring(parent)
-                print "=== END OF FIX CLIP STUFF==="
                 
-# Last step : Create a new kdenlist_producernode                 
-            #print "END HERE"
-        #Fix the Kdenlive Producers                                                                                             
-                print "FIXING kdenlive_produce [timeline].. " +_id
-                for clip in root.findall("./kdenlivedoc/kdenlive_producer[@id='" + _id + "']"):  
-                    print ET.tostring(clip)
-                print "FIXING kdenlive_produce [timeline] : END"
-#        print ET.tostring(clip)
-#        if ('resource' in clip.attrib):                                                                                         
-#            (prefix, sep, suffix) = os.path.basename(clip.attrib["resource"]).rpartition('.') 
-#            #print "prefix     : " + clip.attrib["resource"]
-#            #print "destprefix : " + destprefix
-#            #print "newFilename: " + newFilename
-#            if (prefix == destprefix):                                                                                          
-#                #Adding in a new Producer for the New Video File.
-#                foo = ET.fromstring(CreateKdenliveProducer(GetMediaInformation(newFilename, _id, _in, _out,newFilename, destprefix + destsep + destsuffix)))                                                             
-#                clip.getparent().replace(clip, foo)                           
+                #for clip in root.findall("./kdenlivedoc/kdenlive_producer[@id='" + _id + "']"):  
+                #    print ET.tostring(clip)
                 
     return root
                                                                   
                                                                                                                                 
 def CalculateFileHash(filename):
-    print "HASHING " + filename
     size = os.path.getsize(filename)
     file = open(filename, 'rb')
     if(size > (1000000*2)):
         file.seek(0)
         fileData = file.read(1000000)
         file.seek(1000000,2) #Seek last 1000000 bytes
-        fileData.append(file.read(1000000))
+        fileData = fileData + file.read(1000000)
+        #fileData.append(file.read(1000000))
     else:
         fileData = file.read()
     import hashlib
     m = hashlib.md5()
     m.update(fileData)
-    print m.hexdigest()       
     fileHash =m.hexdigest()
-    print fileHash
     return fileHash
     
 def FindApplication(renderer):                                                                                                  
@@ -333,9 +296,6 @@ def FindApplication(renderer):
                                                                                                                                 
 def CreateRenderShellScript(NewRoot, NewPath):                                                                                  
     """Creates a new Render script."""                                                                                          
-    print NewRoot                                                                                                               
-    print NewPath                                                                                                               
-    print filename                                                                                                              
     (prefix, sep, extension) = os.path.basename(filename).rpartition('.')                                                       
     SCRIPT = filename + ".sh"                                                                                                   
     Output = filename + ".mp4"                                                                                                  
@@ -363,7 +323,6 @@ def CreateRenderShellScript(NewRoot, NewPath):
     TEMPLATE_FILE = "animatic.sh.template"                                                                                      
     template = templateEnv.get_template(TEMPLATE_FILE)                                                                          
     print "Writing " + ShellScript                                                                                              
-    print                                                                                                                       
     #                                                                                                                           
     # Specify any input variables to the template as a dictionary.                                                              
     templateVars = {"source": source_data}                                                                                      
@@ -382,7 +341,7 @@ def CopyKdenLiveFileToMLT(kdenLive):
                                                                                                                                 
                                                                                                                                 
                                                                                                                                 
-try:                                                                                                                            
+try:           
     parser = argparse.ArgumentParser(                                                                                           
         prog='Fixer',                                                                                                           
         description='Jenkins / KDE animatic production utilities',                                                              
@@ -457,8 +416,6 @@ will just fix project resource references.
     print ("ProjectPath        :" + ProjectPath)                                                                                
     print ("CurrentProjectPath :" + CurrentProjectPath)                                                                         
     print ("mltRoot            :" + mltRoot)                                                                                    
-    #print "TESTING HASH" + CalculateFileHash("/home/mike/projects/scargo/scenes/tux/Tux.png")
-    #print " should be : 7ed8a808420a41cc91afa6236e7a1dd4"
     SetProjectRoot(root, CurrentProjectPath) 
     if(FIX_ONLY):
         FixResources2(root, CurrentProjectPath)                                                                                     
@@ -466,19 +423,11 @@ will just fix project resource references.
     if (FIX_ONLY == False):
         FixResources2(root, CurrentProjectPath)     
         tree.write(os.path.join(CurrentProjectPath,filename))
-        ##print "FIX ONLY NOT SPECIFIED"      
-        ##print "Walking from :" + NewPath
         for directoryroot,dirs,sourcefiles in os.walk(os.path.join(NewRoot, NewPath)):                                                             
             for file in sourcefiles: 
-                ##print "walking solution : " + file
                 files = os.path.join(directoryroot,file)                                                                        
                 (prefix, sep, extension) = os.path.basename(files).rpartition('.')                                              
                 if (extension.upper() in IMAGE_EXTENSIONS):
-                    print "== FIXING " + files
-                    print "== FIXING " + file
-                    print "================="                    
-                    
-                    # Some Asset needs re-writing
                     FixClip(root, files)   
                 
                 if (extension.upper() in VALID_EXTENSIONS):
@@ -490,17 +439,7 @@ will just fix project resource references.
                         prefix + VIDEO_FORMAT)                                                                                  
                         animaticVideFile = os.path.join(os.getcwd(),                                                            
                                                  os.path.basename(newFilename))                                                 
-                        #print "Video moved to" + animaticVideFile                                                              
-                        #shutil.move(newFilename, animaticVideFile)                                                          
-                        ##print " -- FIXING CLIP"
                         FixClip(root, newFilename)   
-                        ##print "== OLD ROOT=="
-                        ##print ET.tostring(root)
-                        ##print "== NEW ROOT=="
-                        ##print ET.tostring(newroot)
-                        
-                        ##print " -- FIXING CLIP : DONE"
-                        ##print "Writing to filename : " + os.path.join(CurrentProjectPath,filename)
     tree.write(os.path.join(CurrentProjectPath,filename))                                                                                                        
  
     # Fix the Production Scripts                                                                                                

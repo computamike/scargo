@@ -16,10 +16,12 @@
   <property name="meta.media.0.codec.name">{{Producer.streams[0].codec_name}}</property>
   <property name="meta.media.0.codec.long_name">{{Producer.streams[0].codec_long_name}}</property>
   <property name="meta.media.0.codec.bit_rate">121252</property>
+  {% if Producer.format.tags is defined %}
   <property name="meta.attr.major_brand.markup">{{Producer.format.tags.major_brand}}</property>
   <property name="meta.attr.minor_version.markup">{{Producer.format.tags.minor_version}}</property>
   <property name="meta.attr.compatible_brands.markup">{{Producer.format.tagscompatible_brands}}</property>
   <property name="meta.attr.encoder.markup">{{Producer.format.tags.encoder}}</property>
+  {% endif %}
   <property name="seekable">1</property>
   <property name="meta.media.sample_aspect_num">1</property>
   <property name="meta.media.sample_aspect_den">1</property>
