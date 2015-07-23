@@ -175,24 +175,41 @@ def FixResources(root, Prefix, newFilename):
                                           newFilename,                                                                          
                                           prefix + sep + suffix))                                                               
     #tree.write(filename)                                                                                                       
-                                                                                                                                
+               
+def findFile(BasePath, FileName):
+    for directoryroot,dirs,sourcefiles in os.walk(BasePath):                                                             
+        for file in sourcefiles: 
+            files = os.path.join(directoryroot,file)                                                                        
+            if (os.path.basename(files) == FileName):
+                return files
+            #(prefix, sep, extension) = os.path.basename(files).rpartition('.')                                              
+            #print  prefix + sep + extension + " ?= " + FileName
+            #print os.path.basename(files)
+            
+    
+    
+
                                                                                                                                 
 def FixResources2(root, CurrentProjectPath):                                                                                    
     """Fixes kdenlive resource references, rebasing them on the current                                                         
-       project directory"""                                                                                                     
+       project directory"""         
     for clip in root.findall("./kdenlivedoc/kdenlive_producer"):                                                                
-        if ('resource' in clip.attrib):                                                                                         
+        if ('resource' in clip.attrib):   
+            #print " [I]: Fixing Clip : " + clip.attrib["resource"]
             (prefix, sep, suffix) = os.path.basename(                                                                           
                                     clip.attrib["resource"]).rpartition('.')                                                    
-            Fixed = clip.attrib["resource"].replace(ProjectPath,                                                                
-                                                            CurrentProjectPath)                                                 
-            clip.set('resource', Fixed)                                                                                         
+                      
+            fileat = findFile(CurrentProjectPath,prefix +  sep +  suffix )
+            Fixed = clip.attrib["resource"].replace(ProjectPath,CurrentProjectPath) 
+            clip.set('resource', fileat)                                                                                         
+    
     for clip in root.findall("./producer/property[@name='mlt_service']"): 
-        if (clip.text == "avformat"):
-            foobar = clip.getparent().find("property[@name='resource']")
-            (prefix, sep, suffix) = os.path.basename(foobar.text).rpartition('.')                                                    
-            Fixed = foobar.text.replace(ProjectPath, CurrentProjectPath)
-            foobar.text = Fixed   
+        #if (clip.text == "avformat"):
+        foobar = clip.getparent().find("property[@name='resource']")
+        (prefix, sep, suffix) = os.path.basename(foobar.text).rpartition('.')                                                    
+        Fixed = foobar.text.replace(ProjectPath, CurrentProjectPath)
+        Fixed = findFile(CurrentProjectPath,prefix +  sep +  suffix )
+        foobar.text = Fixed   
 
 
                                                                                                                                 
