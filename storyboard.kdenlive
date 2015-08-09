@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mlt title="Anonymous Submission" version="0.9.0" root="/home/dave" LC_NUMERIC="en_GB.UTF-8">
- <profile width="720" display_aspect_den="3" colorspace="601" frame_rate_den="1" description="DV/DVD PAL" height="576" display_aspect_num="4" frame_rate_num="25" progressive="0" sample_aspect_num="16" sample_aspect_den="15"/>
- <producer in="0" out="500" id="black">
+ <profile width="1920" display_aspect_den="9" colorspace="709" frame_rate_den="1" description="HD 1080p 24 fps" height="1080" display_aspect_num="16" frame_rate_num="24" progressive="1" sample_aspect_num="1" sample_aspect_den="1"/>
+ <producer in="0" out="14999" id="black">
   <property name="mlt_type">producer</property>
   <property name="length">15000</property>
   <property name="eof">pause</property>
@@ -10,12 +10,12 @@
   <property name="mlt_service">colour</property>
  </producer>
  <playlist id="black_track">
-  <entry in="0" out="4479" producer="black"/>
+  <entry in="0" out="4300" producer="black"/>
  </playlist>
  <playlist id="playlist1"/>
- <producer in="0" out="4060" id="1_3">
+ <producer in="0" out="3897" id="1_3">
   <property name="mlt_type">producer</property>
-  <property name="length">4061</property>
+  <property name="length">3898</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/audio/Cat Detective.mp3</property>
   <property name="meta.media.nb_streams">1</property>
@@ -32,19 +32,19 @@
   <property name="mlt_service">avformat</property>
  </producer>
  <playlist id="playlist2">
-  <blank length="221"/>
-  <entry in="0" out="166" producer="1_3"/>
-  <blank length="45"/>
-  <entry in="167" out="737" producer="1_3"/>
-  <blank length="69"/>
-  <entry in="738" out="2384" producer="1_3"/>
-  <entry in="2404" out="3920" producer="1_3"/>
-  <blank length="84"/>
-  <entry in="3921" out="4060" producer="1_3"/>
+  <blank length="212"/>
+  <entry in="0" out="159" producer="1_3"/>
+  <blank length="43"/>
+  <entry in="160" out="708" producer="1_3"/>
+  <blank length="66"/>
+  <entry in="708" out="2289" producer="1_3"/>
+  <entry in="2308" out="3763" producer="1_3"/>
+  <blank length="81"/>
+  <entry in="3764" out="3897" producer="1_3"/>
  </playlist>
- <producer in="0" out="311" id="12">
+ <producer in="0" out="14999" id="12">
   <property name="mlt_type">producer</property>
-  <property name="length">312</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_1.png</property>
   <property name="ttl">25</property>
@@ -56,9 +56,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="13">
+ <producer in="0" out="14999" id="13">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_2.png</property>
   <property name="ttl">25</property>
@@ -70,9 +70,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="150" id="14">
+ <producer in="0" out="14999" id="14">
   <property name="mlt_type">producer</property>
-  <property name="length">151</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_3.png</property>
   <property name="ttl">25</property>
@@ -84,9 +84,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="15">
+ <producer in="0" out="14999" id="15">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_4.png</property>
   <property name="ttl">25</property>
@@ -98,9 +98,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="172" id="16">
+ <producer in="0" out="14999" id="16">
   <property name="mlt_type">producer</property>
-  <property name="length">173</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_5.png</property>
   <property name="ttl">25</property>
@@ -112,9 +112,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="17">
+ <producer in="0" out="14999" id="17">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_6.png</property>
   <property name="ttl">25</property>
@@ -126,9 +126,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="132" id="18">
+ <producer in="0" out="14999" id="18">
   <property name="mlt_type">producer</property>
-  <property name="length">133</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_7.png</property>
   <property name="ttl">25</property>
@@ -140,9 +140,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="19">
+ <producer in="0" out="14999" id="19">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_8.png</property>
   <property name="ttl">25</property>
@@ -154,9 +154,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="146" id="20">
+ <producer in="0" out="14999" id="20">
   <property name="mlt_type">producer</property>
-  <property name="length">147</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_9.png</property>
   <property name="ttl">25</property>
@@ -168,9 +168,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="185" id="21">
+ <producer in="0" out="14999" id="21">
   <property name="mlt_type">producer</property>
-  <property name="length">186</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_10.png</property>
   <property name="ttl">25</property>
@@ -182,9 +182,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="154" id="22">
+ <producer in="0" out="14999" id="22">
   <property name="mlt_type">producer</property>
-  <property name="length">155</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_11.png</property>
   <property name="ttl">25</property>
@@ -196,9 +196,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="207" id="23">
+ <producer in="0" out="14999" id="23">
   <property name="mlt_type">producer</property>
-  <property name="length">208</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_12.png</property>
   <property name="ttl">25</property>
@@ -210,9 +210,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="147" id="24">
+ <producer in="0" out="14999" id="24">
   <property name="mlt_type">producer</property>
-  <property name="length">148</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_13.png</property>
   <property name="ttl">25</property>
@@ -224,9 +224,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="25">
+ <producer in="0" out="14999" id="25">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_14.png</property>
   <property name="ttl">25</property>
@@ -238,9 +238,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="26">
+ <producer in="0" out="14999" id="26">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_15.png</property>
   <property name="ttl">25</property>
@@ -252,9 +252,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="170" id="27">
+ <producer in="0" out="14999" id="27">
   <property name="mlt_type">producer</property>
-  <property name="length">171</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_16.png</property>
   <property name="ttl">25</property>
@@ -266,9 +266,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="212" id="29">
+ <producer in="0" out="14999" id="29">
   <property name="mlt_type">producer</property>
-  <property name="length">213</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_18.png</property>
   <property name="ttl">25</property>
@@ -280,9 +280,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="30">
+ <producer in="0" out="14999" id="30">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_19.png</property>
   <property name="ttl">25</property>
@@ -294,9 +294,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="342" id="31">
+ <producer in="0" out="14999" id="31">
   <property name="mlt_type">producer</property>
-  <property name="length">343</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_20.png</property>
   <property name="ttl">25</property>
@@ -308,9 +308,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="280" id="32">
+ <producer in="0" out="14999" id="32">
   <property name="mlt_type">producer</property>
-  <property name="length">281</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_21.png</property>
   <property name="ttl">25</property>
@@ -322,9 +322,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="157" id="33">
+ <producer in="0" out="14999" id="33">
   <property name="mlt_type">producer</property>
-  <property name="length">158</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_22.png</property>
   <property name="ttl">25</property>
@@ -336,9 +336,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="271" id="34">
+ <producer in="0" out="14999" id="34">
   <property name="mlt_type">producer</property>
-  <property name="length">272</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_23.png</property>
   <property name="ttl">25</property>
@@ -350,9 +350,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="35">
+ <producer in="0" out="14999" id="35">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_24.png</property>
   <property name="ttl">25</property>
@@ -364,9 +364,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="257" id="36">
+ <producer in="0" out="14999" id="36">
   <property name="mlt_type">producer</property>
-  <property name="length">258</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_25.png</property>
   <property name="ttl">25</property>
@@ -378,9 +378,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="182" id="37">
+ <producer in="0" out="14999" id="37">
   <property name="mlt_type">producer</property>
-  <property name="length">183</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_26.png</property>
   <property name="ttl">25</property>
@@ -392,9 +392,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="155" id="38">
+ <producer in="0" out="14999" id="38">
   <property name="mlt_type">producer</property>
-  <property name="length">156</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_27.png</property>
   <property name="ttl">25</property>
@@ -406,9 +406,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="39">
+ <producer in="0" out="14999" id="39">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_28.png</property>
   <property name="ttl">25</property>
@@ -420,9 +420,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="41">
+ <producer in="0" out="14999" id="41">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_30.png</property>
   <property name="ttl">25</property>
@@ -434,9 +434,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="208" id="40">
+ <producer in="0" out="14999" id="40">
   <property name="mlt_type">producer</property>
-  <property name="length">209</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_29.png</property>
   <property name="ttl">25</property>
@@ -448,9 +448,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="42">
+ <producer in="0" out="14999" id="42">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_31.png</property>
   <property name="ttl">25</property>
@@ -462,9 +462,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="43">
+ <producer in="0" out="14999" id="43">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_32.png</property>
   <property name="ttl">25</property>
@@ -476,9 +476,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="130" id="44">
+ <producer in="0" out="14999" id="44">
   <property name="mlt_type">producer</property>
-  <property name="length">131</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_33.png</property>
   <property name="ttl">25</property>
@@ -490,9 +490,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="143" id="45">
+ <producer in="0" out="14999" id="45">
   <property name="mlt_type">producer</property>
-  <property name="length">144</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_34.png</property>
   <property name="ttl">25</property>
@@ -504,9 +504,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="124" id="46">
+ <producer in="0" out="14999" id="46">
   <property name="mlt_type">producer</property>
-  <property name="length">125</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_35.png</property>
   <property name="ttl">25</property>
@@ -518,9 +518,9 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <producer in="0" out="360" id="47">
+ <producer in="0" out="14999" id="47">
   <property name="mlt_type">producer</property>
-  <property name="length">361</property>
+  <property name="length">15000</property>
   <property name="eof">pause</property>
   <property name="resource">project/scargo/scargo/scenes/scene_36.png</property>
   <property name="ttl">25</property>
@@ -533,45 +533,45 @@
   <property name="mlt_service">pixbuf</property>
  </producer>
  <playlist id="playlist3">
-  <entry in="0" out="311" producer="12"/>
-  <entry in="0" out="123" producer="13"/>
-  <entry in="0" out="150" producer="14"/>
-  <entry in="11" out="51" producer="15"/>
-  <entry in="0" out="94" producer="16"/>
-  <entry in="0" out="100" producer="17"/>
-  <entry in="0" out="132" producer="18"/>
-  <entry in="0" out="120" producer="19"/>
-  <entry in="66" out="115" producer="20"/>
-  <entry in="65" out="185" producer="21"/>
-  <entry in="68" out="154" producer="22"/>
-  <entry in="6" out="207" producer="23"/>
-  <entry in="54" out="147" producer="24"/>
-  <entry in="0" out="59" producer="25"/>
-  <entry in="0" out="46" producer="26"/>
-  <entry in="0" out="170" producer="27"/>
-  <entry in="0" out="212" producer="29"/>
-  <entry in="52" out="124" producer="30"/>
-  <entry in="0" out="342" producer="31"/>
-  <entry in="182" out="242" producer="32"/>
-  <entry in="0" out="120" producer="33"/>
-  <entry in="21" out="271" producer="34"/>
-  <entry in="46" out="94" producer="35"/>
-  <entry in="66" out="257" producer="36"/>
-  <entry in="85" out="182" producer="37"/>
-  <entry in="70" out="155" producer="38"/>
-  <entry in="0" out="100" producer="39"/>
-  <entry in="0" out="36" producer="41"/>
-  <entry in="71" out="208" producer="40"/>
-  <entry in="0" out="120" producer="42"/>
-  <entry in="0" out="119" producer="43"/>
-  <entry in="76" out="124" producer="44"/>
-  <entry in="98" out="143" producer="45"/>
-  <entry in="0" out="109" producer="46"/>
-  <entry in="0" out="360" producer="47"/>
+  <entry in="0" out="299" producer="12"/>
+  <entry in="0" out="118" producer="13"/>
+  <entry in="0" out="144" producer="14"/>
+  <entry in="11" out="49" producer="15"/>
+  <entry in="0" out="90" producer="16"/>
+  <entry in="0" out="96" producer="17"/>
+  <entry in="0" out="127" producer="18"/>
+  <entry in="0" out="115" producer="19"/>
+  <entry in="63" out="110" producer="20"/>
+  <entry in="62" out="178" producer="21"/>
+  <entry in="65" out="148" producer="22"/>
+  <entry in="6" out="199" producer="23"/>
+  <entry in="52" out="141" producer="24"/>
+  <entry in="0" out="57" producer="25"/>
+  <entry in="0" out="44" producer="26"/>
+  <entry in="0" out="163" producer="27"/>
+  <entry in="0" out="204" producer="29"/>
+  <entry in="50" out="119" producer="30"/>
+  <entry in="0" out="328" producer="31"/>
+  <entry in="175" out="232" producer="32"/>
+  <entry in="0" out="115" producer="33"/>
+  <entry in="20" out="260" producer="34"/>
+  <entry in="44" out="90" producer="35"/>
+  <entry in="63" out="247" producer="36"/>
+  <entry in="82" out="175" producer="37"/>
+  <entry in="67" out="149" producer="38"/>
+  <entry in="0" out="96" producer="39"/>
+  <entry in="0" out="35" producer="41"/>
+  <entry in="68" out="200" producer="40"/>
+  <entry in="0" out="115" producer="42"/>
+  <entry in="0" out="114" producer="43"/>
+  <entry in="73" out="119" producer="44"/>
+  <entry in="94" out="137" producer="45"/>
+  <entry in="0" out="105" producer="46"/>
+  <entry in="0" out="346" producer="47"/>
  </playlist>
  <playlist id="playlist4"/>
  <playlist id="playlist5"/>
- <tractor title="Anonymous Submission" global_feed="1" in="0" out="4479" id="maintractor">
+ <tractor title="Anonymous Submission" global_feed="1" in="0" out="4303" id="maintractor">
   <property name="meta.volume">1</property>
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
@@ -616,16 +616,16 @@
    <property name="internal_added">237</property>
   </transition>
  </tractor>
- <kdenlivedoc profile="dv_pal" kdenliveversion="0.9.6" version="0.88" projectfolder="/home/dave/kdenlive">
+ <kdenlivedoc profile="atsc_1080p_24" kdenliveversion="0.9.6" version="0.88" projectfolder="/home/dave/kdenlive">
   <customeffects/>
-  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="0" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="3844" proxyminsize="1000" renderstartguide="-1" zoom="7" renderratio="0" rendercategory="MPEG-4" zoneout="1" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="0" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="0" proxyminsize="1000" renderstartguide="-1" zoom="7" renderratio="0" rendercategory="MPEG-4" zoneout="1" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
   <documentmetadata/>
   <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
 p, li { white-space: pre-wrap; }
 &lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:8pt; font-weight:400; font-style:normal;">
 &lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;br />&lt;/p>&lt;/body>&lt;/html></documentnotes>
-  <profileinfo width="720" display_aspect_den="3" frame_rate_den="1" description="DV/DVD PAL" height="576" frame_rate_num="25" display_aspect_num="4" progressive="0" sample_aspect_num="16" sample_aspect_den="15"/>
+  <profileinfo width="1920" display_aspect_den="9" frame_rate_den="1" description="HD 1080p 24 fps" height="1080" frame_rate_num="24" display_aspect_num="16" progressive="1" sample_aspect_num="1" sample_aspect_den="1"/>
   <tracksinfo>
    <trackinfo blind="1" mute="0" locked="0" trackname="Audio 2" type="audio"/>
    <trackinfo blind="1" mute="0" locked="0" trackname="Audio 1" type="audio"/>
@@ -634,7 +634,7 @@ p, li { white-space: pre-wrap; }
    <trackinfo blind="1" mute="0" locked="0" trackname="Video 1"/>
   </tracksinfo>
   <folder id="4" name="Audio"/>
-  <kdenlive_producer audio_max="57" audiocodec="MP3 (MPEG audio layer 3)" channels="1" duration="4061" frame_size="720x576" frequency="44100" analysisdata="" file_size="2599161" groupid="4" aspect_ratio="0.000000" groupname="Audio" file_hash="2f190accfc4cd81603ec9d7cab68ca78" type="1" id="1" name="Cat Detective.mp3" resource="/home/dave/project/scargo/scargo/audio/Cat Detective.mp3"/>
+  <kdenlive_producer audio_max="57" audiocodec="MP3 (MPEG audio layer 3)" channels="1" duration="3898" frame_size="720x576" frequency="44100" analysisdata="" file_size="2599161" groupid="4" aspect_ratio="0.000000" groupname="Audio" file_hash="2f190accfc4cd81603ec9d7cab68ca78" type="1" id="1" name="Cat Detective.mp3" resource="/home/dave/project/scargo/scargo/audio/Cat Detective.mp3"/>
   <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="329338" aspect_ratio="1.000000" out="124" file_hash="0fc56c0937474b66590a8796f74a0712" type="5" id="12" name="scene_1.png" resource="/home/dave/project/scargo/scargo/scenes/scene_1.png"/>
   <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="303355" aspect_ratio="1.000000" out="124" file_hash="9497782ce82c6933d912c2155a5b0ef6" type="5" id="13" name="scene_2.png" resource="/home/dave/project/scargo/scargo/scenes/scene_2.png"/>
   <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="313791" aspect_ratio="1.000000" out="124" file_hash="00a502179bc008ae1c4704f62aab6c4e" type="5" id="14" name="scene_3.png" resource="/home/dave/project/scargo/scargo/scenes/scene_3.png"/>
