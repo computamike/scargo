@@ -10,9 +10,201 @@
   <property name="mlt_service">colour</property>
  </producer>
  <playlist id="black_track">
-  <entry in="0" out="4300" producer="black"/>
+  <entry in="0" out="9604" producer="black"/>
  </playlist>
- <playlist id="playlist1"/>
+ <producer in="0" out="3877" id="60_6">
+  <property name="mlt_type">producer</property>
+  <property name="length">3878</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/audio/Bass Walker.mp3</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16p</property>
+  <property name="meta.media.0.codec.sample_rate">48000</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">mp3</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">320000</property>
+  <property name="meta.attr.encoded_by.markup">iTunes 10.6.1</property>
+  <property name="meta.attr.artist.markup">Kevin MacLeod</property>
+  <property name="meta.attr.TCM.markup">Kevin MacLeod</property>
+  <property name="meta.attr.album.markup">Royalty Free</property>
+  <property name="meta.attr.title.markup">Bass Walker</property>
+  <property name="meta.attr.TBP.markup">112</property>
+  <property name="meta.attr.genre.markup">Jazz</property>
+  <property name="meta.attr.date.markup">2012</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
+ <playlist id="playlist1">
+  <blank length="1110"/>
+  <entry in="0" out="3877" producer="60_6">
+   <filter out="2845" id="volume">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="kdenlive_info"/>
+    <property name="gain">1.47</property>
+    <property name="end">1.47</property>
+   </filter>
+   <filter in="2846" out="2846" id="filter0">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="kdenlive_info"/>
+    <property name="gain">1.47</property>
+    <property name="end">0</property>
+   </filter>
+   <filter in="2847" out="3877" id="filter1">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">volume</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="kdenlive_info"/>
+    <property name="gain">0</property>
+    <property name="end">0</property>
+   </filter>
+  </entry>
+ </playlist>
+ <producer in="0" out="5649" id="61_5">
+  <property name="mlt_type">producer</property>
+  <property name="length">5650</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/audio/Life of Riley.mp3</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">mp3</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">256000</property>
+  <property name="meta.attr.title.markup">Life of Riley</property>
+  <property name="meta.attr.artist.markup">Kevin MacLeod</property>
+  <property name="meta.attr.TCM.markup">Kevin MacLeod</property>
+  <property name="meta.attr.album.markup">Royalty-Free</property>
+  <property name="meta.attr.encoded_by.markup">iTunes 11.4</property>
+  <property name="meta.attr.genre.markup">Pop</property>
+  <property name="meta.attr.date.markup">2014</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
+ <playlist id="playlist0">
+  <entry in="0" out="665" producer="61_5"/>
+  <blank length="3289"/>
+  <entry in="0" out="5649" producer="61_5"/>
+ </playlist>
+ <producer in="0" out="197" id="64_4">
+  <property name="mlt_type">producer</property>
+  <property name="length">198</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/audio/215558__divenorth__dun-dun-duuun-v-01.mp3</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16p</property>
+  <property name="meta.media.0.codec.sample_rate">48000</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">mp3</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">320000</property>
+  <property name="meta.attr.track.markup">1</property>
+  <property name="meta.attr.encoded_by.markup">Fraunhofer IIS MP3 v04.01.02 (fast)</property>
+  <property name="meta.attr.date.markup">2014</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
+ <producer in="0" out="212" id="63_4">
+  <property name="mlt_type">producer</property>
+  <property name="length">213</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/audio/117512__zesoundresearchinc__vinyl-needle-skip.wav</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16</property>
+  <property name="meta.media.0.codec.sample_rate">48000</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">pcm_s16le</property>
+  <property name="meta.media.0.codec.long_name">PCM signed 16-bit little-endian</property>
+  <property name="meta.media.0.codec.bit_rate">1536000</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
+ <producer in="0" out="58" id="62_4">
+  <property name="mlt_type">producer</property>
+  <property name="length">59</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/audio/85568__joelaudio__dragon-roar(1).wav</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">flt</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">1</property>
+  <property name="meta.media.0.codec.name">pcm_f32le</property>
+  <property name="meta.media.0.codec.long_name">PCM 32-bit floating point little-endian</property>
+  <property name="meta.media.0.codec.bit_rate">1411200</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
+ <producer in="0" out="150" id="59_4">
+  <property name="mlt_type">producer</property>
+  <property name="length">151</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/audio/169349__firecamel__cartoon-blink.mp3</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">mp3</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">128000</property>
+  <property name="meta.attr.TSS.markup">GarageBand 5.1</property>
+  <property name="meta.attr.artist.markup">Student</property>
+  <property name="meta.attr.TCM.markup">Student</property>
+  <property name="meta.attr.TBP.markup">120</property>
+  <property name="meta.attr.title.markup">blink</property>
+  <property name="meta.attr.album.markup">Student's Album</property>
+  <property name="meta.attr.date.markup">2011-02-08 22:07</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
+ <playlist id="playlist2">
+  <blank length="666"/>
+  <entry in="11" out="55" producer="64_4"/>
+  <entry in="56" out="197" producer="64_4"/>
+  <blank length="170"/>
+  <entry in="0" out="10" producer="63_4"/>
+  <blank length="2252"/>
+  <entry in="0" out="58" producer="62_4"/>
+  <blank length="548"/>
+  <entry in="0" out="8" producer="59_4"/>
+ </playlist>
  <producer in="0" out="3897" id="1_3">
   <property name="mlt_type">producer</property>
   <property name="length">3898</property>
@@ -31,15 +223,19 @@
   <property name="video_index">-1</property>
   <property name="mlt_service">avformat</property>
  </producer>
- <playlist id="playlist2">
+ <playlist id="playlist3">
   <blank length="212"/>
   <entry in="0" out="159" producer="1_3"/>
   <blank length="43"/>
-  <entry in="160" out="708" producer="1_3"/>
+  <entry in="160" out="434" producer="1_3"/>
+  <blank length="75"/>
+  <entry in="435" out="708" producer="1_3"/>
   <blank length="66"/>
   <entry in="708" out="2289" producer="1_3"/>
-  <entry in="2308" out="3763" producer="1_3"/>
-  <blank length="81"/>
+  <entry in="2308" out="3510" producer="1_3"/>
+  <blank length="65"/>
+  <entry in="3511" out="3763" producer="1_3"/>
+  <blank length="66"/>
   <entry in="3764" out="3897" producer="1_3"/>
  </playlist>
  <producer in="0" out="14999" id="12">
@@ -532,12 +728,12 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
- <playlist id="playlist3">
+ <playlist id="playlist4">
   <entry in="0" out="299" producer="12"/>
   <entry in="0" out="118" producer="13"/>
   <entry in="0" out="144" producer="14"/>
   <entry in="11" out="49" producer="15"/>
-  <entry in="0" out="90" producer="16"/>
+  <entry in="0" out="165" producer="16"/>
   <entry in="0" out="96" producer="17"/>
   <entry in="0" out="127" producer="18"/>
   <entry in="0" out="115" producer="19"/>
@@ -565,20 +761,22 @@
   <entry in="0" out="115" producer="42"/>
   <entry in="0" out="114" producer="43"/>
   <entry in="73" out="119" producer="44"/>
-  <entry in="94" out="137" producer="45"/>
+  <entry in="94" out="166" producer="45"/>
   <entry in="0" out="105" producer="46"/>
   <entry in="0" out="346" producer="47"/>
  </playlist>
- <playlist id="playlist4"/>
  <playlist id="playlist5"/>
- <tractor title="Anonymous Submission" global_feed="1" in="0" out="4303" id="maintractor">
+ <playlist id="playlist6"/>
+ <tractor title="Anonymous Submission" global_feed="1" in="0" out="9604" id="maintractor">
   <property name="meta.volume">1</property>
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
+  <track hide="video" producer="playlist0"/>
   <track hide="video" producer="playlist2"/>
-  <track producer="playlist3"/>
+  <track hide="video" producer="playlist3"/>
   <track hide="video" producer="playlist4"/>
-  <track hide="video" producer="playlist5"/>
+  <track producer="playlist5"/>
+  <track hide="video" producer="playlist6"/>
   <transition id="transition0">
    <property name="a_track">1</property>
    <property name="b_track">2</property>
@@ -615,10 +813,39 @@
    <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
+  <transition id="transition4">
+   <property name="a_track">1</property>
+   <property name="b_track">6</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition id="transition5">
+   <property name="a_track">1</property>
+   <property name="b_track">7</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">mix</property>
+   <property name="always_active">1</property>
+   <property name="combine">1</property>
+   <property name="internal_added">237</property>
+  </transition>
+  <transition out="64" id="transition6">
+   <property name="a_track">0</property>
+   <property name="b_track">5</property>
+   <property name="factory">loader</property>
+   <property name="mlt_type">transition</property>
+   <property name="mlt_service">luma</property>
+   <property name="automatic">1</property>
+   <property name="kdenlive_id">dissolve</property>
+   <property name="force_track">0</property>
+   <property name="reverse">0</property>
+  </transition>
  </tractor>
  <kdenlivedoc profile="atsc_1080p_24" kdenliveversion="0.9.6" version="0.88" projectfolder="/home/dave/kdenlive">
   <customeffects/>
-  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="0" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="0" proxyminsize="1000" renderstartguide="-1" zoom="7" renderratio="0" rendercategory="MPEG-4" zoneout="1" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="0" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="1244" proxyminsize="1000" renderstartguide="-1" zoom="4" renderratio="0" rendercategory="MPEG-4" zoneout="1" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
   <documentmetadata/>
   <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
@@ -627,56 +854,95 @@ p, li { white-space: pre-wrap; }
 &lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;br />&lt;/p>&lt;/body>&lt;/html></documentnotes>
   <profileinfo width="1920" display_aspect_den="9" frame_rate_den="1" description="HD 1080p 24 fps" height="1080" frame_rate_num="24" display_aspect_num="16" progressive="1" sample_aspect_num="1" sample_aspect_den="1"/>
   <tracksinfo>
-   <trackinfo blind="1" mute="0" locked="0" trackname="Audio 2" type="audio"/>
-   <trackinfo blind="1" mute="0" locked="0" trackname="Audio 1" type="audio"/>
-   <trackinfo blind="0" mute="0" locked="0" trackname="Video 3"/>
-   <trackinfo blind="1" mute="0" locked="0" trackname="Video 2"/>
+   <trackinfo blind="1" mute="0" locked="0" trackname="Soundtrack2" type="audio"/>
+   <trackinfo blind="1" mute="0" locked="0" trackname="soundtrack1" type="audio"/>
+   <trackinfo blind="1" mute="0" locked="0" trackname="Foley" type="audio"/>
+   <trackinfo blind="1" mute="0" locked="0" trackname="Narration" type="audio"/>
+   <trackinfo blind="1" mute="0" locked="0" trackname="Video 3"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 2"/>
    <trackinfo blind="1" mute="0" locked="0" trackname="Video 1"/>
   </tracksinfo>
-  <folder id="4" name="Audio"/>
+  <folder opened="1" id="4" name="Audio"/>
+  <folder id="5" name="Storyboard"/>
+  <folder id="6" name="ident"/>
   <kdenlive_producer audio_max="56" audiocodec="MP3 (MPEG audio layer 3)" channels="1" duration="3898" frame_size="720x576" frequency="44100" analysisdata="" file_size="2599161" groupid="4" aspect_ratio="0.000000" groupname="Audio" file_hash="2f190accfc4cd81603ec9d7cab68ca78" type="1" id="1" name="Cat Detective.mp3" resource="/home/dave/project/scargo/scargo/audio/Cat Detective.mp3"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="329338" aspect_ratio="1.000000" out="124" file_hash="0fc56c0937474b66590a8796f74a0712" type="5" id="12" name="scene_1.png" resource="/home/dave/project/scargo/scargo/scenes/scene_1.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="303355" aspect_ratio="1.000000" out="124" file_hash="9497782ce82c6933d912c2155a5b0ef6" type="5" id="13" name="scene_2.png" resource="/home/dave/project/scargo/scargo/scenes/scene_2.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="313791" aspect_ratio="1.000000" out="124" file_hash="00a502179bc008ae1c4704f62aab6c4e" type="5" id="14" name="scene_3.png" resource="/home/dave/project/scargo/scargo/scenes/scene_3.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="335200" aspect_ratio="1.000000" out="124" file_hash="0103ffa5e1c536dd4c668128faaef2d4" type="5" id="15" name="scene_4.png" resource="/home/dave/project/scargo/scargo/scenes/scene_4.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="345750" aspect_ratio="1.000000" out="124" file_hash="0cef8267963271cdb0a1ac7a6436287a" type="5" id="16" name="scene_5.png" resource="/home/dave/project/scargo/scargo/scenes/scene_5.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="287948" aspect_ratio="1.000000" out="124" file_hash="2e93bf679fc305f91869a8b87724142f" type="5" id="17" name="scene_6.png" resource="/home/dave/project/scargo/scargo/scenes/scene_6.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="319306" aspect_ratio="1.000000" out="124" file_hash="44da6efbc8e514843114624c21d329e2" type="5" id="18" name="scene_7.png" resource="/home/dave/project/scargo/scargo/scenes/scene_7.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="288121" aspect_ratio="1.000000" out="124" file_hash="f60e3003df262bf6f061f38165896b57" type="5" id="19" name="scene_8.png" resource="/home/dave/project/scargo/scargo/scenes/scene_8.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="305429" aspect_ratio="1.000000" out="124" file_hash="feb813b6250e68ce76504721bed61792" type="5" id="20" name="scene_9.png" resource="/home/dave/project/scargo/scargo/scenes/scene_9.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="338504" aspect_ratio="1.000000" out="124" file_hash="5648421007a5aa026303fb26c3ceccdd" type="5" id="21" name="scene_10.png" resource="/home/dave/project/scargo/scargo/scenes/scene_10.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="353277" aspect_ratio="1.000000" out="124" file_hash="5e3a6b919a419dcc771d847db162969a" type="5" id="22" name="scene_11.png" resource="/home/dave/project/scargo/scargo/scenes/scene_11.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="326190" aspect_ratio="1.000000" out="124" file_hash="33721f83bfa68dee90572f85dfa99286" type="5" id="23" name="scene_12.png" resource="/home/dave/project/scargo/scargo/scenes/scene_12.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="358995" aspect_ratio="1.000000" out="124" file_hash="cd647de4ca354e450a33394b6ecfdce2" type="5" id="24" name="scene_13.png" resource="/home/dave/project/scargo/scargo/scenes/scene_13.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="299464" aspect_ratio="1.000000" out="124" file_hash="2ca74775178f86691d846c564e452958" type="5" id="25" name="scene_14.png" resource="/home/dave/project/scargo/scargo/scenes/scene_14.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="320239" aspect_ratio="1.000000" out="124" file_hash="cfbd78a6591ff1b7c2760bfbc9881fc7" type="5" id="26" name="scene_15.png" resource="/home/dave/project/scargo/scargo/scenes/scene_15.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="334344" aspect_ratio="1.000000" out="124" file_hash="08107523ed626c88cee47e5653b67f09" type="5" id="27" name="scene_16.png" resource="/home/dave/project/scargo/scargo/scenes/scene_16.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="356719" aspect_ratio="1.000000" out="124" file_hash="d52957970426f89f74cb880942404bb5" type="5" id="28" name="scene_17.png" resource="/home/dave/project/scargo/scargo/scenes/scene_17.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="288852" aspect_ratio="1.000000" out="124" file_hash="cbbac0c2027bfa218732d2bf3e884b89" type="5" id="29" name="scene_18.png" resource="/home/dave/project/scargo/scargo/scenes/scene_18.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="331937" aspect_ratio="1.000000" out="124" file_hash="128a92b63f902f0024182952fb12daf9" type="5" id="30" name="scene_19.png" resource="/home/dave/project/scargo/scargo/scenes/scene_19.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="280369" aspect_ratio="1.000000" out="124" file_hash="a87131e85e78c717c67cead077d8ec58" type="5" id="31" name="scene_20.png" resource="/home/dave/project/scargo/scargo/scenes/scene_20.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="364103" aspect_ratio="1.000000" out="124" file_hash="dce5b81d8abdb79f5351351546623c5d" type="5" id="32" name="scene_21.png" resource="/home/dave/project/scargo/scargo/scenes/scene_21.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="306305" aspect_ratio="1.000000" out="124" file_hash="ef6dc4fc47c1ca31204a3e395924d752" type="5" id="33" name="scene_22.png" resource="/home/dave/project/scargo/scargo/scenes/scene_22.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="325830" aspect_ratio="1.000000" out="124" file_hash="e11a487e7e73b804669799ae751d7831" type="5" id="34" name="scene_23.png" resource="/home/dave/project/scargo/scargo/scenes/scene_23.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="312857" aspect_ratio="1.000000" out="124" file_hash="88a4f8a7ec679f6573b71597187e60fc" type="5" id="35" name="scene_24.png" resource="/home/dave/project/scargo/scargo/scenes/scene_24.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="322928" aspect_ratio="1.000000" out="124" file_hash="bd017c7910983cd1800dce20d5de599d" type="5" id="36" name="scene_25.png" resource="/home/dave/project/scargo/scargo/scenes/scene_25.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="299969" aspect_ratio="1.000000" out="124" file_hash="6b3795be2c116920a47c6b46a50f32d7" type="5" id="37" name="scene_26.png" resource="/home/dave/project/scargo/scargo/scenes/scene_26.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="305204" aspect_ratio="1.000000" out="124" file_hash="2791808b6a966cd032d73517fe8697a9" type="5" id="38" name="scene_27.png" resource="/home/dave/project/scargo/scargo/scenes/scene_27.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="327576" aspect_ratio="1.000000" out="124" file_hash="2b3b4ef599523b0a3e2b7c0744f61311" type="5" id="39" name="scene_28.png" resource="/home/dave/project/scargo/scargo/scenes/scene_28.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="386058" aspect_ratio="1.000000" out="124" file_hash="826368ad947ede8382484c136abfdc77" type="5" id="40" name="scene_29.png" resource="/home/dave/project/scargo/scargo/scenes/scene_29.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="333750" aspect_ratio="1.000000" out="124" file_hash="40075e61ede7fa3e975dfb8cd63e34d8" type="5" id="41" name="scene_30.png" resource="/home/dave/project/scargo/scargo/scenes/scene_30.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="328883" aspect_ratio="1.000000" out="124" file_hash="0da0563e7297614f6606ffc9a75374f8" type="5" id="42" name="scene_31.png" resource="/home/dave/project/scargo/scargo/scenes/scene_31.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="333027" aspect_ratio="1.000000" out="124" file_hash="fa425f4cff4a340103cbbebda6c5e6ec" type="5" id="43" name="scene_32.png" resource="/home/dave/project/scargo/scargo/scenes/scene_32.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="340473" aspect_ratio="1.000000" out="124" file_hash="0cfbe1cb6f1246d4e5e281b6593a8936" type="5" id="44" name="scene_33.png" resource="/home/dave/project/scargo/scargo/scenes/scene_33.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="356002" aspect_ratio="1.000000" out="124" file_hash="34dedf9e06a4a745645e8050926368bc" type="5" id="45" name="scene_34.png" resource="/home/dave/project/scargo/scargo/scenes/scene_34.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="369981" aspect_ratio="1.000000" out="124" file_hash="d9c7c3b4b8035284d94066281518a923" type="5" id="46" name="scene_35.png" resource="/home/dave/project/scargo/scargo/scenes/scene_35.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="325341" aspect_ratio="1.000000" out="124" file_hash="f3be900e1001ed7cc9fc0ad0780e7eac" type="5" id="47" name="scene_36.png" resource="/home/dave/project/scargo/scargo/scenes/scene_36.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="325922" aspect_ratio="1.000000" out="124" file_hash="939cd63cba4c57e2debb18dbda7cfff3" type="5" id="48" name="scene_37.png" resource="/home/dave/project/scargo/scargo/scenes/scene_37.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="292750" aspect_ratio="1.000000" out="124" file_hash="148c228bfd70ae15bd0b62ff189a337b" type="5" id="49" name="scene_38.png" resource="/home/dave/project/scargo/scargo/scenes/scene_38.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="310873" aspect_ratio="1.000000" out="124" file_hash="ce086d8d28a2ad39443ff0d987899031" type="5" id="50" name="scene_39.png" resource="/home/dave/project/scargo/scargo/scenes/scene_39.png"/>
-  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="333731" aspect_ratio="1.000000" out="124" file_hash="bb3b57d8f06b37b6a52df9bdef077120" type="5" id="51" name="scene_40.png" resource="/home/dave/project/scargo/scargo/scenes/scene_40.png"/>
-  <kdenlive_producer duration="125" frame_size="1988x668" in="0" analysisdata="" file_size="1040323" aspect_ratio="1.000000" out="124" file_hash="f13108477be8ea84ef1c77c78ea67e40" type="5" id="52" name="scene_41.png" resource="/home/dave/project/scargo/scargo/scenes/scene_41.png"/>
-  <kdenlive_producer duration="125" frame_size="992x688" in="0" analysisdata="" file_size="486710" aspect_ratio="1.000000" out="124" file_hash="c5b6a515bb01d9f26a9337c033ff43f6" type="5" id="53" name="scene_42.png" resource="/home/dave/project/scargo/scargo/scenes/scene_42.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="329338" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="0fc56c0937474b66590a8796f74a0712" type="5" id="12" name="scene_1.png" resource="/home/dave/project/scargo/scargo/scenes/scene_1.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="303355" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="9497782ce82c6933d912c2155a5b0ef6" type="5" id="13" name="scene_2.png" resource="/home/dave/project/scargo/scargo/scenes/scene_2.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="313791" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="00a502179bc008ae1c4704f62aab6c4e" type="5" id="14" name="scene_3.png" resource="/home/dave/project/scargo/scargo/scenes/scene_3.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="335200" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="0103ffa5e1c536dd4c668128faaef2d4" type="5" id="15" name="scene_4.png" resource="/home/dave/project/scargo/scargo/scenes/scene_4.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="345750" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="0cef8267963271cdb0a1ac7a6436287a" type="5" id="16" name="scene_5.png" resource="/home/dave/project/scargo/scargo/scenes/scene_5.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="287948" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="2e93bf679fc305f91869a8b87724142f" type="5" id="17" name="scene_6.png" resource="/home/dave/project/scargo/scargo/scenes/scene_6.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="319306" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="44da6efbc8e514843114624c21d329e2" type="5" id="18" name="scene_7.png" resource="/home/dave/project/scargo/scargo/scenes/scene_7.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="288121" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="f60e3003df262bf6f061f38165896b57" type="5" id="19" name="scene_8.png" resource="/home/dave/project/scargo/scargo/scenes/scene_8.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="305429" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="feb813b6250e68ce76504721bed61792" type="5" id="20" name="scene_9.png" resource="/home/dave/project/scargo/scargo/scenes/scene_9.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="338504" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="5648421007a5aa026303fb26c3ceccdd" type="5" id="21" name="scene_10.png" resource="/home/dave/project/scargo/scargo/scenes/scene_10.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="353277" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="5e3a6b919a419dcc771d847db162969a" type="5" id="22" name="scene_11.png" resource="/home/dave/project/scargo/scargo/scenes/scene_11.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="326190" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="33721f83bfa68dee90572f85dfa99286" type="5" id="23" name="scene_12.png" resource="/home/dave/project/scargo/scargo/scenes/scene_12.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="358995" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="cd647de4ca354e450a33394b6ecfdce2" type="5" id="24" name="scene_13.png" resource="/home/dave/project/scargo/scargo/scenes/scene_13.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="299464" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="2ca74775178f86691d846c564e452958" type="5" id="25" name="scene_14.png" resource="/home/dave/project/scargo/scargo/scenes/scene_14.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="320239" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="cfbd78a6591ff1b7c2760bfbc9881fc7" type="5" id="26" name="scene_15.png" resource="/home/dave/project/scargo/scargo/scenes/scene_15.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="334344" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="08107523ed626c88cee47e5653b67f09" type="5" id="27" name="scene_16.png" resource="/home/dave/project/scargo/scargo/scenes/scene_16.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="356719" groupid="5" aspect_ratio="1" out="124" groupname="Storyboard" file_hash="d52957970426f89f74cb880942404bb5" type="5" id="28" name="scene_17.png" resource="/home/dave/project/scargo/scargo/scenes/scene_17.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="288852" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="cbbac0c2027bfa218732d2bf3e884b89" type="5" id="29" name="scene_18.png" resource="/home/dave/project/scargo/scargo/scenes/scene_18.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="331937" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="128a92b63f902f0024182952fb12daf9" type="5" id="30" name="scene_19.png" resource="/home/dave/project/scargo/scargo/scenes/scene_19.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="280369" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="a87131e85e78c717c67cead077d8ec58" type="5" id="31" name="scene_20.png" resource="/home/dave/project/scargo/scargo/scenes/scene_20.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="364103" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="dce5b81d8abdb79f5351351546623c5d" type="5" id="32" name="scene_21.png" resource="/home/dave/project/scargo/scargo/scenes/scene_21.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="306305" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="ef6dc4fc47c1ca31204a3e395924d752" type="5" id="33" name="scene_22.png" resource="/home/dave/project/scargo/scargo/scenes/scene_22.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="325830" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="e11a487e7e73b804669799ae751d7831" type="5" id="34" name="scene_23.png" resource="/home/dave/project/scargo/scargo/scenes/scene_23.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="312857" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="88a4f8a7ec679f6573b71597187e60fc" type="5" id="35" name="scene_24.png" resource="/home/dave/project/scargo/scargo/scenes/scene_24.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="322928" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="bd017c7910983cd1800dce20d5de599d" type="5" id="36" name="scene_25.png" resource="/home/dave/project/scargo/scargo/scenes/scene_25.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="299969" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="6b3795be2c116920a47c6b46a50f32d7" type="5" id="37" name="scene_26.png" resource="/home/dave/project/scargo/scargo/scenes/scene_26.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="305204" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="2791808b6a966cd032d73517fe8697a9" type="5" id="38" name="scene_27.png" resource="/home/dave/project/scargo/scargo/scenes/scene_27.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="327576" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="2b3b4ef599523b0a3e2b7c0744f61311" type="5" id="39" name="scene_28.png" resource="/home/dave/project/scargo/scargo/scenes/scene_28.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="386058" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="826368ad947ede8382484c136abfdc77" type="5" id="40" name="scene_29.png" resource="/home/dave/project/scargo/scargo/scenes/scene_29.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="333750" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="40075e61ede7fa3e975dfb8cd63e34d8" type="5" id="41" name="scene_30.png" resource="/home/dave/project/scargo/scargo/scenes/scene_30.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="328883" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="0da0563e7297614f6606ffc9a75374f8" type="5" id="42" name="scene_31.png" resource="/home/dave/project/scargo/scargo/scenes/scene_31.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="333027" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="fa425f4cff4a340103cbbebda6c5e6ec" type="5" id="43" name="scene_32.png" resource="/home/dave/project/scargo/scargo/scenes/scene_32.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="340473" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="0cfbe1cb6f1246d4e5e281b6593a8936" type="5" id="44" name="scene_33.png" resource="/home/dave/project/scargo/scargo/scenes/scene_33.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="356002" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="34dedf9e06a4a745645e8050926368bc" type="5" id="45" name="scene_34.png" resource="/home/dave/project/scargo/scargo/scenes/scene_34.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="369981" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="d9c7c3b4b8035284d94066281518a923" type="5" id="46" name="scene_35.png" resource="/home/dave/project/scargo/scargo/scenes/scene_35.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="325341" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="f3be900e1001ed7cc9fc0ad0780e7eac" type="5" id="47" name="scene_36.png" resource="/home/dave/project/scargo/scargo/scenes/scene_36.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="325922" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="939cd63cba4c57e2debb18dbda7cfff3" type="5" id="48" name="scene_37.png" resource="/home/dave/project/scargo/scargo/scenes/scene_37.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="292750" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="148c228bfd70ae15bd0b62ff189a337b" type="5" id="49" name="scene_38.png" resource="/home/dave/project/scargo/scargo/scenes/scene_38.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="310873" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="ce086d8d28a2ad39443ff0d987899031" type="5" id="50" name="scene_39.png" resource="/home/dave/project/scargo/scargo/scenes/scene_39.png"/>
+  <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="333731" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="bb3b57d8f06b37b6a52df9bdef077120" type="5" id="51" name="scene_40.png" resource="/home/dave/project/scargo/scargo/scenes/scene_40.png"/>
+  <kdenlive_producer duration="125" frame_size="1988x668" in="0" analysisdata="" file_size="1040323" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="f13108477be8ea84ef1c77c78ea67e40" type="5" id="52" name="scene_41.png" resource="/home/dave/project/scargo/scargo/scenes/scene_41.png"/>
+  <kdenlive_producer duration="125" frame_size="992x688" in="0" analysisdata="" file_size="486710" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="c5b6a515bb01d9f26a9337c033ff43f6" type="5" id="53" name="scene_42.png" resource="/home/dave/project/scargo/scargo/scenes/scene_42.png"/>
+  <kdenlive_producer audio_max="40" audiocodec="MP3 (MPEG audio layer 3)" channels="2" duration="151" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="101063" groupid="4" aspect_ratio="0" groupname="Audio" file_hash="7235df080a5569eb76437a258130d6b3" type="1" id="59" name="169349__firecamel__cartoon-blink.mp3" resource="/home/dave/project/scargo/scargo/audio/169349__firecamel__cartoon-blink.mp3">
+   <metaproperty tool="" name="meta.attr.TBP">120</metaproperty>
+   <metaproperty tool="" name="meta.attr.TCM">Student</metaproperty>
+   <metaproperty tool="" name="meta.attr.TSS">GarageBand 5.1</metaproperty>
+   <metaproperty tool="" name="meta.attr.album">Student's Album</metaproperty>
+   <metaproperty tool="" name="meta.attr.artist">Student</metaproperty>
+   <metaproperty tool="" name="meta.attr.date">2011-02-08 22:07</metaproperty>
+   <metaproperty tool="" name="meta.attr.title">blink</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="63" audiocodec="MP3 (MPEG audio layer 3)" channels="2" duration="3878" frame_size="1920x1080" frequency="48000" analysisdata="" file_size="6463882" groupid="4" aspect_ratio="0" groupname="Audio" file_hash="d8938a5835b339d7adee7bf7a1bfd9fb" type="1" id="60" name="Bass Walker.mp3" resource="/home/dave/project/scargo/scargo/audio/Bass Walker.mp3">
+   <metaproperty tool="" name="meta.attr.TBP">112</metaproperty>
+   <metaproperty tool="" name="meta.attr.TCM">Kevin MacLeod</metaproperty>
+   <metaproperty tool="" name="meta.attr.album">Royalty Free</metaproperty>
+   <metaproperty tool="" name="meta.attr.artist">Kevin MacLeod</metaproperty>
+   <metaproperty tool="" name="meta.attr.date">2012</metaproperty>
+   <metaproperty tool="" name="meta.attr.encoded_by">iTunes 10.6.1</metaproperty>
+   <metaproperty tool="" name="meta.attr.genre">Jazz</metaproperty>
+   <metaproperty tool="" name="meta.attr.title">Bass Walker</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="51" audiocodec="MP3 (MPEG audio layer 3)" channels="2" duration="5650" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="7533831" groupid="4" aspect_ratio="0" groupname="Audio" file_hash="cb12d5cf6589700b375d7a435ee0c110" type="1" id="61" name="Life of Riley.mp3" resource="/home/dave/project/scargo/scargo/audio/Life of Riley.mp3">
+   <metaproperty tool="" name="meta.attr.TCM">Kevin MacLeod</metaproperty>
+   <metaproperty tool="" name="meta.attr.album">Royalty-Free</metaproperty>
+   <metaproperty tool="" name="meta.attr.artist">Kevin MacLeod</metaproperty>
+   <metaproperty tool="" name="meta.attr.date">2014</metaproperty>
+   <metaproperty tool="" name="meta.attr.encoded_by">iTunes 11.4</metaproperty>
+   <metaproperty tool="" name="meta.attr.genre">Pop</metaproperty>
+   <metaproperty tool="" name="meta.attr.title">Life of Riley</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="58" audiocodec="PCM 32-bit floating point little-endian" channels="1" duration="59" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="440452" groupid="4" aspect_ratio="0" groupname="Audio" file_hash="6d1a5f1f567c9e71b2a50f9095a218c7" type="1" id="62" name="85568__joelaudio__dragon-roar(1).wav" resource="/home/dave/project/scargo/scargo/audio/85568__joelaudio__dragon-roar(1).wav"/>
+  <kdenlive_producer audio_max="57" audiocodec="PCM signed 16-bit little-endian" channels="2" duration="213" frame_size="1920x1080" frequency="48000" analysisdata="" file_size="1707524" aspect_ratio="0" file_hash="86bb7f7aa6062c779ff391dbc254acc7" type="1" id="63" name="117512__zesoundresearchinc__vinyl-needle-skip.wav" resource="/home/dave/project/scargo/scargo/audio/117512__zesoundresearchinc__vinyl-needle-skip.wav"/>
+  <kdenlive_producer audio_max="47" audiocodec="MP3 (MPEG audio layer 3)" channels="2" duration="198" frame_size="1920x1080" frequency="48000" analysisdata="" file_size="331283" aspect_ratio="0" file_hash="393fa8926bf56be26e656b7d704dcf25" type="1" id="64" name="215558__divenorth__dun-dun-duuun-v-01.mp3" resource="/home/dave/project/scargo/scargo/audio/215558__divenorth__dun-dun-duuun-v-01.mp3">
+   <metaproperty tool="" name="meta.attr.date">2014</metaproperty>
+   <metaproperty tool="" name="meta.attr.encoded_by">Fraunhofer IIS MP3 v04.01.02 (fast)</metaproperty>
+   <metaproperty tool="" name="meta.attr.track">1</metaproperty>
+  </kdenlive_producer>
   <markers/>
   <groups/>
  </kdenlivedoc>
