@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mlt title="Anonymous Submission" version="0.9.0" root="/home/dave" LC_NUMERIC="en_GB.UTF-8">
  <profile width="1920" display_aspect_den="9" colorspace="709" frame_rate_den="1" description="HD 1080p 24 fps" height="1080" display_aspect_num="16" frame_rate_num="24" progressive="1" sample_aspect_num="1" sample_aspect_den="1"/>
- <producer in="0" out="14999" id="black">
+ <producer in="0" out="15573" id="black">
   <property name="mlt_type">producer</property>
-  <property name="length">15000</property>
+  <property name="length">15574</property>
   <property name="eof">pause</property>
   <property name="resource">black</property>
   <property name="aspect_ratio">0</property>
   <property name="mlt_service">colour</property>
  </producer>
  <playlist id="black_track">
-  <entry in="0" out="9604" producer="black"/>
+  <entry in="0" out="5212" producer="black"/>
  </playlist>
  <producer in="0" out="3877" id="60_6">
   <property name="mlt_type">producer</property>
@@ -39,7 +39,7 @@
   <property name="mlt_service">avformat</property>
  </producer>
  <playlist id="playlist1">
-  <blank length="1110"/>
+  <blank length="1335"/>
   <entry in="0" out="3877" producer="60_6">
    <filter out="2845" id="volume">
     <property name="track">0</property>
@@ -108,10 +108,50 @@
   <property name="mlt_service">avformat</property>
  </producer>
  <playlist id="playlist0">
+  <blank length="225"/>
   <entry in="0" out="665" producer="61_5"/>
   <blank length="3289"/>
-  <entry in="0" out="5649" producer="61_5"/>
+  <entry in="0" out="847" producer="61_5">
+   <filter in="820" out="848" id="fadeout">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadeout</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="gain">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
  </playlist>
+ <producer in="0" out="5448" id="73_4">
+  <property name="mlt_type">producer</property>
+  <property name="length">5449</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/audio/Spy Glass.mp3</property>
+  <property name="meta.media.nb_streams">1</property>
+  <property name="meta.media.0.stream.type">audio</property>
+  <property name="meta.media.0.codec.sample_fmt">s16p</property>
+  <property name="meta.media.0.codec.sample_rate">44100</property>
+  <property name="meta.media.0.codec.channels">2</property>
+  <property name="meta.media.0.codec.name">mp3</property>
+  <property name="meta.media.0.codec.long_name">MP3 (MPEG audio layer 3)</property>
+  <property name="meta.media.0.codec.bit_rate">256000</property>
+  <property name="meta.attr.title.markup">Spy Glass</property>
+  <property name="meta.attr.artist.markup">Kevin MacLeod</property>
+  <property name="meta.attr.TCM.markup">Kevin MacLeod</property>
+  <property name="meta.attr.album.markup">Royalty Free</property>
+  <property name="meta.attr.encoded_by.markup">iTunes 11.3.1</property>
+  <property name="meta.attr.genre.markup">Jazz</property>
+  <property name="meta.attr.date.markup">2015</property>
+  <property name="seekable">1</property>
+  <property name="audio_index">0</property>
+  <property name="video_index">-1</property>
+  <property name="mlt_service">avformat</property>
+ </producer>
  <producer in="0" out="197" id="64_4">
   <property name="mlt_type">producer</property>
   <property name="length">198</property>
@@ -195,6 +235,22 @@
   <property name="mlt_service">avformat</property>
  </producer>
  <playlist id="playlist2">
+  <blank length="130"/>
+  <entry in="9" out="103" producer="73_4">
+   <filter in="95" out="103" id="filter2">
+    <property name="track">0</property>
+    <property name="window">75</property>
+    <property name="max_gain">20dB</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">volume</property>
+    <property name="kdenlive_id">fadeout</property>
+    <property name="tag">volume</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="gain">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
   <blank length="666"/>
   <entry in="11" out="55" producer="64_4"/>
   <entry in="56" out="197" producer="64_4"/>
@@ -224,7 +280,7 @@
   <property name="mlt_service">avformat</property>
  </producer>
  <playlist id="playlist3">
-  <blank length="212"/>
+  <blank length="437"/>
   <entry in="0" out="159" producer="1_3"/>
   <blank length="43"/>
   <entry in="160" out="434" producer="1_3"/>
@@ -238,6 +294,64 @@
   <blank length="66"/>
   <entry in="3764" out="3897" producer="1_3"/>
  </playlist>
+ <producer in="0" out="129" id="65_2">
+  <property name="mlt_type">producer</property>
+  <property name="length">130</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/ST LOGO/STLogo.mp4</property>
+  <property name="meta.media.nb_streams">2</property>
+  <property name="meta.media.0.stream.type">video</property>
+  <property name="meta.media.0.stream.frame_rate">25</property>
+  <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+  <property name="meta.media.0.codec.width">1920</property>
+  <property name="meta.media.0.codec.height">1080</property>
+  <property name="meta.media.0.codec.frame_rate">25</property>
+  <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+  <property name="meta.media.0.codec.sample_aspect_ratio">1</property>
+  <property name="meta.media.0.codec.colorspace">709</property>
+  <property name="meta.media.0.codec.name">mpeg4</property>
+  <property name="meta.media.0.codec.long_name">MPEG-4 part 2</property>
+  <property name="meta.media.0.codec.bit_rate">1818698</property>
+  <property name="meta.media.1.stream.type">audio</property>
+  <property name="meta.media.1.codec.sample_fmt">fltp</property>
+  <property name="meta.media.1.codec.sample_rate">44100</property>
+  <property name="meta.media.1.codec.channels">2</property>
+  <property name="meta.media.1.codec.name">aac</property>
+  <property name="meta.media.1.codec.long_name">AAC (Advanced Audio Coding)</property>
+  <property name="meta.media.1.codec.bit_rate">40818</property>
+  <property name="meta.attr.major_brand.markup">isom</property>
+  <property name="meta.attr.minor_version.markup">512</property>
+  <property name="meta.attr.compatible_brands.markup">isomiso2mp41</property>
+  <property name="meta.attr.encoder.markup">Lavf54.20.4</property>
+  <property name="seekable">1</property>
+  <property name="meta.media.sample_aspect_num">1</property>
+  <property name="meta.media.sample_aspect_den">1</property>
+  <property name="aspect_ratio">1</property>
+  <property name="audio_index">1</property>
+  <property name="video_index">0</property>
+  <property name="mlt_service">avformat</property>
+  <property name="meta.media.frame_rate_num">25</property>
+  <property name="meta.media.frame_rate_den">1</property>
+  <property name="meta.media.colorspace">709</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="meta.media.top_field_first">0</property>
+  <property name="meta.media.progressive">0</property>
+ </producer>
+ <producer in="0" out="119" id="66">
+  <property name="mlt_type">producer</property>
+  <property name="length">120</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/credits1.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
  <producer in="0" out="14999" id="12">
   <property name="mlt_type">producer</property>
   <property name="length">15000</property>
@@ -728,7 +842,93 @@
   <property name="meta.media.height">480</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
+ <producer in="0" out="119" id="67">
+  <property name="mlt_type">producer</property>
+  <property name="length">120</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/credits2.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="119" id="68">
+  <property name="mlt_type">producer</property>
+  <property name="length">120</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/credits3.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="119" id="69">
+  <property name="mlt_type">producer</property>
+  <property name="length">120</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/credits4.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="119" id="70">
+  <property name="mlt_type">producer</property>
+  <property name="length">120</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/credits5.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="119" id="71">
+  <property name="mlt_type">producer</property>
+  <property name="length">120</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/credits6.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
+ <producer in="0" out="119" id="72">
+  <property name="mlt_type">producer</property>
+  <property name="length">120</property>
+  <property name="eof">pause</property>
+  <property name="resource">project/scargo/scargo/credits7.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
  <playlist id="playlist4">
+  <entry in="0" out="129" producer="65_2"/>
+  <entry in="0" out="94" producer="66"/>
   <entry in="0" out="299" producer="12"/>
   <entry in="0" out="118" producer="13"/>
   <entry in="0" out="144" producer="14"/>
@@ -764,17 +964,35 @@
   <entry in="94" out="166" producer="45"/>
   <entry in="0" out="105" producer="46"/>
   <entry in="0" out="346" producer="47"/>
+  <entry in="0" out="69" producer="67"/>
+  <entry in="0" out="62" producer="68"/>
+  <entry in="0" out="66" producer="69"/>
+  <entry in="0" out="54" producer="70"/>
+  <entry in="0" out="60" producer="71"/>
+  <entry in="0" out="78" producer="72">
+   <filter in="50" out="78" id="fade_to_black">
+    <property name="track">0</property>
+    <property name="start">1</property>
+    <property name="mlt_type">filter</property>
+    <property name="mlt_service">brightness</property>
+    <property name="kdenlive_id">fade_to_black</property>
+    <property name="tag">brightness</property>
+    <property name="kdenlive_ix">1</property>
+    <property name="end">0</property>
+    <property name="kdenlive_info"/>
+   </filter>
+  </entry>
  </playlist>
  <playlist id="playlist5"/>
  <playlist id="playlist6"/>
- <tractor title="Anonymous Submission" global_feed="1" in="0" out="9604" id="maintractor">
+ <tractor title="Anonymous Submission" global_feed="1" in="0" out="5212" id="maintractor">
   <property name="meta.volume">1</property>
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
   <track hide="video" producer="playlist0"/>
   <track hide="video" producer="playlist2"/>
   <track hide="video" producer="playlist3"/>
-  <track hide="video" producer="playlist4"/>
+  <track producer="playlist4"/>
   <track producer="playlist5"/>
   <track hide="video" producer="playlist6"/>
   <transition id="transition0">
@@ -831,21 +1049,10 @@
    <property name="combine">1</property>
    <property name="internal_added">237</property>
   </transition>
-  <transition out="64" id="transition6">
-   <property name="a_track">0</property>
-   <property name="b_track">5</property>
-   <property name="factory">loader</property>
-   <property name="mlt_type">transition</property>
-   <property name="mlt_service">luma</property>
-   <property name="automatic">1</property>
-   <property name="kdenlive_id">dissolve</property>
-   <property name="force_track">0</property>
-   <property name="reverse">0</property>
-  </transition>
  </tractor>
  <kdenlivedoc profile="atsc_1080p_24" kdenliveversion="0.9.6" version="0.88" projectfolder="/home/dave/kdenlive">
   <customeffects/>
-  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="0" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="1244" proxyminsize="1000" renderstartguide="-1" zoom="4" renderratio="0" rendercategory="MPEG-4" zoneout="1" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="5079" proxyminsize="1000" renderstartguide="-1" zoom="7" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
   <documentmetadata/>
   <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
@@ -858,11 +1065,11 @@ p, li { white-space: pre-wrap; }
    <trackinfo blind="1" mute="0" locked="0" trackname="soundtrack1" type="audio"/>
    <trackinfo blind="1" mute="0" locked="0" trackname="Foley" type="audio"/>
    <trackinfo blind="1" mute="0" locked="0" trackname="Narration" type="audio"/>
-   <trackinfo blind="1" mute="0" locked="0" trackname="Video 3"/>
+   <trackinfo blind="0" mute="0" locked="0" trackname="Video 3"/>
    <trackinfo blind="0" mute="0" locked="0" trackname="Video 2"/>
    <trackinfo blind="1" mute="0" locked="0" trackname="Video 1"/>
   </tracksinfo>
-  <folder opened="1" id="4" name="Audio"/>
+  <folder id="4" name="Audio"/>
   <folder id="5" name="Storyboard"/>
   <folder id="6" name="ident"/>
   <kdenlive_producer audio_max="56" audiocodec="MP3 (MPEG audio layer 3)" channels="1" duration="3898" frame_size="720x576" frequency="44100" analysisdata="" file_size="2599161" groupid="4" aspect_ratio="0.000000" groupname="Audio" file_hash="2f190accfc4cd81603ec9d7cab68ca78" type="1" id="1" name="Cat Detective.mp3" resource="/home/dave/project/scargo/scargo/audio/Cat Detective.mp3"/>
@@ -942,6 +1149,28 @@ p, li { white-space: pre-wrap; }
    <metaproperty tool="" name="meta.attr.date">2014</metaproperty>
    <metaproperty tool="" name="meta.attr.encoded_by">Fraunhofer IIS MP3 v04.01.02 (fast)</metaproperty>
    <metaproperty tool="" name="meta.attr.track">1</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer audio_max="53" id="65" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="STLogo.mp4" videocodecid="mpeg4" thumbnail="100" colorspace="709" videocodec="MPEG-4 part 2" resource="/home/dave/project/scargo/scargo/ST LOGO/STLogo.mp4" default_audio="1" audiocodec="AAC (Advanced Audio Coding)" duration="130" groupid="6" file_hash="a09b8955ce464f75d0d03d117e6d820d" aspect_ratio="1" channels="2" frequency="44100" video_max="0" progressive="0" groupname="ident" type="3" frame_size="1920x1080" file_size="1250563">
+   <metaproperty tool="" name="meta.attr.compatible_brands">isomiso2mp41</metaproperty>
+   <metaproperty tool="" name="meta.attr.encoder">Lavf54.20.4</metaproperty>
+   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
+   <metaproperty tool="" name="meta.attr.minor_version">512</metaproperty>
+  </kdenlive_producer>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5389268" aspect_ratio="1" out="119" file_hash="fba2f49eba75847a7e1e1a130eeb6c50" type="5" id="66" name="credits1.png" resource="/home/dave/project/scargo/scargo/credits1.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5463311" aspect_ratio="1" out="119" file_hash="3009a41d7c11e9f712aeff4870817610" type="5" id="67" name="credits2.png" resource="/home/dave/project/scargo/scargo/credits2.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5407016" aspect_ratio="1" out="119" file_hash="95a8aad68a2901c97c7f2132f35bce6d" type="5" id="68" name="credits3.png" resource="/home/dave/project/scargo/scargo/credits3.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5341384" aspect_ratio="1" out="119" file_hash="0165d519e714886e9dcfc1110410810d" type="5" id="69" name="credits4.png" resource="/home/dave/project/scargo/scargo/credits4.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5423275" aspect_ratio="1" out="119" file_hash="9eb3b796a0ae924d18887b0160e4e929" type="5" id="70" name="credits5.png" resource="/home/dave/project/scargo/scargo/credits5.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5480650" aspect_ratio="1" out="119" file_hash="0f1715ca1970a16b29abdc9d3cc58170" type="5" id="71" name="credits6.png" resource="/home/dave/project/scargo/scargo/credits6.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5432234" aspect_ratio="1" out="119" file_hash="1a3def92803ae8173704dd4309477362" type="5" id="72" name="credits7.png" resource="/home/dave/project/scargo/scargo/credits7.png"/>
+  <kdenlive_producer audio_max="56" audiocodec="MP3 (MPEG audio layer 3)" channels="2" duration="5449" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="7265543" aspect_ratio="0" file_hash="e744bdbc7dc90ba245fb6cb18700eaab" type="1" id="73" name="Spy Glass.mp3" resource="/home/dave/project/scargo/scargo/audio/Spy Glass.mp3">
+   <metaproperty tool="" name="meta.attr.TCM">Kevin MacLeod</metaproperty>
+   <metaproperty tool="" name="meta.attr.album">Royalty Free</metaproperty>
+   <metaproperty tool="" name="meta.attr.artist">Kevin MacLeod</metaproperty>
+   <metaproperty tool="" name="meta.attr.date">2015</metaproperty>
+   <metaproperty tool="" name="meta.attr.encoded_by">iTunes 11.3.1</metaproperty>
+   <metaproperty tool="" name="meta.attr.genre">Jazz</metaproperty>
+   <metaproperty tool="" name="meta.attr.title">Spy Glass</metaproperty>
   </kdenlive_producer>
   <markers/>
   <groups/>

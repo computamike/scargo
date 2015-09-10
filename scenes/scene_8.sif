@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<canvas version="0.9" width="1920" height="1080" xres="2834.645752" yres="2834.645752" view-box="-16.000000 9.000000 16.000000 -9.000000" antialias="1" fps="24.000" begin-time="0f" end-time="5s" bgcolor="0.500000 0.500000 0.500000 1.000000">
+<canvas version="0.9" width="1920" height="1080" xres="2834.645752" yres="2834.645752" view-box="-16.000000 9.000000 16.000000 -9.000000" antialias="1" fps="24.000" begin-time="0f" end-time="5s 8f" bgcolor="0.500000 0.500000 0.500000 1.000000">
   <name>Synfig Animation 2</name>
   <meta name="grid_show" content="0"/>
   <meta name="grid_size" content="0.250000 0.250000"/>
@@ -263,7 +263,7 @@
       </vector>
     </param>
     <param name="canvas">
-      <canvas>
+      <canvas end-time="5s">
         <layer type="PasteCanvas" active="true" version="0.1" desc="Inline Canvas">
           <param name="z_depth">
             <real value="0.0000000000"/>
@@ -43862,7 +43862,7 @@
       </vector>
     </param>
     <param name="canvas">
-      <canvas>
+      <canvas end-time="5s">
         <layer type="PasteCanvas" active="false" version="0.1" desc="Cat_Detective_Shadow">
           <param name="z_depth">
             <real value="0.0000000000"/>
@@ -69301,7 +69301,7 @@
       </vector>
     </param>
     <param name="canvas">
-      <canvas>
+      <canvas end-time="5s">
         <layer type="rectangle" active="true" version="0.2" desc="Rectangle011">
           <param name="z_depth">
             <real value="0.0000000000"/>
@@ -71138,7 +71138,7 @@
       </vector>
     </param>
     <param name="canvas">
-      <canvas>
+      <canvas end-time="5s">
         <layer type="region" active="true" version="0.1" desc="path4150-4">
           <param name="z_depth">
             <real value="0.0000000000"/>
