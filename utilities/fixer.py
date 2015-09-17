@@ -444,14 +444,14 @@ try:
                     #FixClip(root, files)   
                 
                 if (extension.upper() in VALID_EXTENSIONS):
-                    if (RenderSynfigScene(files) == 0):                                                                         
-                        (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
-                        CreateVideo(files)                                                                                      
-                        ClearFrames(files)                                                                                      
-                        newFilename = os.path.join(os.path.dirname(files),                                                      
-                        prefix + VIDEO_FORMAT)                                                                                  
-                        animaticVideFile = os.path.join(os.getcwd(),os.path.basename(newFilename))                                                 
-                        FixClip(root, newFilename)   
+                  RenderSynfigScene(files)
+                  (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
+                  CreateVideo(files)                                                                                      
+                  ClearFrames(files)                                                                                      
+                  newFilename = os.path.join(os.path.dirname(files),                                                      
+                  prefix + VIDEO_FORMAT)                                                                                  
+                  animaticVideFile = os.path.join(os.getcwd(),os.path.basename(newFilename))                                                 
+                  FixClip(root, newFilename)   
     tree.write(os.path.join(CurrentProjectPath,filename))                                                                                                        
  
     # Fix the Production Scripts                                                                                                
