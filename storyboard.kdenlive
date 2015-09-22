@@ -10,7 +10,7 @@
   <property name="mlt_service">colour</property>
  </producer>
  <playlist id="black_track">
-  <entry in="0" out="5027" producer="black"/>
+  <entry in="0" out="5091" producer="black"/>
  </playlist>
  <producer in="0" out="3877" id="60_6">
   <property name="mlt_type">producer</property>
@@ -159,7 +159,7 @@
   </entry>
   <blank length="99"/>
   <entry in="0" out="257" producer="74_5"/>
-  <blank length="2932"/>
+  <blank length="2996"/>
   <entry in="0" out="847" producer="61_5">
    <filter in="820" out="848" id="fadeout">
     <property name="track">0</property>
@@ -352,7 +352,7 @@
   </entry>
   <blank length="2181"/>
   <entry in="0" out="58" producer="62_4"/>
-  <blank length="548"/>
+  <blank length="612"/>
   <entry in="0" out="8" producer="59_4"/>
  </playlist>
  <producer in="0" out="3897" id="1_3">
@@ -382,8 +382,12 @@
   <entry in="435" out="708" producer="1_3"/>
   <blank length="66"/>
   <entry in="708" out="2289" producer="1_3"/>
-  <entry in="2308" out="3510" producer="1_3"/>
-  <blank length="65"/>
+  <entry in="2308" out="3014" producer="1_3"/>
+  <blank length="95"/>
+  <entry in="3015" out="3060" producer="1_3"/>
+  <blank length="10"/>
+  <entry in="3061" out="3510" producer="1_3"/>
+  <blank length="24"/>
   <entry in="3511" out="3763" producer="1_3">
    <filter id="filter4">
     <property name="track">0</property>
@@ -958,8 +962,8 @@
   <property name="progressive">1</property>
   <property name="seekable">1</property>
   <property name="loop">1</property>
-  <property name="meta.media.width">640</property>
-  <property name="meta.media.height">480</property>
+  <property name="meta.media.width">1988</property>
+  <property name="meta.media.height">668</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
  <producer in="0" out="119" id="67">
@@ -1076,14 +1080,14 @@
   <entry in="82" out="175" producer="37"/>
   <entry in="67" out="149" producer="38"/>
   <entry in="0" out="96" producer="39"/>
-  <entry in="0" out="35" producer="41"/>
+  <entry in="0" out="99" producer="41"/>
   <entry in="68" out="200" producer="40"/>
   <entry in="0" out="115" producer="42"/>
   <entry in="0" out="114" producer="43"/>
   <entry in="73" out="119" producer="44"/>
   <entry in="94" out="166" producer="45"/>
   <entry in="0" out="105" producer="46"/>
-  <entry in="0" out="346" producer="47"/>
+  <entry in="0" out="329" producer="47"/>
   <entry in="0" out="69" producer="67"/>
   <entry in="0" out="62" producer="68"/>
   <entry in="0" out="66" producer="69"/>
@@ -1105,7 +1109,7 @@
  </playlist>
  <playlist id="playlist5"/>
  <playlist id="playlist6"/>
- <tractor title="Anonymous Submission" global_feed="1" in="0" out="5027" id="maintractor">
+ <tractor title="Anonymous Submission" global_feed="1" in="0" out="5091" id="maintractor">
   <property name="meta.volume">1</property>
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
@@ -1172,7 +1176,7 @@
  </tractor>
  <kdenlivedoc profile="atsc_1080p_24" kdenliveversion="0.9.6" version="0.88" projectfolder="/home/dave/kdenlive">
   <customeffects/>
-  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="0" proxyminsize="1000" renderstartguide="-1" zoom="8" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="4041" proxyminsize="1000" renderstartguide="-1" zoom="6" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
   <documentmetadata/>
   <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
