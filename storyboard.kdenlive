@@ -382,8 +382,9 @@
   <entry in="435" out="708" producer="1_3"/>
   <blank length="66"/>
   <entry in="708" out="2289" producer="1_3"/>
-  <entry in="2308" out="3014" producer="1_3"/>
+  <entry in="2308" out="2973" producer="1_3"/>
   <blank length="95"/>
+  <entry in="2974" out="3014" producer="1_3"/>
   <entry in="3015" out="3060" producer="1_3"/>
   <blank length="10"/>
   <entry in="3061" out="3510" producer="1_3"/>
@@ -1176,7 +1177,7 @@
  </tractor>
  <kdenlivedoc profile="atsc_1080p_24" kdenliveversion="0.9.6" version="0.88" projectfolder="/home/dave/kdenlive">
   <customeffects/>
-  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="4041" proxyminsize="1000" renderstartguide="-1" zoom="6" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="4344" proxyminsize="1000" renderstartguide="-1" zoom="6" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
   <documentmetadata/>
   <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
