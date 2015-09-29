@@ -377,8 +377,17 @@ try:
     '(default 25)', default='25')                                                                                               
     parser.add_argument('-kdenlive', help='KdenLive project to update '                                                         
     '(default storyboard.kdenlive)', default='storyboard.kdenlive')                                                             
-    parser.add_argument('-fix',action='store_true', default=False ,  help='Fixer only fixes project references' )               
+    parser.add_argument('-fix',action='store_true', default=False ,  
+                        help='Fixer only fixes project references' )               
+    
+    parser.add_argument('-workfile', default=None ,  
+                        help='''Fixer can operate through files identified in 
+                        the workfile, rather than the whole project.  A work 
+                        file should show the files to process. 
+                        project references''' )               
     args = parser.parse_args()                                                                                                  
+
+
                                                                                                                                 
     # Animatic Constants                                                                                                        
     VALID_EXTENSIONS = ["SIF", "SIFZ"]  
@@ -391,7 +400,8 @@ try:
     VIDEO_FORMAT = ".mp4"                                                                                                       
 
     # Applications used in rendering :                                                                                          
-    FIX_ONLY = args.fix                                                                                                         
+    FIX_ONLY = args.fix 
+    WORKFILE = args.workfile
     SYNFIG_RENDER = "synfig"                                                                                                    
     AVCONVERTER = "avconv"                                                                                                      
     NewRoot, NewPath = GetRootInformation(os.getcwd())                                                                          
@@ -418,10 +428,12 @@ try:
     print ("Root               : " + NewRoot)                                                                                   
     print ("Path               : " + NewPath)                                                                                   
     print (" ")                                                                                                                 
-    print ("Fix Only           : " + str(FIX_ONLY))                                                                             
+    print ("Fix Only           : " + str(FIX_ONLY))    
+    print ("WorkFile           : " + str(WORKFILE))    
+    
     print (" ")                                                                                                                 
     # Find All files                                                                                                            
-    print "Job started at      : " + time.strftime("%c")                                                                                                                            
+    print ("Job started at     : " + time.strftime("%c"))                                                                                                                       
     if not os.path.exists(filename):                                                                                            
         raise Exception('Kdenlive Project file specified does not exist.')                                                                       
     tree = ET.parse(filename)                                                                                                   
