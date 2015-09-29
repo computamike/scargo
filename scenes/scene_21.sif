@@ -57852,7 +57852,7 @@
             </vector>
           </param>
         </layer>
-        <layer type="shade" active="true" version="0.2">
+        <layer type="shade" active="false" version="0.2">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>

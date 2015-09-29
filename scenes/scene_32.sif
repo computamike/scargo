@@ -4,16 +4,16 @@
   <defs>
     <animated type="angle" id="CD_Body_Rotate" guid="2714DEB3BCF699B09CF7C536180694A3">
       <waypoint time="0s" before="clamped" after="clamped">
-        <angle value="-18.733978" guid="0132104ECDAFF333A61492EB8F420063"/>
+        <angle value="-18.733978"/>
       </waypoint>
       <waypoint time="0.08333334s" before="clamped" after="clamped">
-        <angle value="-30.324610" guid="F9D49B4AB40A3F9B74F5DADB19669483"/>
+        <angle value="-30.324610"/>
       </waypoint>
       <waypoint time="0.16666667s" before="clamped" after="clamped">
-        <angle value="-34.746559" guid="0254F925066D401E3FEF0E966CC45AE3"/>
+        <angle value="-34.746559"/>
       </waypoint>
       <waypoint time="0.29166666s" before="clamped" after="clamped">
-        <angle value="-37.488071" guid="DD4AC9710BF6BE631AA86E663935109E"/>
+        <angle value="-37.488071"/>
       </waypoint>
       <waypoint time="0.54166669s" before="clamped" after="clamped">
         <angle value="-33.815758"/>
@@ -30,7 +30,7 @@
     </animated>
     <animated type="angle" id="CD_LLeg_Rotate" guid="D61DA1D54C0B2FED87A339671F9D6640">
       <waypoint time="0s" before="clamped" after="clamped">
-        <angle value="-61.114662" guid="B449C4F3D5356A01EF1FE859AEBFEDEC"/>
+        <angle value="-61.114662"/>
       </waypoint>
       <waypoint time="0.54166669s" before="clamped" after="clamped">
         <angle value="0.785242"/>
@@ -50,7 +50,7 @@
     </animated>
     <animated type="vector" id="CD_LLeg_Translate" guid="C254E48FC4900051DBA56BE42D4581CB">
       <waypoint time="0s" before="clamped" after="clamped">
-        <vector guid="B0F1171DA0EB6B7C9ECD9E109EBFCE0C">
+        <vector>
           <x>-0.1431929618</x>
           <y>-0.0680808350</y>
         </vector>
@@ -121,10 +121,10 @@
         <angle value="0.796147"/>
       </waypoint>
       <waypoint time="0.20833333s" before="clamped" after="clamped">
-        <angle value="-99.109047" guid="21F5FFCC83BBF792F2045B6A61999BFB"/>
+        <angle value="-99.109047"/>
       </waypoint>
       <waypoint time="0.33333334s" before="clamped" after="clamped">
-        <angle value="-48.549984" guid="F84DB7BB0A5F7451CE55388708CCCB07"/>
+        <angle value="-48.549984"/>
       </waypoint>
       <waypoint time="0.54166669s" before="clamped" after="clamped">
         <angle value="-68.905396"/>
@@ -153,7 +153,7 @@
         </vector>
       </waypoint>
       <waypoint time="0.20833333s" before="clamped" after="clamped">
-        <vector guid="EBF5645C4E2DCFF821696F85B28540E2">
+        <vector>
           <x>-0.0980589241</x>
           <y>0.1233879477</y>
         </vector>
@@ -412,7 +412,7 @@
       <x>1.0000000000</x>
       <y>1.0000000000</y>
     </vector>
-    <bline type="bline_point" loop="true" id="NewBLine019" guid="55C84B491D10F8FEFB43633458657A15">
+    <bline type="bline_point" loop="true" id="NewBLine019">
       <entry>
         <composite type="bline_point">
           <point>
@@ -570,7 +570,7 @@
         </composite>
       </entry>
     </bline>
-    <bline type="bline_point" loop="true" id="NewBLine020" guid="705D6520522BA19E409D289D7BD845EB">
+    <bline type="bline_point" loop="true" id="NewBLine020">
       <entry>
         <composite type="bline_point">
           <point>
@@ -3715,7 +3715,7 @@
     </param>
     <param name="canvas">
       <canvas end-time="5s">
-        <layer type="PasteCanvas" active="true" version="0.1" desc="Cat_Detective_Shadow">
+        <layer type="PasteCanvas" active="false" version="0.1" desc="Cat_Detective_Shadow">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -46553,15 +46553,15 @@
     <param name="amount">
       <animated type="real">
         <waypoint time="0.16666667s" before="clamped" after="clamped">
-          <real value="1.0000000000" guid="ECB95DD463D3F0675C3438EB59287F2B"/>
+          <real value="1.0000000000"/>
         </waypoint>
         <waypoint time="0.20833333s" before="clamped" after="clamped">
-          <real value="0.0000000000" guid="0AB9E4929D245912DC0D22F045E142E4"/>
+          <real value="0.0000000000"/>
         </waypoint>
       </animated>
     </param>
     <param name="blend_method">
-      <integer value="0" guid="20A26476BD58949541150E2967DBA938"/>
+      <integer value="0"/>
     </param>
     <param name="origin">
       <vector>
