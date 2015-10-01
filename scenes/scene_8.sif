@@ -69302,7 +69302,7 @@
     </param>
     <param name="canvas">
       <canvas end-time="5s">
-        <layer type="rectangle" active="true" version="0.2" desc="Rectangle011">
+        <layer type="rectangle" active="false" version="0.2" desc="Rectangle011">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
