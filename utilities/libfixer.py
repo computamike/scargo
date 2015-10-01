@@ -14,6 +14,8 @@ import subprocess
 AVCONVERTER = "avconv"
 VIDEO_FORMAT = ".mp4"
 SYNFIG_RENDER = "synfig"
+
+
 class FixerLibrary(object):
     def __init__(self):
         pass
@@ -42,11 +44,11 @@ class FixerLibrary(object):
         print "Render Scene Return Code = " + str(proc.returncode)
         return proc.returncode
 
-
     def CreateVideo(self, Scene, FRAME_NAME):
-        """Creates a video from a set of images in the form Form 'Frame.xxxx.png'
-        -where xxx is a leading zero frame number"""
-        AVCNVFRAME_NAME = FRAME_NAME.split('.')[0] + ".%04d." + FRAME_NAME.split('.')[1]
+        """Creates a video from a set of images in the form Form
+        'Frame.xxxx.png' -where xxx is a leading zero frame number"""
+        AVCNVFRAME_NAME = FRAME_NAME.split('.')[0] + ".%04d." + \
+                          FRAME_NAME.split('.')[1]
         OUTPUT = os.path.splitext(Scene)[0] + VIDEO_FORMAT
         pathname = os.path.dirname(Scene)
         lshw_cmd = [AVCONVERTER,
@@ -59,9 +61,6 @@ class FixerLibrary(object):
         proc = subprocess.Popen(lshw_cmd,)
         stdoutdata, stderrdata = proc.communicate()
         return proc.returncode
-
-
-
 
     def ClearFrames(self, Scene, FRAME_NAME):
         """Clears all frames from the scene generation"""

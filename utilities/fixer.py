@@ -86,6 +86,7 @@ def CreateVideo(Scene):
     pathname = os.path.dirname(Scene)
     lshw_cmd = [AVCONVERTER,
                '-f', 'image2',
+               '-r',FPS,
                '-y',
                '-i', os.path.join(pathname, AVCNVFRAME_NAME),
                os.path.join(pathname, OUTPUT)]
@@ -96,15 +97,15 @@ def CreateVideo(Scene):
     return proc.returncode
 
 
-def ClearFrames(Scene):
-    """Clears all frames from the scene generation"""
-    import os
-    import re
-    pattern = FRAME_NAME.split(".")[0] + "\.\d+\." + FRAME_NAME.split(".")[1]
-    pathname = os.path.dirname(Scene)
-    for f in os.listdir(pathname):
-        if re.search(pattern, f):
-            os.remove(os.path.join(pathname, f))
+#def ClearFrames(Scene):
+    #"""Clears all frames from the scene generation"""
+    #import os
+    #import re
+    #pattern = FRAME_NAME.split(".")[0] + "\.\d+\." + FRAME_NAME.split(".")[1]
+    #pathname = os.path.dirname(Scene)
+    #for f in os.listdir(pathname):
+        #if re.search(pattern, f):
+            #os.remove(os.path.join(pathname, f))
 
 
 def CreateProducer(MediaInfoObject):
@@ -335,7 +336,7 @@ def CreateRenderShellScript(NewRoot, NewPath):
     templateEnv = jinja2.Environment(loader=templateLoader)
     TEMPLATE_FILE = "animatic.sh.template"
     template = templateEnv.get_template(TEMPLATE_FILE)
-    print "Writing " + ShellScript
+    print("Writing " + ShellScript)
     #
     # Specify any input variables to the template as a dictionary.
     templateVars = {"source": source_data}
@@ -358,18 +359,17 @@ try:
         prog='Fixer',
         description='Jenkins / KDE animatic production utilities',
         epilog="""
-        This script builds Synfig scenes into animations, and regenerates a KdenLive \n
-        project.
-        """)
+        This script builds Synfig scenes into animations, and regenerates a
+        KdenLive \n project.""")
 
     parser.add_argument('-width', type=int, help=('width of the generated '
-    'frame (by default 640)'), default=640)
+    'frame (by default 640)'), default=320)
     parser.add_argument('-height', type=int, help='height of the generated '
-    'frame (by default 480)', default=480)
+    'frame (by default 480)', default=240)
     parser.add_argument('-frame', help='Name of generated frame '
     '(default frame.png)', default='frame.png')
     parser.add_argument('-fps', help='Framerate of generated animation '
-    '(default 25)', default='25')
+    '(default 24)', default='24')
     parser.add_argument('-kdenlive', help='KdenLive project to update '
     '(default storyboard.kdenlive)', default='storyboard.kdenlive')
     parser.add_argument('-fix', action='store_true', default=False,
@@ -413,16 +413,16 @@ try:
     print ("-----------------")
     #print ("From Version       : " + str(VERSIONFROM))
     #print ("To version         : " + str(VERSIONTO))
-    print ("Frame Width        : " + str(WIDTH))
-    print ("Frame Height       : " + str(HEIGHT))
-    print ("Frames Per Second  : " + str(FPS))
-    print ("Frame Name         : " + FRAME_NAME)
-    print ("Kdenlive           : " + filename)
-    print ("Root               : " + NewRoot)
-    print ("Path               : " + NewPath)
-    print (" ")
-    print ("Fix Only           : " + str(FIX_ONLY))
-    print ("WorkFile           : " + str(WORKFILE))
+    print("Frame Width        : " + str(WIDTH))
+    print("Frame Height       : " + str(HEIGHT))
+    print("Frames Per Second  : " + str(FPS))
+    print("Frame Name         : " + FRAME_NAME)
+    print("Kdenlive           : " + filename)
+    print("Root               : " + NewRoot)
+    print("Path               : " + NewPath)
+    print(" ")
+    print("Fix Only           : " + str(FIX_ONLY))
+    print("WorkFile           : " + str(WORKFILE))
 
     print (" ")
     # Find All files
@@ -434,14 +434,20 @@ try:
     ProjectPath = GetProjectRoot(root)
     mltRoot = GetMltRoot(root)
     CurrentProjectPath = os.getcwd()
-    print ("ProjectPath        :" + ProjectPath)
-    print ("CurrentProjectPath :" + CurrentProjectPath)
-    print ("mltRoot            :" + mltRoot)
+    print("ProjectPath        :" + ProjectPath)
+    print("CurrentProjectPath :" + CurrentProjectPath)
+    print("mltRoot            :" + mltRoot)
+    print"cp1"
     SetProjectRoot(root, CurrentProjectPath)
+    print"cp2"
+
     FixResources2(root, CurrentProjectPath)
+    print"cp3"
+
     tree.write(os.path.join(CurrentProjectPath, filename))
     if (FIX_ONLY is False):
-        for directoryroot, dirs, sourcefiles in os.walk(os.path.join(NewRoot, NewPath)):
+        for directoryroot, dirs, sourcefiles in \
+                                       os.walk(os.path.join(NewRoot, NewPath)):
             for file in sourcefiles:
                 files = os.path.join(directoryroot, file)
                 (prefix, sep, extension) = os.path.basename(files).rpartition('.')
@@ -452,7 +458,7 @@ try:
                     fixerObject.RenderSynfigScene(files, WIDTH, HEIGHT, FRAME_NAME)
                     (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
                     CreateVideo(files)
-                    ClearFrames(files)
+                    fixerObject.ClearFrames(files,FRAME_NAME)
                     newFilename = os.path.join(os.path.dirname(files),
                     prefix + VIDEO_FORMAT)
                     animaticVideFile = os.path.join(os.getcwd(), os.path.basename(newFilename))
@@ -470,4 +476,4 @@ try:
 except Exception as inst:
     #print type(inst)     # the exception instance
     #print inst.args      # arguments stored in .args
-    print "ERROR : " + str(inst)
+    print("ERROR : " + str(inst))
