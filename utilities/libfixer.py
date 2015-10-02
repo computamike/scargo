@@ -33,6 +33,7 @@ class FixerLibrary(object):
             '-t', 'cairo_png',
             '-w', str(WIDTH),
             '-h', str(HEIGHT),
+            '--fps', '24',
             '-a', '15',
             '-T', '4',
             '-o', os.path.join(pathname, FRAME_NAME)
@@ -52,14 +53,16 @@ class FixerLibrary(object):
         OUTPUT = os.path.splitext(Scene)[0] + VIDEO_FORMAT
         pathname = os.path.dirname(Scene)
         lshw_cmd = [AVCONVERTER,
-                   '-f', 'image2',
+                   '-framerate', '24',
                    '-y',
                    '-i', os.path.join(pathname, AVCNVFRAME_NAME),
+                   '-r', '24',
                    os.path.join(pathname, OUTPUT)]
         proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE)
         proc = subprocess.Popen(lshw_cmd,)
         stdoutdata, stderrdata = proc.communicate()
+        print lshw_cmd
         return proc.returncode
 
     def ClearFrames(self, Scene, FRAME_NAME):

@@ -1,6 +1,13 @@
-<?xml version="1.0"?>
-<canvas version="0.9" width="1920" height="1080" xres="2834.645752" yres="2834.645752" view-box="-16.000000 9.000000 16.000000 -9.000000" antialias="1" fps="24.000" begin-time="0f" end-time="3s 8f" bgcolor="0.500000 0.500000 0.500000 1.000000">
+<?xml version="1.0" encoding="UTF-8"?>
+<canvas version="0.9" width="1920" height="1080" xres="2834.645752" yres="2834.645752" view-box="-16.000000 9.000000 16.000000 -9.000000" antialias="1" fps="24.000" begin-time="0f" end-time="5s 12f" bgcolor="0.500000 0.500000 0.500000 1.000000">
   <name>Synfig Animation 2</name>
+  <meta name="grid_show" content="0"/>
+  <meta name="grid_size" content="0.250000 0.250000"/>
+  <meta name="grid_snap" content="0"/>
+  <meta name="guide_show" content="1"/>
+  <meta name="guide_snap" content="0"/>
+  <meta name="guide_y" content=""/>
+  <meta name="onion_skin" content="0"/>
   <defs>
     <angle value="0.000000" id="CD_Body_Rotate"/>
     <angle value="0.000000" id="CD_LLeg_Rotate"/>
@@ -73,7 +80,7 @@
       <y>1.0000000000</y>
     </vector>
   </defs>
-  <layer type="PasteCanvas" active="true" version="0.1" desc="BG">
+  <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="BG">
     <param name="z_depth">
       <real value="0.0000000000"/>
     </param>
@@ -91,7 +98,7 @@
     </param>
     <param name="canvas">
       <canvas end-time="10s 10f">
-        <layer type="circle" active="true" version="0.1" desc="Circle036">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle036">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -128,7 +135,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="rectangle" active="true" version="0.2" desc="Rectangle015">
+        <layer type="rectangle" active="true" exclude_from_rendering="false" version="0.2" desc="Rectangle015">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -165,7 +172,7 @@
             <bool value="false"/>
           </param>
         </layer>
-        <layer type="rectangle" active="true" version="0.2" desc="Rectangle016">
+        <layer type="rectangle" active="true" exclude_from_rendering="false" version="0.2" desc="Rectangle016">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -202,7 +209,7 @@
             <bool value="false"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle050">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle050">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -239,7 +246,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle051">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle051">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -276,7 +283,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle052">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle052">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -313,7 +320,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle037">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle037">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -350,7 +357,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle038">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle038">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -387,7 +394,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle039">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle039">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -424,7 +431,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle040">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle040">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -461,7 +468,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle041">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle041">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -498,7 +505,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle042">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle042">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -535,7 +542,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle043">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle043">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -572,7 +579,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle044">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle044">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -609,7 +616,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="circle" active="true" version="0.1" desc="Circle045">
+        <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle045">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -646,7 +653,7 @@
             <integer value="2"/>
           </param>
         </layer>
-        <layer type="rectangle" active="true" version="0.2" desc="Rectangle013">
+        <layer type="rectangle" active="true" exclude_from_rendering="false" version="0.2" desc="Rectangle013">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -683,7 +690,7 @@
             <bool value="false"/>
           </param>
         </layer>
-        <layer type="rectangle" active="true" version="0.2" desc="Rectangle014">
+        <layer type="rectangle" active="true" exclude_from_rendering="false" version="0.2" desc="Rectangle014">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -720,7 +727,7 @@
             <bool value="false"/>
           </param>
         </layer>
-        <layer type="rectangle" active="true" version="0.2" desc="Rectangle017">
+        <layer type="rectangle" active="true" exclude_from_rendering="false" version="0.2" desc="Rectangle017">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -778,7 +785,7 @@
       <real value="0.0000000000"/>
     </param>
   </layer>
-  <layer type="PasteCanvas" active="true" version="0.1" desc="CAT">
+  <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CAT">
     <param name="z_depth">
       <real value="0.0000000000"/>
     </param>
@@ -796,7 +803,7 @@
     </param>
     <param name="canvas">
       <canvas end-time="5s">
-        <layer type="region" active="true" version="0.1" desc="path5221-0">
+        <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5221-0">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -836,7 +843,7 @@
             <integer value="0"/>
           </param>
           <param name="bline">
-            <bline type="bline_point" loop="true" guid="E9ABE43B185276D805890F4D9D46014F">
+            <bline guid="E9ABE43B185276D805890F4D9D46014F" type="bline_point" loop="true">
               <entry>
                 <composite type="bline_point">
                   <point>
@@ -1425,7 +1432,7 @@
             </bline>
           </param>
         </layer>
-        <layer type="outline" active="true" version="0.2" desc="path5221-0">
+        <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5221-0">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -1465,7 +1472,7 @@
             <integer value="0"/>
           </param>
           <param name="bline">
-            <bline type="bline_point" loop="true" guid="E9ABE43B185276D805890F4D9D46014F">
+            <bline guid="E9ABE43B185276D805890F4D9D46014F" type="bline_point" loop="true">
               <entry>
                 <composite type="bline_point">
                   <point>
@@ -2075,7 +2082,7 @@
             <bool value="true"/>
           </param>
         </layer>
-        <layer type="region" active="true" version="0.1" desc="path5189">
+        <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5189">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -2115,7 +2122,7 @@
             <integer value="1"/>
           </param>
           <param name="bline">
-            <bline type="bline_point" loop="true" guid="E9FD301D2FC2B18AE41B3237807BD1A1">
+            <bline guid="E9FD301D2FC2B18AE41B3237807BD1A1" type="bline_point" loop="true">
               <entry>
                 <composite type="bline_point">
                   <point>
@@ -2149,7 +2156,7 @@
                         <real value="0.2874110000"/>
                       </radius>
                       <theta>
-                        <angle value="-49.398636"/>
+                        <angle value="-49.398640"/>
                       </theta>
                     </radial_composite>
                   </t2>
@@ -2236,7 +2243,7 @@
             </bline>
           </param>
         </layer>
-        <layer type="outline" active="true" version="0.2" desc="path5189">
+        <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5189">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -2276,7 +2283,7 @@
             <integer value="0"/>
           </param>
           <param name="bline">
-            <bline type="bline_point" loop="true" guid="E9FD301D2FC2B18AE41B3237807BD1A1">
+            <bline guid="E9FD301D2FC2B18AE41B3237807BD1A1" type="bline_point" loop="true">
               <entry>
                 <composite type="bline_point">
                   <point>
@@ -2310,7 +2317,7 @@
                         <real value="0.2874110000"/>
                       </radius>
                       <theta>
-                        <angle value="-49.398636"/>
+                        <angle value="-49.398640"/>
                       </theta>
                     </radial_composite>
                   </t2>
@@ -2418,7 +2425,7 @@
             <bool value="true"/>
           </param>
         </layer>
-        <layer type="region" active="true" version="0.1" desc="path5169-8">
+        <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5169-8">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -2458,7 +2465,7 @@
             <integer value="1"/>
           </param>
           <param name="bline">
-            <bline type="bline_point" loop="true" guid="E8307C077D71F82446ED5919B76FA083">
+            <bline guid="E8307C077D71F82446ED5919B76FA083" type="bline_point" loop="true">
               <entry>
                 <composite type="bline_point">
                   <point>
@@ -2657,7 +2664,7 @@
             </bline>
           </param>
         </layer>
-        <layer type="outline" active="true" version="0.2" desc="path5169-8">
+        <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5169-8">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -2697,7 +2704,7 @@
             <integer value="0"/>
           </param>
           <param name="bline">
-            <bline type="bline_point" loop="true" guid="E8307C077D71F82446ED5919B76FA083">
+            <bline guid="E8307C077D71F82446ED5919B76FA083" type="bline_point" loop="true">
               <entry>
                 <composite type="bline_point">
                   <point>
@@ -2917,7 +2924,7 @@
             <bool value="true"/>
           </param>
         </layer>
-        <layer type="region" active="true" version="0.1" desc="path5169">
+        <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5169">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -2957,7 +2964,7 @@
             <integer value="1"/>
           </param>
           <param name="bline">
-            <bline type="bline_point" loop="true" guid="E84348698CE022D6217F4FC35A637FE5">
+            <bline guid="E84348698CE022D6217F4FC35A637FE5" type="bline_point" loop="true">
               <entry>
                 <composite type="bline_point">
                   <point>
@@ -3156,7 +3163,7 @@
             </bline>
           </param>
         </layer>
-        <layer type="outline" active="true" version="0.2" desc="path5169">
+        <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5169">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -3196,7 +3203,7 @@
             <integer value="0"/>
           </param>
           <param name="bline">
-            <bline type="bline_point" loop="true" guid="E84348698CE022D6217F4FC35A637FE5">
+            <bline guid="E84348698CE022D6217F4FC35A637FE5" type="bline_point" loop="true">
               <entry>
                 <composite type="bline_point">
                   <point>
@@ -3416,7 +3423,7 @@
             <bool value="true"/>
           </param>
         </layer>
-        <layer type="PasteCanvas" active="true" version="0.1" desc="Cat Head">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="Cat Head">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -3434,7 +3441,7 @@
           </param>
           <param name="canvas">
             <canvas>
-              <layer type="region" active="true" version="0.1" desc="path4204-3-8-1-2-4">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4204-3-8-1-2-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -3474,7 +3481,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="91CD140D69ADA4BADF2C63878A523EF1">
+                  <bline guid="91CD140D69ADA4BADF2C63878A523EF1" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -3595,7 +3602,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4204-3-8-1-2-4">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4204-3-8-1-2-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -3635,7 +3642,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="91CD140D69ADA4BADF2C63878A523EF1">
+                  <bline guid="91CD140D69ADA4BADF2C63878A523EF1" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -3777,7 +3784,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3339-8-3-5-2">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3339-8-3-5-2">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -3817,7 +3824,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="90006077BFDCEF54B9BE9669B9460DD3">
+                  <bline guid="90006077BFDCEF54B9BE9669B9460DD3" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -3841,7 +3848,7 @@
                               <real value="0.9742380000"/>
                             </radius>
                             <theta>
-                              <angle value="260.268768"/>
+                              <angle value="260.268738"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -3851,7 +3858,7 @@
                               <real value="0.9742350000"/>
                             </radius>
                             <theta>
-                              <angle value="-99.731285"/>
+                              <angle value="-99.731293"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -3880,7 +3887,7 @@
                               <real value="0.9742390000"/>
                             </radius>
                             <theta>
-                              <angle value="350.268585"/>
+                              <angle value="350.268555"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -3929,7 +3936,7 @@
                               <real value="0.9742360000"/>
                             </radius>
                             <theta>
-                              <angle value="80.268524"/>
+                              <angle value="80.268532"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -3968,7 +3975,7 @@
                               <real value="0.9742350000"/>
                             </radius>
                             <theta>
-                              <angle value="170.268677"/>
+                              <angle value="170.268692"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -3977,7 +3984,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3339-8-3-5-2">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3339-8-3-5-2">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -4017,7 +4024,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="90006077BFDCEF54B9BE9669B9460DD3">
+                  <bline guid="90006077BFDCEF54B9BE9669B9460DD3" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -4041,7 +4048,7 @@
                               <real value="0.9742380000"/>
                             </radius>
                             <theta>
-                              <angle value="260.268768"/>
+                              <angle value="260.268738"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -4051,7 +4058,7 @@
                               <real value="0.9742350000"/>
                             </radius>
                             <theta>
-                              <angle value="-99.731285"/>
+                              <angle value="-99.731293"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -4080,7 +4087,7 @@
                               <real value="0.9742390000"/>
                             </radius>
                             <theta>
-                              <angle value="350.268585"/>
+                              <angle value="350.268555"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -4129,7 +4136,7 @@
                               <real value="0.9742360000"/>
                             </radius>
                             <theta>
-                              <angle value="80.268524"/>
+                              <angle value="80.268532"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -4168,7 +4175,7 @@
                               <real value="0.9742350000"/>
                             </radius>
                             <theta>
-                              <angle value="170.268677"/>
+                              <angle value="170.268692"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -4198,7 +4205,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3339-1-8-9-3-8">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3339-1-8-9-3-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -4238,7 +4245,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9053AC59CD4316061810BD53AC7BDC35">
+                  <bline guid="9053AC59CD4316061810BD53AC7BDC35" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -4272,7 +4279,7 @@
                               <real value="0.9742360000"/>
                             </radius>
                             <theta>
-                              <angle value="-99.731453"/>
+                              <angle value="-99.731445"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -4301,7 +4308,7 @@
                               <real value="0.9742390000"/>
                             </radius>
                             <theta>
-                              <angle value="350.268585"/>
+                              <angle value="350.268555"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -4359,7 +4366,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3339-1-8-9-3-8">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3339-1-8-9-3-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -4399,7 +4406,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9053AC59CD4316061810BD53AC7BDC35">
+                  <bline guid="9053AC59CD4316061810BD53AC7BDC35" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -4433,7 +4440,7 @@
                               <real value="0.9742360000"/>
                             </radius>
                             <theta>
-                              <angle value="-99.731453"/>
+                              <angle value="-99.731445"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -4462,7 +4469,7 @@
                               <real value="0.9742390000"/>
                             </radius>
                             <theta>
-                              <angle value="350.268585"/>
+                              <angle value="350.268555"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -4541,7 +4548,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path5029">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5029">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -4581,7 +4588,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9066F8431CF250B0FAE2A005536FAB17">
+                  <bline guid="9066F8431CF250B0FAE2A005536FAB17" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -4800,7 +4807,7 @@
                               <real value="0.1222070000"/>
                             </radius>
                             <theta>
-                              <angle value="325.073120"/>
+                              <angle value="325.073151"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -4810,7 +4817,7 @@
                               <real value="0.1978290000"/>
                             </radius>
                             <theta>
-                              <angle value="-46.623215"/>
+                              <angle value="-46.623219"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -5005,7 +5012,7 @@
                               <real value="0.3005650000"/>
                             </radius>
                             <theta>
-                              <angle value="34.845947"/>
+                              <angle value="34.845951"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -5190,7 +5197,7 @@
                               <real value="0.1056740000"/>
                             </radius>
                             <theta>
-                              <angle value="225.651566"/>
+                              <angle value="225.651581"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -5200,7 +5207,7 @@
                               <real value="0.4623730000"/>
                             </radius>
                             <theta>
-                              <angle value="135.355682"/>
+                              <angle value="135.355667"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -5404,7 +5411,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5029">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5029">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -5444,7 +5451,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9066F8431CF250B0FAE2A005536FAB17">
+                  <bline guid="9066F8431CF250B0FAE2A005536FAB17" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -5663,7 +5670,7 @@
                               <real value="0.1222070000"/>
                             </radius>
                             <theta>
-                              <angle value="325.073120"/>
+                              <angle value="325.073151"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -5673,7 +5680,7 @@
                               <real value="0.1978290000"/>
                             </radius>
                             <theta>
-                              <angle value="-46.623215"/>
+                              <angle value="-46.623219"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -5868,7 +5875,7 @@
                               <real value="0.3005650000"/>
                             </radius>
                             <theta>
-                              <angle value="34.845947"/>
+                              <angle value="34.845951"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -6053,7 +6060,7 @@
                               <real value="0.1056740000"/>
                             </radius>
                             <theta>
-                              <angle value="225.651566"/>
+                              <angle value="225.651581"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -6063,7 +6070,7 @@
                               <real value="0.4623730000"/>
                             </radius>
                             <theta>
-                              <angle value="135.355682"/>
+                              <angle value="135.355667"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -6288,7 +6295,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4128-5-6-3-6">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4128-5-6-3-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -6328,7 +6335,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="90B9C7A522629B62A574D6EF46637A49">
+                  <bline guid="90B9C7A522629B62A574D6EF46637A49" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -6352,7 +6359,7 @@
                               <real value="0.4221510000"/>
                             </radius>
                             <theta>
-                              <angle value="260.268494"/>
+                              <angle value="260.268463"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -6401,7 +6408,7 @@
                               <real value="0.4099730000"/>
                             </radius>
                             <theta>
-                              <angle value="-9.731186"/>
+                              <angle value="-9.731185"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -6488,7 +6495,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4128-5-6-3-6">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4128-5-6-3-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -6528,7 +6535,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="90B9C7A522629B62A574D6EF46637A49">
+                  <bline guid="90B9C7A522629B62A574D6EF46637A49" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -6552,7 +6559,7 @@
                               <real value="0.4221510000"/>
                             </radius>
                             <theta>
-                              <angle value="260.268494"/>
+                              <angle value="260.268463"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -6601,7 +6608,7 @@
                               <real value="0.4099730000"/>
                             </radius>
                             <theta>
-                              <angle value="-9.731186"/>
+                              <angle value="-9.731185"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -6709,7 +6716,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4204-39-0-8-1">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4204-39-0-8-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -6749,7 +6756,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="90CB138F7191C21C07C6FDD175174AAB">
+                  <bline guid="90CB138F7191C21C07C6FDD175174AAB" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -6783,7 +6790,7 @@
                               <real value="0.1328650000"/>
                             </radius>
                             <theta>
-                              <angle value="125.268494"/>
+                              <angle value="125.268501"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -6870,7 +6877,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4204-39-0-8-1">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4204-39-0-8-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -6910,7 +6917,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="90CB138F7191C21C07C6FDD175174AAB">
+                  <bline guid="90CB138F7191C21C07C6FDD175174AAB" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -6944,7 +6951,7 @@
                               <real value="0.1328650000"/>
                             </radius>
                             <theta>
-                              <angle value="125.268494"/>
+                              <angle value="125.268501"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -7052,7 +7059,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4128-8-1-7-9-8">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4128-8-1-7-9-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7092,7 +7099,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="931E5FF187000CCEE658E0BB180B198D">
+                  <bline guid="931E5FF187000CCEE658E0BB180B198D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7126,7 +7133,7 @@
                               <real value="0.4221500000"/>
                             </radius>
                             <theta>
-                              <angle value="-99.731026"/>
+                              <angle value="-99.731033"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -7252,7 +7259,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4128-8-1-7-9-8">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4128-8-1-7-9-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7292,7 +7299,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="931E5FF187000CCEE658E0BB180B198D">
+                  <bline guid="931E5FF187000CCEE658E0BB180B198D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7326,7 +7333,7 @@
                               <real value="0.4221500000"/>
                             </radius>
                             <theta>
-                              <angle value="-99.731026"/>
+                              <angle value="-99.731033"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -7473,7 +7480,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4130-7-0-9-8">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4130-7-0-9-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7513,7 +7520,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9351ABDBD6B0B778412D176D0F3CE8EF">
+                  <bline guid="9351ABDBD6B0B778412D176D0F3CE8EF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7615,7 +7622,7 @@
                               <real value="0.1461280000"/>
                             </radius>
                             <theta>
-                              <angle value="70.655640"/>
+                              <angle value="70.655632"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -7673,7 +7680,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4130-7-0-9-8">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4130-7-0-9-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7713,7 +7720,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9351ABDBD6B0B778412D176D0F3CE8EF">
+                  <bline guid="9351ABDBD6B0B778412D176D0F3CE8EF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7815,7 +7822,7 @@
                               <real value="0.1461280000"/>
                             </radius>
                             <theta>
-                              <angle value="70.655640"/>
+                              <angle value="70.655632"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -7894,7 +7901,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4168-6-6-5-6">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4168-6-6-5-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7934,7 +7941,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9364F73DE427FE2A23BF3A573230A7C1">
+                  <bline guid="9364F73DE427FE2A23BF3A573230A7C1" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -8085,7 +8092,7 @@
                               <real value="0.0874360000"/>
                             </radius>
                             <theta>
-                              <angle value="102.069489"/>
+                              <angle value="102.069481"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -8211,7 +8218,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4168-6-6-5-6">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4168-6-6-5-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -8251,7 +8258,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9364F73DE427FE2A23BF3A573230A7C1">
+                  <bline guid="9364F73DE427FE2A23BF3A573230A7C1" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -8402,7 +8409,7 @@
                               <real value="0.0874360000"/>
                             </radius>
                             <theta>
-                              <angle value="102.069489"/>
+                              <angle value="102.069481"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -8549,7 +8556,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4198-7-0-1-6">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4198-7-0-1-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -8589,7 +8596,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="93B7C3270A5638C48211213921247623">
+                  <bline guid="93B7C3270A5638C48211213921247623" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -8788,7 +8795,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4198-7-0-1-6">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4198-7-0-1-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -8828,7 +8835,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="93B7C3270A5638C48211213921247623">
+                  <bline guid="93B7C3270A5638C48211213921247623" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -9048,7 +9055,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4277-1-3-7-5-5">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4277-1-3-7-5-5">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -9112,7 +9119,7 @@
                               <real value="0.1185980000"/>
                             </radius>
                             <theta>
-                              <angle value="260.268280"/>
+                              <angle value="260.268311"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -9122,7 +9129,7 @@
                               <real value="0.1186000000"/>
                             </radius>
                             <theta>
-                              <angle value="-99.730110"/>
+                              <angle value="-99.730118"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -9200,7 +9207,7 @@
                               <real value="0.1186010000"/>
                             </radius>
                             <theta>
-                              <angle value="80.268524"/>
+                              <angle value="80.268532"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -9248,7 +9255,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4279-8-7-9-8-9">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4279-8-7-9-8-9">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -9400,7 +9407,7 @@
                               <real value="0.0395340000"/>
                             </radius>
                             <theta>
-                              <angle value="80.271332"/>
+                              <angle value="80.271339"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -9448,7 +9455,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4279-8-7-9-8-9-3">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4279-8-7-9-8-9-3">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -9551,7 +9558,7 @@
                               <real value="0.0353790000"/>
                             </radius>
                             <theta>
-                              <angle value="350.265930"/>
+                              <angle value="350.265900"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -9600,7 +9607,7 @@
                               <real value="0.0395340000"/>
                             </radius>
                             <theta>
-                              <angle value="80.271332"/>
+                              <angle value="80.271339"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -9648,7 +9655,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4277-1-3-7-5-5-3">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4277-1-3-7-5-5-3">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -9712,7 +9719,7 @@
                               <real value="0.1185980000"/>
                             </radius>
                             <theta>
-                              <angle value="260.268280"/>
+                              <angle value="260.268311"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -9800,7 +9807,7 @@
                               <real value="0.1186010000"/>
                             </radius>
                             <theta>
-                              <angle value="80.268524"/>
+                              <angle value="80.268532"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -9829,7 +9836,7 @@
                               <real value="0.1111880000"/>
                             </radius>
                             <theta>
-                              <angle value="170.269012"/>
+                              <angle value="170.268997"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -9848,7 +9855,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path5055">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5055">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -9888,7 +9895,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="92B43EA1139A463EEB2BBB4B83E9829D">
+                  <bline guid="92B43EA1139A463EEB2BBB4B83E9829D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -9922,7 +9929,7 @@
                               <real value="0.2419950000"/>
                             </radius>
                             <theta>
-                              <angle value="-177.985886"/>
+                              <angle value="-177.985901"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -10117,7 +10124,7 @@
                               <real value="0.4165450000"/>
                             </radius>
                             <theta>
-                              <angle value="87.853668"/>
+                              <angle value="87.853676"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -10360,7 +10367,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5055">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5055">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -10400,7 +10407,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="92B43EA1139A463EEB2BBB4B83E9829D">
+                  <bline guid="92B43EA1139A463EEB2BBB4B83E9829D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -10434,7 +10441,7 @@
                               <real value="0.2419950000"/>
                             </radius>
                             <theta>
-                              <angle value="-177.985886"/>
+                              <angle value="-177.985901"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -10629,7 +10636,7 @@
                               <real value="0.4165450000"/>
                             </radius>
                             <theta>
-                              <angle value="87.853668"/>
+                              <angle value="87.853676"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -10893,7 +10900,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path5136">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5136">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -10933,7 +10940,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9C18526F58ED68FC1D282F3104523C8B">
+                  <bline guid="9C18526F58ED68FC1D282F3104523C8B" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -11249,7 +11256,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5136">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5136">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -11289,7 +11296,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9C18526F58ED68FC1D282F3104523C8B">
+                  <bline guid="9C18526F58ED68FC1D282F3104523C8B" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -11626,7 +11633,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="AnimTongue">
+              <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="AnimTongue">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -11644,7 +11651,7 @@
                 </param>
                 <param name="canvas">
                   <canvas>
-                    <layer type="PasteCanvas" active="true" version="0.1" desc="tongue1">
+                    <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="tongue1">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -11682,7 +11689,7 @@
                       </param>
                       <param name="canvas">
                         <canvas>
-                          <layer type="region" active="true" version="0.1" desc="path5140">
+                          <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5140">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -11722,7 +11729,7 @@
                               <integer value="1"/>
                             </param>
                             <param name="bline">
-                              <bline type="bline_point" loop="false" guid="8C591074389F2570AFE3F4FDF198DC85">
+                              <bline guid="8C591074389F2570AFE3F4FDF198DC85" type="bline_point" loop="false">
                                 <entry>
                                   <composite type="bline_point">
                                     <point>
@@ -11863,7 +11870,7 @@
                                           <real value="0.2135130000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="94.085396"/>
+                                          <angle value="94.085403"/>
                                         </theta>
                                       </radial_composite>
                                     </t1>
@@ -11873,7 +11880,7 @@
                                           <real value="0.2135130000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="94.085999"/>
+                                          <angle value="94.086006"/>
                                         </theta>
                                       </radial_composite>
                                     </t2>
@@ -11960,7 +11967,7 @@
                               </bline>
                             </param>
                           </layer>
-                          <layer type="outline" active="true" version="0.2" desc="path5140">
+                          <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5140">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -12000,7 +12007,7 @@
                               <integer value="0"/>
                             </param>
                             <param name="bline">
-                              <bline type="bline_point" loop="false" guid="8C591074389F2570AFE3F4FDF198DC85">
+                              <bline guid="8C591074389F2570AFE3F4FDF198DC85" type="bline_point" loop="false">
                                 <entry>
                                   <composite type="bline_point">
                                     <point>
@@ -12141,7 +12148,7 @@
                                           <real value="0.2135130000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="94.085396"/>
+                                          <angle value="94.085403"/>
                                         </theta>
                                       </radial_composite>
                                     </t1>
@@ -12151,7 +12158,7 @@
                                           <real value="0.2135130000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="94.085999"/>
+                                          <angle value="94.086006"/>
                                         </theta>
                                       </radial_composite>
                                     </t2>
@@ -12259,7 +12266,7 @@
                               <bool value="true"/>
                             </param>
                           </layer>
-                          <layer type="outline" active="true" version="0.2" desc="path5142">
+                          <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5142">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -12362,7 +12369,7 @@
                                           <real value="0.0740440000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="9.471967"/>
+                                          <angle value="9.471966"/>
                                         </theta>
                                       </radial_composite>
                                     </t1>
@@ -12423,7 +12430,7 @@
                         <real value="0.0000000000"/>
                       </param>
                     </layer>
-                    <layer type="PasteCanvas" active="true" version="0.1" desc="tongue2">
+                    <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="tongue2">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -12461,7 +12468,7 @@
                       </param>
                       <param name="canvas">
                         <canvas>
-                          <layer type="region" active="true" version="0.1" desc="path5150">
+                          <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5150">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -12501,7 +12508,7 @@
                               <integer value="1"/>
                             </param>
                             <param name="bline">
-                              <bline type="bline_point" loop="false" guid="8CC2B7B895B1B3D468C7C95117B17E49">
+                              <bline guid="8CC2B7B895B1B3D468C7C95117B17E49" type="bline_point" loop="false">
                                 <entry>
                                   <composite type="bline_point">
                                     <point>
@@ -12700,7 +12707,7 @@
                               </bline>
                             </param>
                           </layer>
-                          <layer type="outline" active="true" version="0.2" desc="path5150">
+                          <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5150">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -12740,7 +12747,7 @@
                               <integer value="0"/>
                             </param>
                             <param name="bline">
-                              <bline type="bline_point" loop="false" guid="8CC2B7B895B1B3D468C7C95117B17E49">
+                              <bline guid="8CC2B7B895B1B3D468C7C95117B17E49" type="bline_point" loop="false">
                                 <entry>
                                   <composite type="bline_point">
                                     <point>
@@ -12960,7 +12967,7 @@
                               <bool value="true"/>
                             </param>
                           </layer>
-                          <layer type="outline" active="true" version="0.2" desc="path5152">
+                          <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5152">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -13124,7 +13131,7 @@
                         <real value="0.0000000000"/>
                       </param>
                     </layer>
-                    <layer type="PasteCanvas" active="true" version="0.1" desc="tongue3">
+                    <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="tongue3">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -13165,7 +13172,7 @@
                       </param>
                       <param name="canvas">
                         <canvas>
-                          <layer type="region" active="true" version="0.1" desc="path5158">
+                          <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5158">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -13205,7 +13212,7 @@
                               <integer value="1"/>
                             </param>
                             <param name="bline">
-                              <bline type="bline_point" loop="false" guid="8F64DFCC76504088159B1FA53DC9E00D">
+                              <bline guid="8F64DFCC76504088159B1FA53DC9E00D" type="bline_point" loop="false">
                                 <entry>
                                   <composite type="bline_point">
                                     <point>
@@ -13278,7 +13285,7 @@
                                           <real value="0.1974500000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="84.085083"/>
+                                          <angle value="84.085091"/>
                                         </theta>
                                       </radial_composite>
                                     </t2>
@@ -13356,7 +13363,7 @@
                                           <real value="0.1840510000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="-53.746361"/>
+                                          <angle value="-53.746365"/>
                                         </theta>
                                       </radial_composite>
                                     </t2>
@@ -13443,7 +13450,7 @@
                               </bline>
                             </param>
                           </layer>
-                          <layer type="outline" active="true" version="0.2" desc="path5158">
+                          <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5158">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -13483,7 +13490,7 @@
                               <integer value="0"/>
                             </param>
                             <param name="bline">
-                              <bline type="bline_point" loop="false" guid="8F64DFCC76504088159B1FA53DC9E00D">
+                              <bline guid="8F64DFCC76504088159B1FA53DC9E00D" type="bline_point" loop="false">
                                 <entry>
                                   <composite type="bline_point">
                                     <point>
@@ -13556,7 +13563,7 @@
                                           <real value="0.1974500000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="84.085083"/>
+                                          <angle value="84.085091"/>
                                         </theta>
                                       </radial_composite>
                                     </t2>
@@ -13634,7 +13641,7 @@
                                           <real value="0.1840510000"/>
                                         </radius>
                                         <theta>
-                                          <angle value="-53.746361"/>
+                                          <angle value="-53.746365"/>
                                         </theta>
                                       </radial_composite>
                                     </t2>
@@ -13742,7 +13749,7 @@
                               <bool value="true"/>
                             </param>
                           </layer>
-                          <layer type="outline" active="true" version="0.2" desc="path5160">
+                          <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5160">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -13885,7 +13892,7 @@
                               <bool value="true"/>
                             </param>
                           </layer>
-                          <layer type="outline" active="true" version="0.2" desc="path5162">
+                          <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5162">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
                             </param>
@@ -14070,7 +14077,7 @@
                   <real value="0.0000000000"/>
                 </param>
               </layer>
-              <layer type="timeloop" active="true" version="0.2">
+              <layer type="timeloop" active="true" exclude_from_rendering="false" version="0.2">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -14094,7 +14101,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="rotate" active="true" version="0.1" desc="head rotate">
+              <layer type="rotate" active="true" exclude_from_rendering="false" version="0.1" desc="head rotate">
                 <param name="origin">
                   <vector>
                     <x>0.0000000000</x>
@@ -14145,7 +14152,7 @@
             <real value="0.0000000000"/>
           </param>
         </layer>
-        <layer type="PasteCanvas" active="true" version="0.1" desc="LH">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="LH">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -14163,7 +14170,7 @@
           </param>
           <param name="canvas">
             <canvas width="744" height="1052" view-box="-6.200788 8.769685 6.200788 -8.769685">
-              <layer type="region" active="true" version="0.1" desc="path5095">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5095">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -14203,7 +14210,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="92C70A8B210A80E855BDAE3DB69D51FF">
+                  <bline guid="92C70A8B210A80E855BDAE3DB69D51FF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -14422,7 +14429,7 @@
                               <real value="0.1469720000"/>
                             </radius>
                             <theta>
-                              <angle value="329.271820"/>
+                              <angle value="329.271790"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -14510,7 +14517,7 @@
                               <real value="0.1177720000"/>
                             </radius>
                             <theta>
-                              <angle value="-56.309738"/>
+                              <angle value="-56.309742"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -14666,7 +14673,7 @@
                               <real value="0.1692360000"/>
                             </radius>
                             <theta>
-                              <angle value="-123.050682"/>
+                              <angle value="-123.050674"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -14714,7 +14721,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5095">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5095">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -14754,7 +14761,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="92C70A8B210A80E855BDAE3DB69D51FF">
+                  <bline guid="92C70A8B210A80E855BDAE3DB69D51FF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -14973,7 +14980,7 @@
                               <real value="0.1469720000"/>
                             </radius>
                             <theta>
-                              <angle value="329.271820"/>
+                              <angle value="329.271790"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -15061,7 +15068,7 @@
                               <real value="0.1177720000"/>
                             </radius>
                             <theta>
-                              <angle value="-56.309738"/>
+                              <angle value="-56.309742"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -15217,7 +15224,7 @@
                               <real value="0.1692360000"/>
                             </radius>
                             <theta>
-                              <angle value="-123.050682"/>
+                              <angle value="-123.050674"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -15286,7 +15293,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5097">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5097">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -15360,7 +15367,7 @@
                               <real value="0.1070250000"/>
                             </radius>
                             <theta>
-                              <angle value="-44.626892"/>
+                              <angle value="-44.626888"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -15429,7 +15436,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5099">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5099">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -15572,7 +15579,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="rotate" active="true" version="0.1" desc="left hand rotate">
+              <layer type="rotate" active="true" exclude_from_rendering="false" version="0.1" desc="left hand rotate">
                 <param name="origin">
                   <vector>
                     <x>0.0000000000</x>
@@ -15623,7 +15630,7 @@
             <real value="0.0000000000"/>
           </param>
         </layer>
-        <layer type="PasteCanvas" active="true" version="0.1" desc="RH">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="RH">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -15641,7 +15648,7 @@
           </param>
           <param name="canvas">
             <canvas width="744" height="1052" view-box="-6.200788 8.769685 6.200788 -8.769685">
-              <layer type="region" active="true" version="0.1" desc="path5095-4">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path5095-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -15681,7 +15688,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9D60EE39D458BCE67173EEB37FB6CE15">
+                  <bline guid="9D60EE39D458BCE67173EEB37FB6CE15" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -16105,7 +16112,7 @@
                               <real value="0.4933690000"/>
                             </radius>
                             <theta>
-                              <angle value="57.516708"/>
+                              <angle value="57.516712"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -16134,7 +16141,7 @@
                               <real value="0.4100550000"/>
                             </radius>
                             <theta>
-                              <angle value="303.050262"/>
+                              <angle value="303.050293"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -16192,7 +16199,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5095-4">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5095-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -16232,7 +16239,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="9D60EE39D458BCE67173EEB37FB6CE15">
+                  <bline guid="9D60EE39D458BCE67173EEB37FB6CE15" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -16656,7 +16663,7 @@
                               <real value="0.4933690000"/>
                             </radius>
                             <theta>
-                              <angle value="57.516708"/>
+                              <angle value="57.516712"/>
                             </theta>
                           </radial_composite>
                         </t2>
@@ -16685,7 +16692,7 @@
                               <real value="0.4100550000"/>
                             </radius>
                             <theta>
-                              <angle value="303.050262"/>
+                              <angle value="303.050293"/>
                             </theta>
                           </radial_composite>
                         </t1>
@@ -16764,7 +16771,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5097-7">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5097-7">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -16907,7 +16914,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path5099-7">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5099-7">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17050,7 +17057,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="rotate" active="true" version="0.1" desc="Right hand rotate">
+              <layer type="rotate" active="true" exclude_from_rendering="false" version="0.1" desc="Right hand rotate">
                 <param name="origin">
                   <vector>
                     <x>0.0000000000</x>
@@ -17069,10 +17076,10 @@
                       <angle value="-18.433369"/>
                     </waypoint>
                     <waypoint time="2.29166675s" before="clamped" after="clamped">
-                      <angle value="9.730257"/>
+                      <angle value="9.730256"/>
                     </waypoint>
                     <waypoint time="3.08333325s" before="clamped" after="clamped">
-                      <angle value="9.730257"/>
+                      <angle value="9.730256"/>
                     </waypoint>
                     <waypoint time="3.33333325s" before="clamped" after="clamped">
                       <angle value="0.000000"/>
@@ -17101,7 +17108,7 @@
             <real value="0.0000000000"/>
           </param>
         </layer>
-        <layer type="translate" active="true" version="0.1" desc="Cat Trans">
+        <layer type="translate" active="true" exclude_from_rendering="false" version="0.1" desc="Cat Trans">
           <param name="origin">
             <vector>
               <x>0.0000000000</x>
@@ -17109,7 +17116,7 @@
             </vector>
           </param>
         </layer>
-        <layer type="rotate" active="true" version="0.1" desc="Cat rotate">
+        <layer type="rotate" active="true" exclude_from_rendering="false" version="0.1" desc="Cat rotate">
           <param name="origin">
             <vector>
               <x>0.0000000000</x>
@@ -17120,7 +17127,7 @@
             <angle value="0.000000"/>
           </param>
         </layer>
-        <layer type="shade" active="true" version="0.2">
+        <layer type="shade" active="true" exclude_from_rendering="false" version="0.2">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>

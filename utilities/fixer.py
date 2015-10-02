@@ -205,11 +205,28 @@ def FixResources2(root, CurrentProjectPath):
 
     for clip in root.findall("./producer/property[@name='mlt_service']"):
         #if (clip.text == "avformat"):
-        foobar = clip.getparent().find("property[@name='resource']")
-        (prefix, sep, suffix) = os.path.basename(foobar.text).rpartition('.')
-        Fixed = foobar.text.replace(ProjectPath, CurrentProjectPath)
-        Fixed = findFile(CurrentProjectPath, prefix + sep + suffix)
-        foobar.text = Fixed
+        print"clip"
+        print str(clip)
+        print(ET.tostring(clip, pretty_print=True))        
+        
+        
+        print "clip parent"
+        print(ET.tostring(clip.getparent(), pretty_print=True))  
+        if clip.getparent().findall("property[@name='resource']") is not None:
+            foobar = clip.getparent().findall("property[@name='resource']")
+            if foobar[0] != None and foobar[0].text != None:
+                print "Checking"
+                print (ET.tostring(foobar[0], pretty_print=True))
+                (prefix, sep, suffix) = os.path.basename(foobar[0].text).rpartition('.')
+                print "C1"
+                Fixed = foobar[0].text.replace(ProjectPath, CurrentProjectPath)
+                print "C2"
+                Fixed = findFile(CurrentProjectPath, prefix + sep + suffix)
+                print"FIXING"
+                foobar[0].text = Fixed
+            else:
+                print "NOT FIXING"
+                    
 
     for Producers in root.findall("./producer"):
         if (Producers.find("property[@name='mlt_service']").
@@ -437,12 +454,8 @@ try:
     print("ProjectPath        :" + ProjectPath)
     print("CurrentProjectPath :" + CurrentProjectPath)
     print("mltRoot            :" + mltRoot)
-    print"cp1"
     SetProjectRoot(root, CurrentProjectPath)
-    print"cp2"
-
     FixResources2(root, CurrentProjectPath)
-    print"cp3"
 
     tree.write(os.path.join(CurrentProjectPath, filename))
     if (FIX_ONLY is False):
@@ -457,8 +470,8 @@ try:
                 if (extension.upper() in VALID_EXTENSIONS):
                     fixerObject.RenderSynfigScene(files, WIDTH, HEIGHT, FRAME_NAME)
                     (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
-                    CreateVideo(files)
-                    fixerObject.ClearFrames(files,FRAME_NAME)
+                    fixerObject.CreateVideo(files, FRAME_NAME)
+                    fixerObject.ClearFrames(files, FRAME_NAME)
                     newFilename = os.path.join(os.path.dirname(files),
                     prefix + VIDEO_FORMAT)
                     animaticVideFile = os.path.join(os.getcwd(), os.path.basename(newFilename))

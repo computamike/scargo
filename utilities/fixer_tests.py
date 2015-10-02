@@ -10,30 +10,35 @@ import libfixer
 # will be improved
 class testLibFixer(unittest.TestCase):
 
-    def testSeeWhatHappensWhenWeRenderScene20(self):
+    #def testSeeWhatHappensWhenWeRenderScene20(self):
+        #f = libfixer.FixerLibrary()
+        #scene = "/home/mike/projects/github/scargo/scenes/scene_20.sif"
+        #f.RenderSynfigScene(scene, 320, 240, "frame.png")
+        #f.CreateVideo(scene, "frame.png")
+        #f.ClearFrames(scene, "frame.png")
+
+    #def testSeeWhatHappensWhenWeRenderScene12And13(self):
+        #f = libfixer.FixerLibrary()
+        #scene = "/home/mike/projects/github/scargo/scenes/scene_12.sif"
+        #f.RenderSynfigScene(scene, 320, 240, "frame.png")
+        #f.CreateVideo(scene, "frame.png")
+        #f.ClearFrames(scene, "frame.png")
+        #scene = "/home/mike/projects/github/scargo/scenes/scene_13.sif"
+        #f.RenderSynfigScene(scene, 320, 240, "frame.png")
+        #f.CreateVideo(scene, "frame.png")
+        #f.ClearFrames(scene, "frame.png")
+
+    #def testJustRenderScene12frames(self):
+        #f = libfixer.FixerLibrary()
+        #scene = "/home/mike/projects/github/scargo/scenes/scene_12.sif"
+        #f.RenderSynfigScene(scene, 320, 240, "frame.png")
+
+    def testSeeWhatHappensWhenWeRenderScene11(self):
         f = libfixer.FixerLibrary()
-        scene = "/home/mike/projects/github/scargo/scenes/scene_20.sif"
+        scene = "/home/mike/projects/github/scargo/scenes/scene_11.sif"
         f.RenderSynfigScene(scene, 320, 240, "frame.png")
         f.CreateVideo(scene, "frame.png")
         f.ClearFrames(scene, "frame.png")
-
-    def testSeeWhatHappensWhenWeRenderScene12And13(self):
-        f = libfixer.FixerLibrary()
-        scene = "/home/mike/projects/github/scargo/scenes/scene_12.sif"
-        f.RenderSynfigScene(scene, 320, 240, "frame.png")
-        f.CreateVideo(scene, "frame.png")
-        f.ClearFrames(scene, "frame.png")
-        scene = "/home/mike/projects/github/scargo/scenes/scene_13.sif"
-        f.RenderSynfigScene(scene, 320, 240, "frame.png")
-        f.CreateVideo(scene, "frame.png")
-        f.ClearFrames(scene, "frame.png")
-
-    def testJustRenderScene12frames(self):
-        f = libfixer.FixerLibrary()
-        scene = "/home/mike/projects/github/scargo/scenes/scene_12.sif"
-        f.RenderSynfigScene(scene, 320, 240, "frame.png")
-
-
 
 
 
