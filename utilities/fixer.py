@@ -135,29 +135,38 @@ def CreateKdenliveProducer(MediaInfoObject):
     outputText = template.render(templateVars)
     return outputText
 
+def CalculateKdenLiveLength( SynfigNumberOfFrames, SynfigFrameRate, KdenFrameRate):
+    result1 = (float(1) / float(SynfigFrameRate)) * float(SynfigNumberOfFrames)
+    result2 = result1 / (float(1 )/ float(KdenFrameRate))
+    result2 = int(round(result2, 0))
+    return result2
 
-def GetMediaInformation(File, ID, _in, _out, resource, name):
-    """Gets information about a media file - such as a rendered scene"""
-    FFMPEG_BIN = 'avprobe'
-    lshw_cmd = [FFMPEG_BIN,
-        '-show_format',
-        '-show_streams',
-        '-loglevel', 'quiet',
-        '-of', 'json',
-        File]
+#def GetMediaInformation(File, ID, _in, _out, resource, name, KFR):
+    #"""Gets information about a media file - such as a rendered scene"""
+    #FFMPEG_BIN = 'avprobe'
+    #lshw_cmd = [FFMPEG_BIN,
+        #'-show_format',
+        #'-show_streams',
+        #'-loglevel', 'quiet',
+        #'-of', 'json',
+        #File]
 
-    proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
-                                      stderr=subprocess.PIPE)
-    data = json.loads(proc.communicate()[0])
-    data['id'] = ID
-    data['in'] = _in
-    data['out'] = _out
-    data['resource'] = resource
-    data['NumerofFrames'] = _out
-    data['resourcename'] = name
-    filehash = CalculateFileHash(File)
-    data['FileHash'] = filehash
-    return data
+    #proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
+                                      #stderr=subprocess.PIPE)
+    #data = json.loads(proc.communicate()[0])
+    #data['id'] = ID
+    #data['in'] = _in
+    #data['out'] = _out
+    #data['resource'] = resource
+
+    #SynfigFramesRate = data["streams"][0]["fps"]
+    #SynfigFramesNumber = data["streams"][0]["nb_frames"]
+    #rescaledNumberFrames = CalculateKdenLiveLength(SynfigFramesNumber, SynfigFramesRate, KFR)
+    #data['NumerofFrames'] = rescaledNumberFrames
+    #data['resourcename'] = name
+    #filehash = CalculateFileHash(File)
+    #data['FileHash'] = filehash
+    #return data
 
 
 def FixResources(root, Prefix, newFilename):
@@ -205,28 +214,14 @@ def FixResources2(root, CurrentProjectPath):
 
     for clip in root.findall("./producer/property[@name='mlt_service']"):
         #if (clip.text == "avformat"):
-        print"clip"
-        print str(clip)
-        print(ET.tostring(clip, pretty_print=True))        
-        
-        
-        print "clip parent"
-        print(ET.tostring(clip.getparent(), pretty_print=True))  
         if clip.getparent().findall("property[@name='resource']") is not None:
             foobar = clip.getparent().findall("property[@name='resource']")
             if foobar[0] != None and foobar[0].text != None:
-                print "Checking"
-                print (ET.tostring(foobar[0], pretty_print=True))
                 (prefix, sep, suffix) = os.path.basename(foobar[0].text).rpartition('.')
-                print "C1"
                 Fixed = foobar[0].text.replace(ProjectPath, CurrentProjectPath)
-                print "C2"
                 Fixed = findFile(CurrentProjectPath, prefix + sep + suffix)
-                print"FIXING"
                 foobar[0].text = Fixed
-            else:
-                print "NOT FIXING"
-                    
+
 
     for Producers in root.findall("./producer"):
         if (Producers.find("property[@name='mlt_service']").
@@ -242,6 +237,10 @@ def FixResources2(root, CurrentProjectPath):
 def GetProjectRoot(root):
     """Returns the Project root from the Kdenlive project tree"""
     return root.find("kdenlivedoc").attrib["projectfolder"]
+
+def GetProjectSpeed(root):
+    """Returns the FPS from the Kdenlive project tree"""
+    return root.find("profile").attrib["frame_rate_num"]
 
 
 def SetProjectRoot(root, NewRoot):
@@ -259,10 +258,10 @@ def SetMltRoot(root, Val):
     root.attrib["root"] = Val
 
 
-def FixClip(root, newFilename):
+def FixClip(root, newFilename,kdenrate):
     """Replaces a animatic frame with a rendered video - if required."""
     (destprefix, destsep, destsuffix) = os.path.basename(newFilename).rpartition('.')
-
+    fixerObject = libfixer.FixerLibrary()
     for Producers in root.findall("./producer"):
         #foo2 = Producers.find("property[@name='mlt_service']").text
         if (Producers.find("property[@name='mlt_service']").text not in INVALID_PRODUCERTYPES):
@@ -279,19 +278,39 @@ def FixClip(root, newFilename):
                 foo = ET.fromstring(
                     CreateProducer
                     (
-                        GetMediaInformation(
+                        fixerObject.GetMediaInformation(
                             newFilename,
                             _id,
                             _in,
                             _out,
                             newFilename[1:],
-                            ""
+                            "",
+                            kdenrate
                         )
                     )
                 )
                 parent.getparent().replace(parent, foo)
-#for clip in root.findall("./kdenlivedoc/kdenlive_producer[@id='" + _id + "']"):
-#    print ET.tostring(clip)
+                for clip in root.findall("./kdenlivedoc/kdenlive_producer[@id='" + _id + "']"):
+                    print ET.tostring(clip)
+                    nkd = CreateKdenliveProducer
+                    (
+                        fixerObject.GetMediaInformation(
+                            newFilename,
+                            _id,
+                            _in,
+                            _out,
+                            newFilename[1:],
+                            "",
+                            kdenrate
+                            )
+                    )
+
+                    print "----"
+                    print str(nkd)
+#kdenlive_producer duration="120" frame_size="640x480" in="0" analysisdata="" file_size="320239" groupid="5" aspect_ratio="1" out="119" groupname="Storyboard" file_hash="cfbd78a6591ff1b7c2760bfbc9881fc7" type="5" id="81" name="scene_13.png" resource="/home/mike/projects/github/scargo/scenes/scene_13.png"/>
+
+
+
     return root
 
 
@@ -369,6 +388,8 @@ def CopyKdenLiveFileToMLT(kdenLive):
     SCRIPT = filename + ".sh"
     meltFile = os.path.join(NewRoot, NewPath, SCRIPT + ".mlt")
     shutil.copy(filename, meltFile)
+
+
 
 
 try:
@@ -449,6 +470,7 @@ try:
     tree = ET.parse(filename)
     root = tree.getroot()
     ProjectPath = GetProjectRoot(root)
+    KdenLiveSpeed = GetProjectSpeed(root)
     mltRoot = GetMltRoot(root)
     CurrentProjectPath = os.getcwd()
     print("ProjectPath        :" + ProjectPath)
@@ -475,7 +497,7 @@ try:
                     newFilename = os.path.join(os.path.dirname(files),
                     prefix + VIDEO_FORMAT)
                     animaticVideFile = os.path.join(os.getcwd(), os.path.basename(newFilename))
-                    FixClip(root, newFilename)
+                    FixClip(root, newFilename,KdenLiveSpeed)
     tree.write(os.path.join(CurrentProjectPath, filename))
 
     # Fix the Production Scripts

@@ -5,8 +5,8 @@
 #from lxml import etree as ET
 import os
 import subprocess
-#import json
-#import jinja2
+import json
+import jinja2
 #import shutil
 #from fractions import gcd
 #import time
@@ -23,6 +23,14 @@ class FixerLibrary(object):
     def print_func(self, par):
        print "Hello : ", par
 
+
+    def CalculateKdenLiveLength(self, SynfigNumberOfFrames, SynfigFrameRate, KdenFrameRate):
+        result1 = (float(1) / float(SynfigFrameRate)) * float(SynfigNumberOfFrames)
+        result2 = result1 / (float(1 )/ float(KdenFrameRate))
+        result2 = int(round(result2, 0))
+        return result2
+
+
     def RenderSynfigScene(self, scene, WIDTH, HEIGHT, FRAME_NAME):
         """Renders a synfig scene to a series of png files."""
         print "Rendering Synfig Scene " + scene
@@ -38,7 +46,6 @@ class FixerLibrary(object):
             '-T', '4',
             '-o', os.path.join(pathname, FRAME_NAME)
             ]
-        print lshw_cmd
         proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE)
         stdoutdata, stderrdata = proc.communicate()
@@ -62,7 +69,6 @@ class FixerLibrary(object):
                                 stderr=subprocess.PIPE)
         proc = subprocess.Popen(lshw_cmd,)
         stdoutdata, stderrdata = proc.communicate()
-        print lshw_cmd
         return proc.returncode
 
     def ClearFrames(self, Scene, FRAME_NAME):
@@ -75,6 +81,97 @@ class FixerLibrary(object):
         for f in os.listdir(pathname):
             if re.search(pattern, f):
                 os.remove(os.path.join(pathname, f))
+
+    def CalculateFileHash(self, filename):
+        size = os.path.getsize(filename)
+        fileToHash = open(filename, 'rb')
+        if(size > (1000000 * 2)):
+            fileToHash.seek(0)
+            fileData = file.read(1000000)
+            fileToHash.seek(1000000, 2)  # Seek last 1000000 bytes
+            fileData = fileData + file.read(1000000)
+            #fileData.append(file.read(1000000))
+        else:
+            fileData = fileToHash.read()
+        import hashlib
+        m = hashlib.md5()
+        m.update(fileData)
+        fileHash = m.hexdigest()
+        return fileHash
+
+    def oldGetMediaInformation(self, File, ID, _in, _out, resource, name):
+        """Gets information about a media file - such as a rendered scene"""
+        FFMPEG_BIN = 'avprobe'
+        lshw_cmd = [FFMPEG_BIN,
+            '-show_format',
+            '-show_streams',
+            '-loglevel', 'quiet',
+            '-of', 'json',
+            File]
+
+        proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
+                                          stderr=subprocess.PIPE)
+        data = json.loads(proc.communicate()[0])
+        data['id'] = ID
+        data['in'] = _in
+        data['out'] = int(data["streams"][0]["nb_frames"])-1
+        data['fps'] = data["streams"][0]["avg_frame_rate"].split("/")[0]
+        data['codec_long_name'] = data["streams"][0]["codec_long_name"]
+        data['resource'] = resource
+        data['NumerofFrames'] = data["streams"][0]["nb_frames"]
+        data['resourcename'] = name
+        filehash = self.CalculateFileHash(File)
+        data['FileHash'] = filehash
+        return data
+
+
+    def GetMediaInformation(self, File, ID, _in, _out, resource, name, KFR):
+        """Gets information about a media file - such as a rendered scene"""
+        FFMPEG_BIN = 'avprobe'
+        lshw_cmd = [FFMPEG_BIN,
+            '-show_format',
+            '-show_streams',
+            '-loglevel', 'quiet',
+            '-of', 'json',
+            File]
+
+        proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
+                                          stderr=subprocess.PIPE)
+        data = json.loads(proc.communicate()[0])
+        data['id'] = ID
+        data['in'] = _in
+        data['out'] = _out
+        data['resource'] = File
+        data['FileSize'] = data["format"]["size"].split(".")[0]
+        data['resourcename'] = os.path.basename(File)
+        data['fps'] = data["streams"][0]["avg_frame_rate"].split("/")[0]
+        SynfigFramesRate = data['fps']
+        SynfigFramesNumber = data["streams"][0]["nb_frames"]
+        rescaledNumberFrames = self.CalculateKdenLiveLength(SynfigFramesNumber, SynfigFramesRate, KFR)
+        data['NumerofFrames'] = rescaledNumberFrames
+        data['SynfigNumberOfFrames'] = SynfigFramesNumber
+        #data['resourcename'] = name
+        filehash = self.CalculateFileHash(File)
+        data['FileHash'] = filehash
+        data['KDENLiveFrameRate'] = KFR
+        return data
+
+
+
+
+    def CreateKdenliveProducer(self, MediaInfoObject):
+        """Creates a KdenLiveProducer for insertion into the
+           kdenlive project file"""
+        templatePath = os.path.dirname(os.path.realpath(__file__))
+        templateLoader = jinja2.FileSystemLoader(searchpath=str(templatePath))
+        templateEnv = jinja2.Environment(loader=templateLoader)
+        TEMPLATE_FILE = "kdenliveproducer.xml"
+        template = templateEnv.get_template(TEMPLATE_FILE)
+        # Specify any input variables to the template as a dictionary.
+        templateVars = {"Producer": MediaInfoObject}
+        # Finally, process the templat e to produce our final text.
+        outputText = template.render(templateVars)
+        return outputText
 
 
 if __name__ == '__main__':

@@ -33,14 +33,30 @@ class testLibFixer(unittest.TestCase):
         #scene = "/home/mike/projects/github/scargo/scenes/scene_12.sif"
         #f.RenderSynfigScene(scene, 320, 240, "frame.png")
 
-    def testSeeWhatHappensWhenWeRenderScene11(self):
-        f = libfixer.FixerLibrary()
-        scene = "/home/mike/projects/github/scargo/scenes/scene_11.sif"
-        f.RenderSynfigScene(scene, 320, 240, "frame.png")
-        f.CreateVideo(scene, "frame.png")
-        f.ClearFrames(scene, "frame.png")
+    #def testSeeWhatHappensWhenWeRenderScene11(self):
+        #f = libfixerFixerLibrary()
+        #scene = "/home/mike/projects/github/scargo/scenes/scene_11.sif"
+        #f.RenderSynfigScene(scene, 320, 240, "frame.png")
+        #f.CreateVideo(scene, "frame.png")
+        #f.ClearFrames(scene, "frame.png")
 
 
+    #def testSeeWhatMediaInformationWeCanDerriveForScene29(self):
+        #f = libfixer.FixerLibrary()
+        #scene = "/home/mike/projects/github/scargo/scenes/scene_13.mp4"
+        #ID = "1"
+        #_in = 100
+        #_out = 200
+        #resource = "resource"
+        #name = "name"
+        #mediaInfo = f.GetMediaInformation( scene, ID, _in, _out, resource, name, 25)
+        #f.CreateKdenliveProducer(mediaInfo)
+        ##print str(res)
+
+    #def testKdenlive(self):
+        #f = libfixer.FixerLibrary()
+        #print"test"
+        #print str(f.CalculateKdenLiveLength(133,24,25))
 
 
     def testOne(self):
