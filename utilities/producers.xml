@@ -15,7 +15,7 @@
   <property name="meta.media.0.codec.colorspace">601</property>
   <property name="meta.media.0.codec.name">{{Producer.streams[0].codec_name}}</property>
   <property name="meta.media.0.codec.long_name">{{Producer.streams[0].codec_long_name}}</property>
-  <property name="meta.media.0.codec.bit_rate">{{Producer.streams[0].bit_rate}}</property>
+  <property name="meta.media.0.codec.bit_rate">{{Producer.bitrate}}</property>
   {% if Producer.format.tags is defined %}
   <property name="meta.attr.major_brand.markup">{{Producer.format.tags.major_brand}}</property>
   <property name="meta.attr.minor_version.markup">{{Producer.format.tags.minor_version}}</property>

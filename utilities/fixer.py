@@ -135,6 +135,27 @@ def CreateKdenliveProducer(MediaInfoObject):
     outputText = template.render(templateVars)
     return outputText
 
+
+def CreateKdenlivePlaylistEntry(MediaInfoObject):
+    """Creates a playlist entry for insertion into the
+       kdenlive project file"""
+    existingDuration = int(MediaInfoObject['out'] ) - int(MediaInfoObject['in'])
+    sceneLength = MediaInfoObject['SynfigNumberOfFrames']  
+    MediaInfoObject['BestLength'] = min(existingDuration,sceneLength)
+    templatePath = os.path.dirname(os.path.realpath(__file__))
+    templateLoader = jinja2.FileSystemLoader(searchpath=str(templatePath))
+    templateEnv = jinja2.Environment(loader=templateLoader)
+    TEMPLATE_FILE = "PlaylistEntry.xml"
+    template = templateEnv.get_template(TEMPLATE_FILE)
+    # Specify any input variables to the template as a dictionary.
+    templateVars = {"Producer": MediaInfoObject}
+    # Finally, process the templat e to produce our final text.
+    outputText = template.render(templateVars)
+    return outputText
+
+
+
+
 def CalculateKdenLiveLength( SynfigNumberOfFrames, SynfigFrameRate, KdenFrameRate):
     result1 = (float(1) / float(SynfigFrameRate)) * float(SynfigNumberOfFrames)
     result2 = result1 / (float(1 )/ float(KdenFrameRate))
@@ -268,7 +289,6 @@ def FixClip(root, newFilename,kdenrate):
             clip = Producers.find("property[@name='resource']")
             (prefix, sep, suffix) = os.path.basename(clip.text).rpartition('.')
             #mltRoot = GetMltRoot(root)
-
             if (prefix.upper() == destprefix.upper()):
                 #print mltRoot+prefix
                 parent = clip.getparent()
@@ -290,9 +310,29 @@ def FixClip(root, newFilename,kdenrate):
                     )
                 )
                 parent.getparent().replace(parent, foo)
+        
+                # Fix the Playlist:
+                for PlayListEntry in root.findall("./playlist/entry[@producer='" + _id + "']"):
+                    _out = PlayListEntry.attrib["out"]                    
+                    _in = PlayListEntry.attrib["in"]                          
+                    Varentry = ET.fromstring(
+                        CreateKdenlivePlaylistEntry(
+                            fixerObject.GetMediaInformation(
+                                newFilename,
+                                _id,
+                                _in,
+                                _out,
+                                newFilename[1:],
+                                "",
+                                kdenrate
+                            )
+                        )
+                    )                   
+                    PlayListEntry.getparent().replace(PlayListEntry,Varentry)    
+                        
                 for clip in root.findall("./kdenlivedoc/kdenlive_producer[@id='" + _id + "']"):
-                    print ET.tostring(clip)
-                    nkd = CreateKdenliveProducer
+                    foo2 = ET.fromstring(
+                    CreateKdenliveProducer
                     (
                         fixerObject.GetMediaInformation(
                             newFilename,
@@ -303,11 +343,9 @@ def FixClip(root, newFilename,kdenrate):
                             "",
                             kdenrate
                             )
-                    )
-
-                    print "----"
-                    print str(nkd)
-#kdenlive_producer duration="120" frame_size="640x480" in="0" analysisdata="" file_size="320239" groupid="5" aspect_ratio="1" out="119" groupname="Storyboard" file_hash="cfbd78a6591ff1b7c2760bfbc9881fc7" type="5" id="81" name="scene_13.png" resource="/home/mike/projects/github/scargo/scenes/scene_13.png"/>
+                    ))
+                    clip.getparent().replace(clip,foo2)
+                    #kdenlive_producer duration="120" frame_size="640x480" in="0" analysisdata="" file_size="320239" groupid="5" aspect_ratio="1" out="119" groupname="Storyboard" file_hash="cfbd78a6591ff1b7c2760bfbc9881fc7" type="5" id="81" name="scene_13.png" resource="/home/mike/projects/github/scargo/scenes/scene_13.png"/>
 
 
 
@@ -490,12 +528,14 @@ try:
                     #FixClip(root, files)
 
                 if (extension.upper() in VALID_EXTENSIONS):
-                    fixerObject.RenderSynfigScene(files, WIDTH, HEIGHT, FRAME_NAME)
-                    (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
-                    fixerObject.CreateVideo(files, FRAME_NAME)
-                    fixerObject.ClearFrames(files, FRAME_NAME)
+                    VideoFile= os.path.join( directoryroot ,file.split(".")[0] +VIDEO_FORMAT)
+                    if (not os.path.isfile(VideoFile)):
+                        fixerObject.RenderSynfigScene(files, WIDTH, HEIGHT, FRAME_NAME)
+                        (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
+                        fixerObject.CreateVideo(files, FRAME_NAME)
+                        fixerObject.ClearFrames(files, FRAME_NAME)
                     newFilename = os.path.join(os.path.dirname(files),
-                    prefix + VIDEO_FORMAT)
+                        prefix + VIDEO_FORMAT)
                     animaticVideFile = os.path.join(os.getcwd(), os.path.basename(newFilename))
                     FixClip(root, newFilename,KdenLiveSpeed)
     tree.write(os.path.join(CurrentProjectPath, filename))

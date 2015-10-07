@@ -142,6 +142,7 @@ class FixerLibrary(object):
         data['in'] = _in
         data['out'] = _out
         data['resource'] = File
+        data['bitrate'] = data["streams"][0]["bit_rate"].split(".")[0]
         data['FileSize'] = data["format"]["size"].split(".")[0]
         data['resourcename'] = os.path.basename(File)
         data['fps'] = data["streams"][0]["avg_frame_rate"].split("/")[0]
