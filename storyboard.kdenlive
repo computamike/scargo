@@ -1057,36 +1057,36 @@
   <entry in="0" out="299" producer="12"/>
   <entry in="0" out="118" producer="13"/>
   <entry in="0" out="144" producer="14"/>
-  <entry in="11" out="49" producer="15"/>
+  <entry in="0" out="38" producer="15"/>
   <entry in="0" out="165" producer="16"/>
   <entry in="0" out="96" producer="17"/>
   <entry in="0" out="127" producer="18"/>
   <entry in="0" out="115" producer="19"/>
-  <entry in="63" out="110" producer="20"/>
-  <entry in="62" out="178" producer="21"/>
-  <entry in="65" out="148" producer="22"/>
-  <entry in="6" out="199" producer="23"/>
-  <entry in="52" out="141" producer="24"/>
+  <entry in="0" out="46" producer="20"/>
+  <entry in="0" out="115" producer="21"/>
+  <entry in="0" out="82" producer="22"/>
+  <entry in="0" out="192" producer="23"/>
+  <entry in="0" out="88" producer="24"/>
   <entry in="0" out="57" producer="25"/>
   <entry in="0" out="44" producer="26"/>
   <entry in="0" out="163" producer="27"/>
   <entry in="0" out="204" producer="29"/>
-  <entry in="50" out="119" producer="30"/>
+  <entry in="0" out="68" producer="30"/>
   <entry in="0" out="328" producer="31"/>
-  <entry in="175" out="232" producer="32"/>
+  <entry in="0" out="56" producer="32"/>
   <entry in="0" out="115" producer="33"/>
-  <entry in="20" out="260" producer="34"/>
-  <entry in="44" out="90" producer="35"/>
-  <entry in="63" out="247" producer="36"/>
-  <entry in="82" out="175" producer="37"/>
-  <entry in="67" out="149" producer="38"/>
+  <entry in="0" out="239" producer="34"/>
+  <entry in="0" out="45" producer="35"/>
+  <entry in="0" out="183" producer="36"/>
+  <entry in="0" out="92" producer="37"/>
+  <entry in="0" out="81" producer="38"/>
   <entry in="0" out="96" producer="39"/>
   <entry in="0" out="99" producer="41"/>
-  <entry in="68" out="200" producer="40"/>
+  <entry in="0" out="131" producer="40"/>
   <entry in="0" out="115" producer="42"/>
   <entry in="0" out="114" producer="43"/>
-  <entry in="73" out="119" producer="44"/>
-  <entry in="94" out="166" producer="45"/>
+  <entry in="0" out="45" producer="44"/>
+  <entry in="0" out="72" producer="45"/>
   <entry in="0" out="105" producer="46"/>
   <entry in="0" out="329" producer="47"/>
   <entry in="0" out="69" producer="67"/>
