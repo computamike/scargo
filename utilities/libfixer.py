@@ -145,7 +145,11 @@ class FixerLibrary(object):
         data['bitrate'] = data["streams"][0]["bit_rate"].split(".")[0]
         data['FileSize'] = data["format"]["size"].split(".")[0]
         data['resourcename'] = os.path.basename(File)
-        data['fps'] = data["streams"][0]["avg_frame_rate"].split("/")[0]
+
+        dividend = float(data["streams"][0]["avg_frame_rate"].split("/")[0])
+        divisor = float(data["streams"][0]["avg_frame_rate"].split("/")[1])
+
+        data['fps'] = round(dividend / divisor,2)
         SynfigFramesRate = data['fps']
         SynfigFramesNumber = data["streams"][0]["nb_frames"]
         rescaledNumberFrames = self.CalculateKdenLiveLength(SynfigFramesNumber, SynfigFramesRate, KFR)
@@ -160,13 +164,42 @@ class FixerLibrary(object):
 
 
 
-    def CreateKdenliveProducer(self, MediaInfoObject):
+    def CreateProducer(self, MediaInfoObject):
+        """Creates a Producer xml object for insertion into the
+           kdenlive project file"""
+        templatePath = os.path.dirname(os.path.realpath(__file__))
+        templateLoader = jinja2.FileSystemLoader(searchpath=str(templatePath))
+        templateEnv = jinja2.Environment(loader=templateLoader)
+        TEMPLATE_FILE = "producers.xml"
+        template = templateEnv.get_template(TEMPLATE_FILE)
+        templateVars = {"Producer": MediaInfoObject}
+        outputText = template.render(templateVars)
+        return outputText
+
+    def CreateKdenliveProducer(self, MediaInfoObject, GroupName, GroupID):
         """Creates a KdenLiveProducer for insertion into the
            kdenlive project file"""
         templatePath = os.path.dirname(os.path.realpath(__file__))
         templateLoader = jinja2.FileSystemLoader(searchpath=str(templatePath))
         templateEnv = jinja2.Environment(loader=templateLoader)
         TEMPLATE_FILE = "kdenliveproducer.xml"
+        template = templateEnv.get_template(TEMPLATE_FILE)
+        # Specify any input variables to the template as a dictionary.
+        MediaInfoObject['GroupName'] = GroupName
+        MediaInfoObject['GroupID'] = GroupID
+        templateVars = {"Producer": MediaInfoObject}
+        # Finally, process the templat e to produce our final text.
+        outputText = template.render(templateVars)
+        return outputText
+
+
+    def CreateKdenlivePlaylistEntry(self, MediaInfoObject):
+        """Creates a KdenLiveProducer for insertion into the
+           kdenlive project file"""
+        templatePath = os.path.dirname(os.path.realpath(__file__))
+        templateLoader = jinja2.FileSystemLoader(searchpath=str(templatePath))
+        templateEnv = jinja2.Environment(loader=templateLoader)
+        TEMPLATE_FILE = "PlaylistEntry.xml"
         template = templateEnv.get_template(TEMPLATE_FILE)
         # Specify any input variables to the template as a dictionary.
         templateVars = {"Producer": MediaInfoObject}
