@@ -242,9 +242,9 @@ def FixResources2(root, CurrentProjectPath):
                                     clip.attrib["resource"]).rpartition('.')
 
             fileat = findFile(CurrentProjectPath, prefix + sep + suffix)
-            print "fileat = " + fileat
             if fileat != None and fileat != "" :
-                Fixed = clip.attrib["resource"].replace(ProjectPath, CurrentProjectPath)
+            	print "fileat = " + fileat
+            	Fixed = clip.attrib["resource"].replace(ProjectPath, CurrentProjectPath)
                 clip.set('resource', fileat)
 
     for clip in root.findall("./producer/property[@name='mlt_service']"):
