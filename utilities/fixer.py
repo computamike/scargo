@@ -545,15 +545,15 @@ try:
 
                 if (extension.upper() in VALID_EXTENSIONS):
                     VideoFile= os.path.join( directoryroot ,file.split(".")[0] +VIDEO_FORMAT)
+					newFilename = os.path.join(os.path.dirname(files),
+						prefix + VIDEO_FORMAT)
+					animaticVideFile = os.path.join(os.getcwd(), os.path.basename(newFilename))
                     if (not os.path.isfile(VideoFile)):
                         fixerObject.RenderSynfigScene(files, WIDTH, HEIGHT, FRAME_NAME)
                         (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
                         fixerObject.CreateVideo(files, FRAME_NAME)
                         fixerObject.ClearFrames(files, FRAME_NAME)
-                        newFilename = os.path.join(os.path.dirname(files),
-                            prefix + VIDEO_FORMAT)
-                        animaticVideFile = os.path.join(os.getcwd(), os.path.basename(newFilename))
-                        FixClip(root, newFilename,KdenLiveSpeed)
+					FixClip(root, newFilename,KdenLiveSpeed)
     tree.write(os.path.join(CurrentProjectPath, filename))
 
     # Fix the Production Scripts
