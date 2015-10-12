@@ -266,7 +266,7 @@ def FixResources2(root, CurrentProjectPath):
                 FullResourcePath = FullResourcePath.replace(ProjectPath,
                                                             CurrentProjectPath)
                 Producers.find("property[@name='resource']").text = '/'.join(FullResourcePath.split('/')[1:])
-                SetMltRoot(root, '/')
+    SetMltRoot(root, '/')
 
 
 
