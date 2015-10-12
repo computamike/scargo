@@ -250,11 +250,11 @@ def FixResources2(root, CurrentProjectPath):
     for clip in root.findall("./producer/property[@name='mlt_service']"):
         if clip.getparent().findall("property[@name='resource']") is not None:
             foobar = clip.getparent().findall("property[@name='resource']")
-            #if foobar[0] != None and foobar[0].text != None:
-            #    (prefix, sep, suffix) = os.path.basename(foobar[0].text).rpartition('.')
-            #    Fixed = foobar[0].text.replace(ProjectPath, CurrentProjectPath)
-            #    Fixed = findFile(CurrentProjectPath, prefix + sep + suffix)
-            #    foobar[0].text = Fixed
+            if foobar[0] != None and foobar[0].text != None:
+                (prefix, sep, suffix) = os.path.basename(foobar[0].text).rpartition('.')
+                Fixed = foobar[0].text.replace(ProjectPath, CurrentProjectPath)
+                Fixed = findFile(CurrentProjectPath, prefix + sep + suffix)
+                foobar[0].text = Fixed
 
 
     for Producers in root.findall("./producer"):
