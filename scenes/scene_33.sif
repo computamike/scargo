@@ -4337,7 +4337,7 @@
     </param>
     <param name="canvas">
       <canvas end-time="5s">
-        <layer type="PasteCanvas" active="true" version="0.1" desc="Cat_Detective_Shadow">
+        <layer type="PasteCanvas" active="false" version="0.1" desc="Cat_Detective_Shadow">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -4355,7 +4355,7 @@
           </param>
           <param name="canvas">
             <canvas>
-              <layer type="region" active="true" version="0.1" desc="path3360">
+              <layer type="region" active="false" version="0.1" desc="path3360">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -4555,7 +4555,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="radialGradient4136">
+              <layer type="PasteCanvas" active="false" version="0.1" desc="radialGradient4136">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -4573,7 +4573,7 @@
                 </param>
                 <param name="canvas">
                   <canvas width="744" height="1052" view-box="-6.200788 8.769685 6.200788 -8.769685">
-                    <layer type="radial_gradient" active="true" version="0.1" desc="radialGradient4136">
+                    <layer type="radial_gradient" active="false" version="0.1" desc="radialGradient4136">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -4615,7 +4615,7 @@
                         <bool value="false"/>
                       </param>
                     </layer>
-                    <layer type="warp" active="true" version="0.1" desc="Transform">
+                    <layer type="warp" active="false" version="0.1" desc="Transform">
                       <param name="src_tl">
                         <vector>
                           <x>-4.5341210365</x>
