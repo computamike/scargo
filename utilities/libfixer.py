@@ -37,20 +37,20 @@ class FixerLibrary(object):
         pathname = os.path.dirname(scene)
 
         lshw_cmd = [SYNFIG_RENDER,
+            '-v','10',
             scene,
+            '-b',
             '-t', 'cairo_png',
             '-w', str(WIDTH),
             '-h', str(HEIGHT),
             '--fps', '24',
-            '-a', '15',
-            '-T', '4',
+            '-a', '5',
             '-o', os.path.join(pathname, FRAME_NAME)
             ]
-        proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
-                                            stderr=subprocess.PIPE)
-        stdoutdata, stderrdata = proc.communicate()
-        print "Render Scene Return Code = " + str(proc.returncode)
-        return proc.returncode
+        proc = subprocess.call(lshw_cmd)
+        #stdoutdata, stderrdata = proc.communicate()
+        print "Render Scene Return Code = " + str(proc)
+        return proc
 
     def CreateVideo(self, Scene, FRAME_NAME):
         """Creates a video from a set of images in the form Form
@@ -65,11 +65,13 @@ class FixerLibrary(object):
                    '-i', os.path.join(pathname, AVCNVFRAME_NAME),
                    '-r', '24',
                    os.path.join(pathname, OUTPUT)]
-        proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
-                                stderr=subprocess.PIPE)
-        proc = subprocess.Popen(lshw_cmd,)
-        stdoutdata, stderrdata = proc.communicate()
-        return proc.returncode
+        proc = subprocess.call(lshw_cmd)
+        #stdoutdata, stderrdata = proc.communicate()        
+        #proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
+        #                        stderr=subprocess.PIPE)
+        #proc = subprocess.Popen(lshw_cmd,)
+        #stdoutdata, stderrdata = proc.communicate()
+        return proc
 
     def ClearFrames(self, Scene, FRAME_NAME):
         """Clears all frames from the scene generation"""
