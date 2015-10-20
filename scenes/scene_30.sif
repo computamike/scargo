@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<canvas version="0.9" width="1920" height="1080" xres="2834.645752" yres="2834.645752" view-box="-16.000000 9.000000 16.000000 -9.000000" antialias="1" fps="24.000" begin-time="0f" end-time="4s 4f" bgcolor="0.500000 0.500000 0.500000 1.000000">
+<?xml version="1.0" encoding="UTF-8"?>
+<canvas version="0.9" width="1920" height="1080" xres="2834.645752" yres="2834.645752" view-box="-16.000000 9.000000 16.000000 -9.000000" antialias="1" fps="24.000" begin-time="0f" end-time="4s 3f" bgcolor="0.500000 0.500000 0.500000 1.000000">
   <name>Synfig Animation 2</name>
   <defs>
     <angle value="0.000000" id="CD_Body_Rotate"/>
@@ -129,7 +129,7 @@
       <y>1.0000000000</y>
     </vector>
   </defs>
-  <layer type="rectangle" active="true" version="0.2" desc="Rectangle031">
+  <layer type="rectangle" active="true" exclude_from_rendering="false" version="0.2" desc="Rectangle031">
     <param name="z_depth">
       <real value="0.0000000000"/>
     </param>
@@ -166,7 +166,7 @@
       <bool value="false"/>
     </param>
   </layer>
-  <layer type="PasteCanvas" active="true" version="0.1" desc="Cat and cage">
+  <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="Cat and cage">
     <param name="z_depth">
       <real value="0.0000000000"/>
     </param>
@@ -184,7 +184,7 @@
     </param>
     <param name="canvas">
       <canvas end-time="2s 12f">
-        <layer type="PasteCanvas" active="true" version="0.1" desc="CLOUD">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CLOUD">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -202,7 +202,7 @@
           </param>
           <param name="canvas">
             <canvas>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="CLOUD SHADING">
+              <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CLOUD SHADING">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -220,7 +220,7 @@
                 </param>
                 <param name="canvas">
                   <canvas>
-                    <layer type="circle" active="true" version="0.1" desc="Circle191">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle191">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -257,7 +257,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle192">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle192">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -294,7 +294,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle192">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle192">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -331,7 +331,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle192">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle192">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -368,7 +368,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle192">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle192">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -405,7 +405,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle192">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle192">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -442,7 +442,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle192">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle192">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -479,7 +479,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle184">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle184">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -516,7 +516,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle185">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle185">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -574,7 +574,7 @@
                   <real value="0.0000000000"/>
                 </param>
               </layer>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="CLOUD">
+              <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CLOUD">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -592,7 +592,7 @@
                 </param>
                 <param name="canvas">
                   <canvas>
-                    <layer type="circle" active="true" version="0.1" desc="Circle185">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle185">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -629,7 +629,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle184">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle184">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -666,7 +666,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle201">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle201">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -703,7 +703,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle202">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle202">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -740,7 +740,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle203">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle203">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -777,7 +777,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle204">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle204">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -814,7 +814,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle186">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle186">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -851,7 +851,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle187">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle187">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -888,7 +888,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle188">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle188">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -925,7 +925,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle189">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle189">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -962,7 +962,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle191">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle191">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -999,7 +999,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle192">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle192">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -1036,7 +1036,7 @@
                         <integer value="2"/>
                       </param>
                     </layer>
-                    <layer type="rectangle" active="true" version="0.2" desc="Rectangle045">
+                    <layer type="rectangle" active="true" exclude_from_rendering="false" version="0.2" desc="Rectangle045">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -1073,7 +1073,7 @@
                         <bool value="false"/>
                       </param>
                     </layer>
-                    <layer type="circle" active="true" version="0.1" desc="Circle210">
+                    <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle210">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -1152,7 +1152,7 @@
             <real value="0.0000000000"/>
           </param>
         </layer>
-        <layer type="PasteCanvas" active="true" version="0.1" desc="Cat and Cage">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="Cat and Cage">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -1170,7 +1170,7 @@
           </param>
           <param name="canvas">
             <canvas>
-              <layer type="region" active="true" version="0.1" desc="path4204-3-9-6">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4204-3-9-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -1210,7 +1210,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="03642E17DFDD6593A3EADB2C0C98757B">
+                  <bline guid="03642E17DFDD6593A3EADB2C0C98757B" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -1331,7 +1331,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4204-3-9-6">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4204-3-9-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -1371,7 +1371,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="03642E17DFDD6593A3EADB2C0C98757B">
+                  <bline guid="03642E17DFDD6593A3EADB2C0C98757B" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -1513,7 +1513,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4309-8">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4309-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -1553,7 +1553,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="03B71AFDB16E2CC54278EE1A1B6C8A59">
+                  <bline guid="03B71AFDB16E2CC54278EE1A1B6C8A59" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -1830,7 +1830,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4309-8">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4309-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -1870,7 +1870,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="03B71AFDB16E2CC54278EE1A1B6C8A59">
+                  <bline guid="03B71AFDB16E2CC54278EE1A1B6C8A59" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -2168,7 +2168,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4311-5">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4311-5">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -2350,7 +2350,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4309-8-8">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4309-8-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -2390,7 +2390,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="020CB2A1548FB999879C04AE4574E815">
+                  <bline guid="020CB2A1548FB999879C04AE4574E815" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -2667,7 +2667,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4309-8-8">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4309-8-8">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -2707,7 +2707,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="020CB2A1548FB999879C04AE4574E815">
+                  <bline guid="020CB2A1548FB999879C04AE4574E815" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -3005,7 +3005,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4311-5-2">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4311-5-2">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -3187,7 +3187,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4244-9">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4244-9">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -3227,7 +3227,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="026A2A95F7A1067DC4C032C2AF5D4ED1">
+                  <bline guid="026A2A95F7A1067DC4C032C2AF5D4ED1" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -3543,7 +3543,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4244-9">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4244-9">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -3583,7 +3583,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="026A2A95F7A1067DC4C032C2AF5D4ED1">
+                  <bline guid="026A2A95F7A1067DC4C032C2AF5D4ED1" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -3920,7 +3920,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4246-2">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4246-2">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -3960,7 +3960,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="02B51573C931CDAF9B564428BA519F8F">
+                  <bline guid="02B51573C931CDAF9B564428BA519F8F" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -4354,7 +4354,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4246-2">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4246-2">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -4394,7 +4394,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="02B51573C931CDAF9B564428BA519F8F">
+                  <bline guid="02B51573C931CDAF9B564428BA519F8F" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -4809,7 +4809,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4170-6">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4170-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -4849,7 +4849,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="02C7C1599AC294D139E46F168925AF6D">
+                  <bline guid="02C7C1599AC294D139E46F168925AF6D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -5009,7 +5009,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4170-6">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4170-6">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -5049,7 +5049,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="02C7C1599AC294D139E46F168925AF6D">
+                  <bline guid="02C7C1599AC294D139E46F168925AF6D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -5230,7 +5230,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3339-89-3">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3339-89-3">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -5270,7 +5270,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="01128D276C535A03D87A727CE439FC4B">
+                  <bline guid="01128D276C535A03D87A727CE439FC4B" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -5430,7 +5430,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3339-89-3">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3339-89-3">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -5470,7 +5470,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="01128D276C535A03D87A727CE439FC4B">
+                  <bline guid="01128D276C535A03D87A727CE439FC4B" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -5651,7 +5651,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4178-1">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4178-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -5812,7 +5812,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4176-5">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4176-5">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -5852,7 +5852,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="016825EB0F74A8E71D9DA890CE024207">
+                  <bline guid="016825EB0F74A8E71D9DA890CE024207" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -6051,7 +6051,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4176-5">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4176-5">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -6091,7 +6091,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="016825EB0F74A8E71D9DA890CE024207">
+                  <bline guid="016825EB0F74A8E71D9DA890CE024207" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -6311,7 +6311,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4176-6-1">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4176-6-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -6351,7 +6351,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="01BB11F1E1056E09BC33B3FEDD1693E5">
+                  <bline guid="01BB11F1E1056E09BC33B3FEDD1693E5" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -6550,7 +6550,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4176-6-1">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4176-6-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -6590,7 +6590,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="01BB11F1E1056E09BC33B3FEDD1693E5">
+                  <bline guid="01BB11F1E1056E09BC33B3FEDD1693E5" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -6810,7 +6810,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4172-7">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4172-7">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -6850,7 +6850,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="01C5DDDFB29635BB52C1C5242BEAA0C3">
+                  <bline guid="01C5DDDFB29635BB52C1C5242BEAA0C3" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7010,7 +7010,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4172-7">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4172-7">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7050,7 +7050,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="01C5DDDFB29635BB52C1C5242BEAA0C3">
+                  <bline guid="01C5DDDFB29635BB52C1C5242BEAA0C3" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7231,7 +7231,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3339-1-37-1">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3339-1-37-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7271,7 +7271,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="001089A58426FCEDF157E81206FEF1A1">
+                  <bline guid="001089A58426FCEDF157E81206FEF1A1" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7392,7 +7392,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3339-1-37-1">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3339-1-37-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7432,7 +7432,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="001089A58426FCEDF157E81206FEF1A1">
+                  <bline guid="001089A58426FCEDF157E81206FEF1A1" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7574,7 +7574,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4128-8-9-1">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4128-8-9-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7614,7 +7614,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0023758355B7821F97E5F37815F3069F">
+                  <bline guid="0023758355B7821F97E5F37815F3069F" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7774,7 +7774,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4128-8-9-1">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4128-8-9-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -7814,7 +7814,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0023758355B7821F97E5F37815F3069F">
+                  <bline guid="0023758355B7821F97E5F37815F3069F" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -7995,7 +7995,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4128-9-5">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4128-9-5">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -8035,7 +8035,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="006E206927384941367B06A660C7567D">
+                  <bline guid="006E206927384941367B06A660C7567D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -8195,7 +8195,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4128-9-5">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4128-9-5">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -8235,7 +8235,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="006E206927384941367B06A660C7567D">
+                  <bline guid="006E206927384941367B06A660C7567D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -8416,7 +8416,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4204-9-0">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4204-9-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -8456,7 +8456,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="00B8EC77F8C910F3D509298C7FDB675B">
+                  <bline guid="00B8EC77F8C910F3D509298C7FDB675B" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -8577,7 +8577,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4204-9-0">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4204-9-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -8617,7 +8617,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="00B8EC77F8C910F3D509298C7FDB675B">
+                  <bline guid="00B8EC77F8C910F3D509298C7FDB675B" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -8759,7 +8759,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4168-3-0">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4168-3-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -8799,7 +8799,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="00CBD85DCA59D6256B9F3CFA4AAFB439">
+                  <bline guid="00CBD85DCA59D6256B9F3CFA4AAFB439" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -9076,7 +9076,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4168-3-0">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4168-3-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -9116,7 +9116,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="00CBD85DCA59D6256B9F3CFA4AAFB439">
+                  <bline guid="00CBD85DCA59D6256B9F3CFA4AAFB439" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -9414,7 +9414,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4198-3-4">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4198-3-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -9454,7 +9454,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0F16843B9BEA9D570A2D462059A3C517">
+                  <bline guid="0F16843B9BEA9D570A2D462059A3C517" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -9653,7 +9653,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4198-3-4">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4198-3-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -9693,7 +9693,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0F16843B9BEA9D570A2D462059A3C517">
+                  <bline guid="0F16843B9BEA9D570A2D462059A3C517" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -9913,7 +9913,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4234-6-4">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4234-6-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -10056,7 +10056,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4236-6-9">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4236-6-9">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -10199,7 +10199,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4238-5-0">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4238-5-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -10342,7 +10342,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4240-2-5">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4240-2-5">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -10485,7 +10485,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4130-75-0">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4130-75-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -10525,7 +10525,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0E1480B9B3BE3E31230ABDF6F860D94D">
+                  <bline guid="0E1480B9B3BE3E31230ABDF6F860D94D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -10685,7 +10685,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4130-75-0">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4130-75-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -10725,7 +10725,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0E1480B9B3BE3E31230ABDF6F860D94D">
+                  <bline guid="0E1480B9B3BE3E31230ABDF6F860D94D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -10906,7 +10906,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4252-00-4">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4252-00-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -11049,7 +11049,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4252-1-1-4">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4252-1-1-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -11192,7 +11192,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4277-7-9">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4277-7-9">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -11392,7 +11392,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4279-1-7">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4279-1-7">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -11592,7 +11592,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4277-1-8-4">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4277-1-8-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -11792,7 +11792,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4279-8-8-1">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4279-8-8-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -11992,7 +11992,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path4174-0">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path4174-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -12032,7 +12032,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0D703BE36EA32D7FB90441D8450E337F">
+                  <bline guid="0D703BE36EA32D7FB90441D8450E337F" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -12192,7 +12192,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path4174-0">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path4174-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -12232,7 +12232,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0D703BE36EA32D7FB90441D8450E337F">
+                  <bline guid="0D703BE36EA32D7FB90441D8450E337F" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -12413,7 +12413,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="shade" active="true" version="0.2">
+              <layer type="shade" active="true" exclude_from_rendering="false" version="0.2">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -12450,7 +12450,7 @@
                   <bool value="false"/>
                 </param>
               </layer>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="CageBase">
+              <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CageBase">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -12468,7 +12468,7 @@
                 </param>
                 <param name="canvas">
                   <canvas>
-                    <layer type="region" active="true" version="0.1" desc="path6633-8">
+                    <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path6633-8">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -12668,7 +12668,7 @@
                         </bline>
                       </param>
                     </layer>
-                    <layer type="region" active="true" version="0.1" desc="path6633">
+                    <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path6633">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -12708,7 +12708,7 @@
                         <integer value="1"/>
                       </param>
                       <param name="bline">
-                        <bline type="bline_point" loop="true" guid="0A84F943879ED85FA22A96B8B4493D5F">
+                        <bline guid="0A84F943879ED85FA22A96B8B4493D5F" type="bline_point" loop="true">
                           <entry>
                             <composite type="bline_point">
                               <point>
@@ -12889,7 +12889,7 @@
                   <real value="0.0000000000"/>
                 </param>
               </layer>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="CageBArd BG">
+              <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CageBArd BG">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -12907,7 +12907,7 @@
                 </param>
                 <param name="canvas">
                   <canvas end-time="5s">
-                    <layer type="outline" active="true" version="0.2" desc="path5033-8">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-8">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -13050,7 +13050,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-7-1">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-7-1">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -13193,7 +13193,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-1-2">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-1-2">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -13336,7 +13336,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-2-1">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-2-1">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -13479,7 +13479,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-6-4">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-6-4">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -13622,7 +13622,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-0-9">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-0-9">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -13765,7 +13765,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-4-8">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-4-8">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -13908,7 +13908,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-9-2">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-9-2">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -14051,7 +14051,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-5">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-5">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -14194,7 +14194,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-0-2">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-0-2">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -14337,7 +14337,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-9">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-9">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -14480,7 +14480,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-6-9">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-6-9">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -14623,7 +14623,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-6-2-8">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-6-2-8">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -14766,7 +14766,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-6-4-3">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-6-4-3">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -14909,7 +14909,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-6-5-8">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-6-5-8">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -15073,7 +15073,7 @@
                   <real value="0.0000000000"/>
                 </param>
               </layer>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="CageBars FG">
+              <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CageBars FG">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -15091,7 +15091,7 @@
                 </param>
                 <param name="canvas">
                   <canvas>
-                    <layer type="outline" active="true" version="0.2" desc="path6633">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6633">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -15131,7 +15131,7 @@
                         <integer value="0"/>
                       </param>
                       <param name="bline">
-                        <bline type="bline_point" loop="true" guid="0A84F943879ED85FA22A96B8B4493D5F">
+                        <bline guid="0A84F943879ED85FA22A96B8B4493D5F" type="bline_point" loop="true">
                           <entry>
                             <composite type="bline_point">
                               <point>
@@ -15312,7 +15312,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -15455,7 +15455,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-7">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-7">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -15598,7 +15598,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-1">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-1">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -15741,7 +15741,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-2">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-2">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -15884,7 +15884,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-6">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-6">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -16027,7 +16027,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-0">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-0">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -16170,7 +16170,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-4">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-4">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -16313,7 +16313,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-9">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-9">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -16456,7 +16456,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path5033-46">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path5033-46">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -16599,7 +16599,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -16742,7 +16742,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-0">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-0">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -16885,7 +16885,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -17028,7 +17028,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-6">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-6">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -17171,7 +17171,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-6-2">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-6-2">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -17314,7 +17314,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-6-4">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-6-4">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -17457,7 +17457,7 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="outline" active="true" version="0.2" desc="path6556-3-6-5">
+                    <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path6556-3-6-5">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -17642,7 +17642,7 @@
             <real value="0.0000000000"/>
           </param>
         </layer>
-        <layer type="PasteCanvas" active="true" version="0.1" desc="CAT FG">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CAT FG">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -17660,7 +17660,7 @@
           </param>
           <param name="canvas">
             <canvas>
-              <layer type="circle" active="true" version="0.1" desc="Circle207">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle207">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17697,7 +17697,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle208">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle208">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17734,7 +17734,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle209">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle209">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17792,7 +17792,7 @@
             <real value="0.0000000000"/>
           </param>
         </layer>
-        <layer type="PasteCanvas" active="true" version="0.1" desc="CageFG">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="CageFG">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -17810,7 +17810,7 @@
           </param>
           <param name="canvas">
             <canvas>
-              <layer type="circle" active="true" version="0.1" desc="Circle193">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle193">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17847,7 +17847,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle194">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle194">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17884,7 +17884,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle195">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle195">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17921,7 +17921,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle196">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle196">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17958,7 +17958,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle197">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle197">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -17995,7 +17995,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle198">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle198">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18032,7 +18032,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle199">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle199">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18069,7 +18069,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle200">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle200">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18106,7 +18106,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle205">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle205">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18143,7 +18143,7 @@
                   <integer value="2"/>
                 </param>
               </layer>
-              <layer type="circle" active="true" version="0.1" desc="Circle206">
+              <layer type="circle" active="true" exclude_from_rendering="false" version="0.1" desc="Circle206">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18229,7 +18229,7 @@
       <real value="0.0000000000"/>
     </param>
   </layer>
-  <layer type="PasteCanvas" active="true" version="0.1" desc="Dragon">
+  <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="Dragon">
     <param name="z_depth">
       <real value="0.0000000000"/>
     </param>
@@ -18247,7 +18247,7 @@
     </param>
     <param name="canvas">
       <canvas end-time="2s 12f">
-        <layer type="PasteCanvas" active="true" version="0.1">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -18265,7 +18265,7 @@
           </param>
           <param name="canvas">
             <canvas>
-              <layer type="region" active="true" version="0.1" desc="path3784">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3784">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18305,7 +18305,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7B944A0721709AE365158A5C1260D7AB">
+                  <bline guid="7B944A0721709AE365158A5C1260D7AB" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -18465,7 +18465,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3784">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3784">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18505,7 +18505,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7B944A0721709AE365158A5C1260D7AB">
+                  <bline guid="7B944A0721709AE365158A5C1260D7AB" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -18686,7 +18686,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3008-1">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3008-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18726,7 +18726,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7BA736EDF30120153BAB9D8A6174E489">
+                  <bline guid="7BA736EDF30120153BAB9D8A6174E489" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -18886,7 +18886,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3008-1">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3008-1">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -18926,7 +18926,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7BA736EDF30120153BAB9D8A6174E489">
+                  <bline guid="7BA736EDF30120153BAB9D8A6174E489" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -19107,7 +19107,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3854">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3854">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -19147,7 +19147,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7BF1E2CBC491E747DA39A0F07C493467">
+                  <bline guid="7BF1E2CBC491E747DA39A0F07C493467" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -19268,7 +19268,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3854">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3854">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -19308,7 +19308,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7BF1E2CBC491E747DA39A0F07C493467">
+                  <bline guid="7BF1E2CBC491E747DA39A0F07C493467" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -19450,7 +19450,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3829-9">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3829-9">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -19490,7 +19490,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7A3CAED19622AEE978CFCBDE4B5D4545">
+                  <bline guid="7A3CAED19622AEE978CFCBDE4B5D4545" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -19884,7 +19884,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3829-9">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3829-9">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -19924,7 +19924,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7A3CAED19622AEE978CFCBDE4B5D4545">
+                  <bline guid="7A3CAED19622AEE978CFCBDE4B5D4545" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -20339,7 +20339,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3940">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3940">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -20734,7 +20734,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3837-4">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3837-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -20774,7 +20774,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7A9A468539443B4DBDF3E072B525AB01">
+                  <bline guid="7A9A468539443B4DBDF3E072B525AB01" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -20895,7 +20895,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3837-4">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3837-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -20935,7 +20935,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7A9A468539443B4DBDF3E072B525AB01">
+                  <bline guid="7A9A468539443B4DBDF3E072B525AB01" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -21077,7 +21077,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3825">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3825">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -21117,7 +21117,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7AA531630AD4C2FF5C810B588039F8FF">
+                  <bline guid="7AA531630AD4C2FF5C810B588039F8FF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -21316,7 +21316,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3825">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3825">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -21356,7 +21356,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7AA531630AD4C2FF5C810B588039F8FF">
+                  <bline guid="7AA531630AD4C2FF5C810B588039F8FF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -21576,7 +21576,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3786">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3786">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -21616,7 +21616,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="7AF7FD49DC658821F3171E869F0E09DD">
+                  <bline guid="7AF7FD49DC658821F3171E869F0E09DD" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -21737,7 +21737,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3786">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3786">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -21777,7 +21777,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="7AF7FD49DC658821F3171E869F0E09DD">
+                  <bline guid="7AF7FD49DC658821F3171E869F0E09DD" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -21919,7 +21919,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3942">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3942">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -22236,7 +22236,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3782">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3782">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -22276,7 +22276,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="794D953D7F871685303B34DAF9166F99">
+                  <bline guid="794D953D7F871685303B34DAF9166F99" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -22475,7 +22475,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3782">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3782">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -22515,7 +22515,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="794D953D7F871685303B34DAF9166F99">
+                  <bline guid="794D953D7F871685303B34DAF9166F99" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -22735,7 +22735,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3008">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3008">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -22775,7 +22775,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7998411B5117DC37D6C95E00D7EABF77">
+                  <bline guid="7998411B5117DC37D6C95E00D7EABF77" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -22896,7 +22896,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3008">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3008">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -22936,7 +22936,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7998411B5117DC37D6C95E00D7EABF77">
+                  <bline guid="7998411B5117DC37D6C95E00D7EABF77" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -23078,7 +23078,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3788-7">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3788-7">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -23118,7 +23118,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="79AB0DE122986359755F616E22FECC55">
+                  <bline guid="79AB0DE122986359755F616E22FECC55" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -23239,7 +23239,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3788-7">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3788-7">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -23279,7 +23279,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="79AB0DE122986359755F616E22FECC55">
+                  <bline guid="79AB0DE122986359755F616E22FECC55" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -23421,7 +23421,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3788">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3788">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -23461,7 +23461,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="79F5F9CFF4292A8B0BED745431F31D33">
+                  <bline guid="79F5F9CFF4292A8B0BED745431F31D33" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -23582,7 +23582,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3788">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3788">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -23622,7 +23622,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="79F5F9CFF4292A8B0BED745431F31D33">
+                  <bline guid="79F5F9CFF4292A8B0BED745431F31D33" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -23764,7 +23764,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3790">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3790">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -23804,7 +23804,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7800A5D5C5B9F03DAA829F820CC75211">
+                  <bline guid="7800A5D5C5B9F03DAA829F820CC75211" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -23925,7 +23925,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3790">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3790">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -23965,7 +23965,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="7800A5D5C5B9F03DAA829F820CC75211">
+                  <bline guid="7800A5D5C5B9F03DAA829F820CC75211" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -24107,7 +24107,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3792">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3792">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -24147,7 +24147,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="785391B3974AB76F4910A2E81BDB63CF">
+                  <bline guid="785391B3974AB76F4910A2E81BDB63CF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -24231,7 +24231,7 @@
                         <point>
                           <vector>
                             <x>-6.7238159180</x>
-                            <y>12.0825195313</y>
+                            <y>12.0825195312</y>
                           </vector>
                         </point>
                         <width>
@@ -24268,7 +24268,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3792">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3792">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -24308,7 +24308,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="785391B3974AB76F4910A2E81BDB63CF">
+                  <bline guid="785391B3974AB76F4910A2E81BDB63CF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -24392,7 +24392,7 @@
                         <point>
                           <vector>
                             <x>-6.7238159180</x>
-                            <y>12.0825195313</y>
+                            <y>12.0825195312</y>
                           </vector>
                         </point>
                         <width>
@@ -24450,7 +24450,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3790-4">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3790-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -24490,7 +24490,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="789E5D9968DB7E91EFA6B5D676AFB0AD">
+                  <bline guid="789E5D9968DB7E91EFA6B5D676AFB0AD" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -24611,7 +24611,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3790-4">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3790-4">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -24651,7 +24651,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="789E5D9968DB7E91EFA6B5D676AFB0AD">
+                  <bline guid="789E5D9968DB7E91EFA6B5D676AFB0AD" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -24793,7 +24793,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3792-0">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3792-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -24833,7 +24833,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="78A908673A6C05C38E34DF3C45A3C18B">
+                  <bline guid="78A908673A6C05C38E34DF3C45A3C18B" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -24954,7 +24954,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3792-0">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3792-0">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -24994,7 +24994,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="78A908673A6C05C38E34DF3C45A3C18B">
+                  <bline guid="78A908673A6C05C38E34DF3C45A3C18B" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -25136,7 +25136,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3932">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3932">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -25336,7 +25336,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3821">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3821">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -25376,7 +25376,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0706A02BDD8D92A7C358F550AF842647">
+                  <bline guid="0706A02BDD8D92A7C358F550AF842647" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -25536,7 +25536,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3821">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3821">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -25576,7 +25576,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0706A02BDD8D92A7C358F550AF842647">
+                  <bline guid="0706A02BDD8D92A7C358F550AF842647" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -25757,7 +25757,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3823">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3823">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -25797,7 +25797,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="07516C31AF1E59C961EE18BEBA987725">
+                  <bline guid="07516C31AF1E59C961EE18BEBA987725" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -25918,7 +25918,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3823">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3823">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -25958,7 +25958,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="07516C31AF1E59C961EE18BEBA987725">
+                  <bline guid="07516C31AF1E59C961EE18BEBA987725" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -26100,7 +26100,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3827">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3827">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -26140,7 +26140,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="079C581F80AF1F7B007C23E4896C8403">
+                  <bline guid="079C581F80AF1F7B007C23E4896C8403" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -26378,7 +26378,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3827">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3827">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -26418,7 +26418,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="079C581F80AF1F7B007C23E4896C8403">
+                  <bline guid="079C581F80AF1F7B007C23E4896C8403" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -26677,7 +26677,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3839">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3839">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -26717,7 +26717,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="07AF04E5523FA6ADA71236D2E460D5E1">
+                  <bline guid="07AF04E5523FA6ADA71236D2E460D5E1" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -26877,7 +26877,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3839">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3839">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -26917,7 +26917,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="07AF04E5523FA6ADA71236D2E460D5E1">
+                  <bline guid="07AF04E5523FA6ADA71236D2E460D5E1" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -27098,7 +27098,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3841">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3841">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -27138,7 +27138,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="07F9F0C323C06DDF45A05838F374EADF">
+                  <bline guid="07F9F0C323C06DDF45A05838F374EADF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -27298,7 +27298,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3841">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3841">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -27338,7 +27338,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="07F9F0C323C06DDF45A05838F374EADF">
+                  <bline guid="07F9F0C323C06DDF45A05838F374EADF" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -27519,7 +27519,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3936">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3936">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -27680,7 +27680,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3938">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3938">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -27841,7 +27841,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3829">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3829">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -27881,7 +27881,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0662549D987281E5595999BA28519879">
+                  <bline guid="0662549D987281E5595999BA28519879" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -28275,7 +28275,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3829">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3829">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -28315,7 +28315,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0662549D987281E5595999BA28519879">
+                  <bline guid="0662549D987281E5595999BA28519879" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -28730,7 +28730,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3837">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3837">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -28770,7 +28770,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="06AD077B6A034717FFEFACE00725A957">
+                  <bline guid="06AD077B6A034717FFEFACE00725A957" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -28891,7 +28891,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3837">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3837">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -28931,7 +28931,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="06AD077B6A034717FFEFACE00725A957">
+                  <bline guid="06AD077B6A034717FFEFACE00725A957" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -29073,7 +29073,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3835">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3835">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -29273,7 +29273,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3831">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3831">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -29313,7 +29313,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="050ABF2F0D24D5EB3D13D934610E0F13">
+                  <bline guid="050ABF2F0D24D5EB3D13D934610E0F13" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -29395,7 +29395,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3831">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3831">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -29435,7 +29435,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="false" guid="050ABF2F0D24D5EB3D13D934610E0F13">
+                  <bline guid="050ABF2F0D24D5EB3D13D934610E0F13" type="bline_point" loop="false">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -29538,7 +29538,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3920">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3920">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -29855,7 +29855,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3918">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3918">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -30016,7 +30016,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3780">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3780">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -30056,7 +30056,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="05B303F981D6E9F110C51AB659EAA28D">
+                  <bline guid="05B303F981D6E9F110C51AB659EAA28D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -30216,7 +30216,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3780">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3780">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -30256,7 +30256,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="05B303F981D6E9F110C51AB659EAA28D">
+                  <bline guid="05B303F981D6E9F110C51AB659EAA28D" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -30437,7 +30437,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3778">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3778">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -30477,7 +30477,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="05FDCFC75367AF23B75B2D9CB4FEF26B">
+                  <bline guid="05FDCFC75367AF23B75B2D9CB4FEF26B" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -30598,7 +30598,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3778">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3778">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -30638,7 +30638,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="05FDCFC75367AF23B75B2D9CB4FEF26B">
+                  <bline guid="05FDCFC75367AF23B75B2D9CB4FEF26B" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -30780,7 +30780,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3922">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3922">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -30820,7 +30820,7 @@
                   <integer value="1"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0408BBAD24E8765555E930CA83F30349">
+                  <bline guid="0408BBAD24E8765555E930CA83F30349" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -30941,7 +30941,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="outline" active="true" version="0.2" desc="path3922">
+              <layer type="outline" active="true" exclude_from_rendering="false" version="0.2" desc="path3922">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -30981,7 +30981,7 @@
                   <integer value="0"/>
                 </param>
                 <param name="bline">
-                  <bline type="bline_point" loop="true" guid="0408BBAD24E8765555E930CA83F30349">
+                  <bline guid="0408BBAD24E8765555E930CA83F30349" type="bline_point" loop="true">
                     <entry>
                       <composite type="bline_point">
                         <point>
@@ -31123,7 +31123,7 @@
                   <bool value="true"/>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3924">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3924">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -31284,7 +31284,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3926">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3926">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -31484,7 +31484,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3928">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3928">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -31723,7 +31723,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3930">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3930">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -32001,7 +32001,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="region" active="true" version="0.1" desc="path3934">
+              <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="path3934">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -32474,7 +32474,7 @@
                   </bline>
                 </param>
               </layer>
-              <layer type="shade" active="true" version="0.2">
+              <layer type="shade" active="true" exclude_from_rendering="false" version="0.2">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -32532,7 +32532,7 @@
             <real value="0.0000000000"/>
           </param>
         </layer>
-        <layer type="PasteCanvas" active="true" version="0.1">
+        <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1">
           <param name="z_depth">
             <real value="0.0000000000"/>
           </param>
@@ -32550,7 +32550,7 @@
           </param>
           <param name="canvas">
             <canvas>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="Smoke">
+              <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="Smoke">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -32568,7 +32568,7 @@
                 </param>
                 <param name="canvas">
                   <canvas>
-                    <layer type="region" active="true" version="0.1" desc="NewBLine016 Region">
+                    <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="NewBLine016 Region">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -33548,7 +33548,7 @@
                         </bline>
                       </param>
                     </layer>
-                    <layer type="translate" active="true" version="0.1">
+                    <layer type="translate" active="true" exclude_from_rendering="false" version="0.1">
                       <param name="origin">
                         <animated type="vector">
                           <waypoint time="2.125s" before="clamped" after="clamped">
@@ -33587,7 +33587,7 @@
                   <real value="0.0000000000"/>
                 </param>
               </layer>
-              <layer type="PasteCanvas" active="true" version="0.1" desc="smoke mask">
+              <layer type="PasteCanvas" active="true" exclude_from_rendering="false" version="0.1" desc="smoke mask">
                 <param name="z_depth">
                   <real value="0.0000000000"/>
                 </param>
@@ -33605,7 +33605,7 @@
                 </param>
                 <param name="canvas">
                   <canvas>
-                    <layer type="region" active="true" version="0.1" desc="NewBLine015 Region">
+                    <layer type="region" active="true" exclude_from_rendering="false" version="0.1" desc="NewBLine015 Region">
                       <param name="z_depth">
                         <real value="0.0000000000"/>
                       </param>
@@ -34003,7 +34003,7 @@
             <real value="0.0000000000"/>
           </param>
         </layer>
-        <layer type="translate" active="true" version="0.1">
+        <layer type="translate" active="true" exclude_from_rendering="false" version="0.1">
           <param name="origin">
             <animated type="vector">
               <waypoint time="1.66666663s" before="clamped" after="clamped">
