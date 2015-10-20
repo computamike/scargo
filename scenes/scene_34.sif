@@ -8832,41 +8832,6 @@
                                     </bline>
                                   </param>
                                 </layer>
-                                <layer type="import" active="true" version="0.1" desc="tail3.png">
-                                  <param name="z_depth">
-                                    <real value="0.0000000000"/>
-                                  </param>
-                                  <param name="amount">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="blend_method">
-                                    <integer value="15"/>
-                                  </param>
-                                  <param name="tl">
-                                    <vector>
-                                      <x>-0.5121061802</x>
-                                      <y>1.2985074520</y>
-                                    </vector>
-                                  </param>
-                                  <param name="br">
-                                    <vector>
-                                      <x>1.7545604706</x>
-                                      <y>-0.4181591570</y>
-                                    </vector>
-                                  </param>
-                                  <param name="c">
-                                    <integer value="1" static="true"/>
-                                  </param>
-                                  <param name="gamma_adjust">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="filename">
-                                    <string>..\..\characters\Dragon\tail3.png</string>
-                                  </param>
-                                  <param name="time_offset">
-                                    <time value="0s"/>
-                                  </param>
-                                </layer>
                                 <layer type="rotate" active="true" version="0.1">
                                   <param name="origin">
                                     <vector>
@@ -10797,41 +10762,6 @@
                                   </composite>
                                 </entry>
                               </bline>
-                            </param>
-                          </layer>
-                          <layer type="import" active="true" version="0.1" desc="tail2.png">
-                            <param name="z_depth">
-                              <real value="0.0000000000"/>
-                            </param>
-                            <param name="amount">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="blend_method">
-                              <integer value="15"/>
-                            </param>
-                            <param name="tl">
-                              <vector>
-                                <x>-0.5664787889</x>
-                                <y>1.6307035685</y>
-                              </vector>
-                            </param>
-                            <param name="br">
-                              <vector>
-                                <x>2.6835212708</x>
-                                <y>-0.7526297569</y>
-                              </vector>
-                            </param>
-                            <param name="c">
-                              <integer value="1" static="true"/>
-                            </param>
-                            <param name="gamma_adjust">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="filename">
-                              <string>..\..\characters\Dragon\tail2.png</string>
-                            </param>
-                            <param name="time_offset">
-                              <time value="0s"/>
                             </param>
                           </layer>
                           <layer type="rotate" active="true" version="0.1">
@@ -13117,41 +13047,6 @@
                         </bline>
                       </param>
                     </layer>
-                    <layer type="import" active="true" version="0.1" desc="tail1.png">
-                      <param name="z_depth">
-                        <real value="0.0000000000"/>
-                      </param>
-                      <param name="amount">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="blend_method">
-                        <integer value="15"/>
-                      </param>
-                      <param name="tl">
-                        <vector>
-                          <x>-0.7501257062</x>
-                          <y>3.2980408669</y>
-                        </vector>
-                      </param>
-                      <param name="br">
-                        <vector>
-                          <x>2.3165409565</x>
-                          <y>-0.8019590378</y>
-                        </vector>
-                      </param>
-                      <param name="c">
-                        <integer value="1" static="true"/>
-                      </param>
-                      <param name="gamma_adjust">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="filename">
-                        <string>..\..\characters\Dragon\tail1.png</string>
-                      </param>
-                      <param name="time_offset">
-                        <time value="0s"/>
-                      </param>
-                    </layer>
                     <layer type="rotate" active="true" version="0.1">
                       <param name="origin">
                         <vector>
@@ -14778,41 +14673,6 @@
                         </bline>
                       </param>
                     </layer>
-                    <layer type="import" active="true" version="0.1" desc="right wing.png">
-                      <param name="z_depth">
-                        <real value="0.0000000000"/>
-                      </param>
-                      <param name="amount">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="blend_method">
-                        <integer value="15"/>
-                      </param>
-                      <param name="tl">
-                        <vector>
-                          <x>-0.9926164746</x>
-                          <y>0.4474038482</y>
-                        </vector>
-                      </param>
-                      <param name="br">
-                        <vector>
-                          <x>3.7240502834</x>
-                          <y>-3.5859293938</y>
-                        </vector>
-                      </param>
-                      <param name="c">
-                        <integer value="1" static="true"/>
-                      </param>
-                      <param name="gamma_adjust">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="filename">
-                        <string>..\..\characters\Dragon\right wing.png</string>
-                      </param>
-                      <param name="time_offset">
-                        <time value="0s"/>
-                      </param>
-                    </layer>
                     <layer type="rotate" active="true" version="0.1">
                       <param name="origin">
                         <vector>
@@ -16306,41 +16166,6 @@
                             </composite>
                           </entry>
                         </bline>
-                      </param>
-                    </layer>
-                    <layer type="import" active="false" version="0.1" desc="right upperarm.png">
-                      <param name="z_depth">
-                        <real value="0.0000000000"/>
-                      </param>
-                      <param name="amount">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="blend_method">
-                        <integer value="15"/>
-                      </param>
-                      <param name="tl">
-                        <vector>
-                          <x>-1.3252199888</x>
-                          <y>0.3962074518</y>
-                        </vector>
-                      </param>
-                      <param name="br">
-                        <vector>
-                          <x>0.6914466619</x>
-                          <y>-2.0704591274</y>
-                        </vector>
-                      </param>
-                      <param name="c">
-                        <integer value="1" static="true"/>
-                      </param>
-                      <param name="gamma_adjust">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="filename">
-                        <string>..\..\characters\Dragon\right upperarm.png</string>
-                      </param>
-                      <param name="time_offset">
-                        <time value="0s"/>
                       </param>
                     </layer>
                     <layer type="PasteCanvas" active="true" version="0.1" desc="Dragon_RForearm">
@@ -20868,41 +20693,6 @@
                             </param>
                             <param name="homogeneous_width">
                               <bool value="true"/>
-                            </param>
-                          </layer>
-                          <layer type="import" active="false" version="0.1" desc="right forearm.png">
-                            <param name="z_depth">
-                              <real value="0.0000000000"/>
-                            </param>
-                            <param name="amount">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="blend_method">
-                              <integer value="15"/>
-                            </param>
-                            <param name="tl">
-                              <vector>
-                                <x>-2.6886208057</x>
-                                <y>0.4954152405</y>
-                              </vector>
-                            </param>
-                            <param name="br">
-                              <vector>
-                                <x>0.4780458212</x>
-                                <y>-2.3712513447</y>
-                              </vector>
-                            </param>
-                            <param name="c">
-                              <integer value="1" static="true"/>
-                            </param>
-                            <param name="gamma_adjust">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="filename">
-                              <string>..\..\characters\Dragon\right forearm.png</string>
-                            </param>
-                            <param name="time_offset">
-                              <time value="0s"/>
                             </param>
                           </layer>
                           <layer type="rotate" active="true" version="0.1">
@@ -28408,41 +28198,6 @@
                         <bool value="true"/>
                       </param>
                     </layer>
-                    <layer type="import" active="false" version="0.1" desc="neck.png">
-                      <param name="z_depth">
-                        <real value="0.0000000000"/>
-                      </param>
-                      <param name="amount">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="blend_method">
-                        <integer value="15"/>
-                      </param>
-                      <param name="tl">
-                        <vector>
-                          <x>-2.6124501228</x>
-                          <y>3.7487180233</y>
-                        </vector>
-                      </param>
-                      <param name="br">
-                        <vector>
-                          <x>0.2375499904</x>
-                          <y>-0.2679487467</y>
-                        </vector>
-                      </param>
-                      <param name="c">
-                        <integer value="1" static="true"/>
-                      </param>
-                      <param name="gamma_adjust">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="filename">
-                        <string>..\..\characters\Dragon\neck.png</string>
-                      </param>
-                      <param name="time_offset">
-                        <time value="0s"/>
-                      </param>
-                    </layer>
                     <layer type="rotate" active="true" version="0.1">
                       <param name="origin">
                         <vector>
@@ -29666,41 +29421,6 @@
                                   </param>
                                   <param name="homogeneous_width">
                                     <bool value="true"/>
-                                  </param>
-                                </layer>
-                                <layer type="import" active="false" version="0.1" desc="jaw.png">
-                                  <param name="z_depth">
-                                    <real value="0.0000000000"/>
-                                  </param>
-                                  <param name="amount">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="blend_method">
-                                    <integer value="15"/>
-                                  </param>
-                                  <param name="tl">
-                                    <vector>
-                                      <x>-3.0013322830</x>
-                                      <y>0.3216987550</y>
-                                    </vector>
-                                  </param>
-                                  <param name="br">
-                                    <vector>
-                                      <x>0.1064184755</x>
-                                      <y>-2.5265288353</y>
-                                    </vector>
-                                  </param>
-                                  <param name="c">
-                                    <integer value="1" static="true"/>
-                                  </param>
-                                  <param name="gamma_adjust">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="filename">
-                                    <string>..\..\characters\Dragon\jaw.png</string>
-                                  </param>
-                                  <param name="time_offset">
-                                    <time value="0s"/>
                                   </param>
                                 </layer>
                                 <layer type="rotate" active="true" version="0.1">
@@ -35985,41 +35705,6 @@
                               <bool value="true"/>
                             </param>
                           </layer>
-                          <layer type="import" active="false" version="0.1" desc="head.png">
-                            <param name="z_depth">
-                              <real value="0.0000000000"/>
-                            </param>
-                            <param name="amount">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="blend_method">
-                              <integer value="15"/>
-                            </param>
-                            <param name="tl">
-                              <vector>
-                                <x>-2.2051632404</x>
-                                <y>3.2520627975</y>
-                              </vector>
-                            </param>
-                            <param name="br">
-                              <vector>
-                                <x>1.6948367357</x>
-                                <y>-1.6479371786</y>
-                              </vector>
-                            </param>
-                            <param name="c">
-                              <integer value="1" static="true"/>
-                            </param>
-                            <param name="gamma_adjust">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="filename">
-                              <string>..\..\characters\Dragon\head.png</string>
-                            </param>
-                            <param name="time_offset">
-                              <time value="0s"/>
-                            </param>
-                          </layer>
                           <layer type="PasteCanvas" active="true" version="0.1" desc="Dragon_LeftPupil">
                             <param name="z_depth">
                               <real value="0.0000000000"/>
@@ -37169,41 +36854,6 @@
                                         </composite>
                                       </entry>
                                     </bline>
-                                  </param>
-                                </layer>
-                                <layer type="import" active="false" version="0.1" desc="eyeborws.png">
-                                  <param name="z_depth">
-                                    <real value="0.0000000000"/>
-                                  </param>
-                                  <param name="amount">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="blend_method">
-                                    <integer value="15"/>
-                                  </param>
-                                  <param name="tl">
-                                    <vector>
-                                      <x>-0.9101866484</x>
-                                      <y>1.9841738939</y>
-                                    </vector>
-                                  </param>
-                                  <param name="br">
-                                    <vector>
-                                      <x>1.0564800501</x>
-                                      <y>-0.0658261254</y>
-                                    </vector>
-                                  </param>
-                                  <param name="c">
-                                    <integer value="1" static="true"/>
-                                  </param>
-                                  <param name="gamma_adjust">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="filename">
-                                    <string>..\..\characters\Dragon\eyeborws.png</string>
-                                  </param>
-                                  <param name="time_offset">
-                                    <time value="0s"/>
                                   </param>
                                 </layer>
                                 <layer type="translate" active="true" version="0.1" desc="Dragon_BushyEyeBrowsTranslate">
@@ -45273,41 +44923,6 @@
                               <bool value="true"/>
                             </param>
                           </layer>
-                          <layer type="import" active="false" version="0.1" desc="left forearm.png">
-                            <param name="z_depth">
-                              <real value="0.0000000000"/>
-                            </param>
-                            <param name="amount">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="blend_method">
-                              <integer value="15"/>
-                            </param>
-                            <param name="tl">
-                              <vector>
-                                <x>-2.6644752026</x>
-                                <y>0.4651611149</y>
-                              </vector>
-                            </param>
-                            <param name="br">
-                              <vector>
-                                <x>0.5021914840</x>
-                                <y>-2.3848388195</y>
-                              </vector>
-                            </param>
-                            <param name="c">
-                              <integer value="1" static="true"/>
-                            </param>
-                            <param name="gamma_adjust">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="filename">
-                              <string>..\..\characters\Dragon\left forearm.png</string>
-                            </param>
-                            <param name="time_offset">
-                              <time value="0s"/>
-                            </param>
-                          </layer>
                           <layer type="rotate" active="true" version="0.1">
                             <param name="origin">
                               <vector>
@@ -45346,41 +44961,6 @@
                       </param>
                       <param name="outline_grow">
                         <real value="0.0000000000"/>
-                      </param>
-                    </layer>
-                    <layer type="import" active="false" version="0.1" desc="left upperarm.png">
-                      <param name="z_depth">
-                        <real value="0.0000000000"/>
-                      </param>
-                      <param name="amount">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="blend_method">
-                        <integer value="15"/>
-                      </param>
-                      <param name="tl">
-                        <vector>
-                          <x>-1.3216080666</x>
-                          <y>0.1100179106</y>
-                        </vector>
-                      </param>
-                      <param name="br">
-                        <vector>
-                          <x>0.6617252827</x>
-                          <y>-2.0566487312</y>
-                        </vector>
-                      </param>
-                      <param name="c">
-                        <integer value="1" static="true"/>
-                      </param>
-                      <param name="gamma_adjust">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="filename">
-                        <string>..\..\characters\Dragon\left upperarm.png</string>
-                      </param>
-                      <param name="time_offset">
-                        <time value="0s"/>
                       </param>
                     </layer>
                     <layer type="translate" active="true" version="0.1">
@@ -46917,41 +46497,6 @@
                         </bline>
                       </param>
                     </layer>
-                    <layer type="import" active="false" version="0.1" desc="left wing.png">
-                      <param name="z_depth">
-                        <real value="0.0000000000"/>
-                      </param>
-                      <param name="amount">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="blend_method">
-                        <integer value="15"/>
-                      </param>
-                      <param name="tl">
-                        <vector>
-                          <x>-0.9229249954</x>
-                          <y>0.3423075080</y>
-                        </vector>
-                      </param>
-                      <param name="br">
-                        <vector>
-                          <x>3.7770750523</x>
-                          <y>-3.6910257339</y>
-                        </vector>
-                      </param>
-                      <param name="c">
-                        <integer value="1" static="true"/>
-                      </param>
-                      <param name="gamma_adjust">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="filename">
-                        <string>..\..\characters\Dragon\left wing.png</string>
-                      </param>
-                      <param name="time_offset">
-                        <time value="0s"/>
-                      </param>
-                    </layer>
                     <layer type="rotate" active="true" version="0.1">
                       <param name="origin">
                         <vector>
@@ -46990,41 +46535,6 @@
                 </param>
                 <param name="outline_grow">
                   <real value="0.0000000000"/>
-                </param>
-              </layer>
-              <layer type="import" active="false" version="0.1" desc="torso.png">
-                <param name="z_depth">
-                  <real value="0.0000000000"/>
-                </param>
-                <param name="amount">
-                  <real value="1.0000000000"/>
-                </param>
-                <param name="blend_method">
-                  <integer value="15"/>
-                </param>
-                <param name="tl">
-                  <vector>
-                    <x>-2.8528814316</x>
-                    <y>3.5316455364</y>
-                  </vector>
-                </param>
-                <param name="br">
-                  <vector>
-                    <x>2.8304519653</x>
-                    <y>-2.1516878605</y>
-                  </vector>
-                </param>
-                <param name="c">
-                  <integer value="1" static="true"/>
-                </param>
-                <param name="gamma_adjust">
-                  <real value="1.0000000000"/>
-                </param>
-                <param name="filename">
-                  <string>..\..\characters\Dragon\torso.png</string>
-                </param>
-                <param name="time_offset">
-                  <time value="0s"/>
                 </param>
               </layer>
               <layer type="rotate" active="true" version="0.1" desc="Dragon_BodyRoate">
@@ -48165,41 +47675,6 @@
                                   </composite>
                                 </entry>
                               </bline>
-                            </param>
-                          </layer>
-                          <layer type="import" active="false" version="0.1" desc="rightcalf.png">
-                            <param name="z_depth">
-                              <real value="0.0000000000"/>
-                            </param>
-                            <param name="amount">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="blend_method">
-                              <integer value="15"/>
-                            </param>
-                            <param name="tl">
-                              <vector>
-                                <x>-1.2965669632</x>
-                                <y>0.4681943059</y>
-                              </vector>
-                            </param>
-                            <param name="br">
-                              <vector>
-                                <x>0.5034330487</x>
-                                <y>-2.1151390076</y>
-                              </vector>
-                            </param>
-                            <param name="c">
-                              <integer value="1" static="true"/>
-                            </param>
-                            <param name="gamma_adjust">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="filename">
-                              <string>..\..\characters\Dragon\rightcalf.png</string>
-                            </param>
-                            <param name="time_offset">
-                              <time value="0s"/>
                             </param>
                           </layer>
                           <layer type="PasteCanvas" active="true" version="0.1" desc="Dragon_RightFoot">
@@ -52398,41 +51873,6 @@
                                     </bline>
                                   </param>
                                 </layer>
-                                <layer type="import" active="true" version="0.1" desc="right foot.png">
-                                  <param name="z_depth">
-                                    <real value="0.0000000000"/>
-                                  </param>
-                                  <param name="amount">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="blend_method">
-                                    <integer value="15"/>
-                                  </param>
-                                  <param name="tl">
-                                    <vector>
-                                      <x>-2.0156848431</x>
-                                      <y>0.8896808624</y>
-                                    </vector>
-                                  </param>
-                                  <param name="br">
-                                    <vector>
-                                      <x>1.0343151093</x>
-                                      <y>-1.4769858122</y>
-                                    </vector>
-                                  </param>
-                                  <param name="c">
-                                    <integer value="1" static="true"/>
-                                  </param>
-                                  <param name="gamma_adjust">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="filename">
-                                    <string>..\..\characters\Dragon\right foot.png</string>
-                                  </param>
-                                  <param name="time_offset">
-                                    <time value="0s"/>
-                                  </param>
-                                </layer>
                                 <layer type="rotate" active="true" version="0.1">
                                   <param name="origin">
                                     <vector>
@@ -53509,41 +52949,6 @@
                             </composite>
                           </entry>
                         </bline>
-                      </param>
-                    </layer>
-                    <layer type="import" active="false" version="0.1" desc="rightthigh.png">
-                      <param name="z_depth">
-                        <real value="0.0000000000"/>
-                      </param>
-                      <param name="amount">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="blend_method">
-                        <integer value="15"/>
-                      </param>
-                      <param name="tl">
-                        <vector>
-                          <x>-1.1428821087</x>
-                          <y>1.0346773863</y>
-                        </vector>
-                      </param>
-                      <param name="br">
-                        <vector>
-                          <x>1.8237845898</x>
-                          <y>-1.9986560345</y>
-                        </vector>
-                      </param>
-                      <param name="c">
-                        <integer value="1" static="true"/>
-                      </param>
-                      <param name="gamma_adjust">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="filename">
-                        <string>..\..\characters\Dragon\rightthigh.png</string>
-                      </param>
-                      <param name="time_offset">
-                        <time value="0s"/>
                       </param>
                     </layer>
                     <layer type="rotate" active="true" version="0.1">
@@ -54709,41 +54114,6 @@
                                   </composite>
                                 </entry>
                               </bline>
-                            </param>
-                          </layer>
-                          <layer type="import" active="false" version="0.1" desc="leftcalf.png">
-                            <param name="z_depth">
-                              <real value="0.0000000000"/>
-                            </param>
-                            <param name="amount">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="blend_method">
-                              <integer value="15"/>
-                            </param>
-                            <param name="tl">
-                              <vector>
-                                <x>-1.3858273029</x>
-                                <y>0.3384615183</y>
-                              </vector>
-                            </param>
-                            <param name="br">
-                              <vector>
-                                <x>0.4475059807</x>
-                                <y>-2.2782051563</y>
-                              </vector>
-                            </param>
-                            <param name="c">
-                              <integer value="1" static="true"/>
-                            </param>
-                            <param name="gamma_adjust">
-                              <real value="1.0000000000"/>
-                            </param>
-                            <param name="filename">
-                              <string>..\..\characters\Dragon\leftcalf.png</string>
-                            </param>
-                            <param name="time_offset">
-                              <time value="0s"/>
                             </param>
                           </layer>
                           <layer type="PasteCanvas" active="true" version="0.1" desc="Dragon_LeftFoot">
@@ -58825,41 +58195,6 @@
                                     </bline>
                                   </param>
                                 </layer>
-                                <layer type="import" active="true" version="0.1" desc="leftfoot.png">
-                                  <param name="z_depth">
-                                    <real value="0.0000000000"/>
-                                  </param>
-                                  <param name="amount">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="blend_method">
-                                    <integer value="15"/>
-                                  </param>
-                                  <param name="tl">
-                                    <vector>
-                                      <x>-1.9348003864</x>
-                                      <y>0.9132249951</y>
-                                    </vector>
-                                  </param>
-                                  <param name="br">
-                                    <vector>
-                                      <x>0.9318662286</x>
-                                      <y>-1.4367749691</y>
-                                    </vector>
-                                  </param>
-                                  <param name="c">
-                                    <integer value="1" static="true"/>
-                                  </param>
-                                  <param name="gamma_adjust">
-                                    <real value="1.0000000000"/>
-                                  </param>
-                                  <param name="filename">
-                                    <string>..\..\characters\Dragon\leftfoot.png</string>
-                                  </param>
-                                  <param name="time_offset">
-                                    <time value="0s"/>
-                                  </param>
-                                </layer>
                                 <layer type="rotate" active="true" version="0.1">
                                   <param name="origin">
                                     <vector>
@@ -58938,41 +58273,6 @@
                       </param>
                       <param name="outline_grow">
                         <real value="0.0000000000"/>
-                      </param>
-                    </layer>
-                    <layer type="import" active="false" version="0.1" desc="leftthigh.png">
-                      <param name="z_depth">
-                        <real value="0.0000000000"/>
-                      </param>
-                      <param name="amount">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="blend_method">
-                        <integer value="15"/>
-                      </param>
-                      <param name="tl">
-                        <vector>
-                          <x>-1.1348011494</x>
-                          <y>1.0076923370</y>
-                        </vector>
-                      </param>
-                      <param name="br">
-                        <vector>
-                          <x>1.8318655491</x>
-                          <y>-2.0256409645</y>
-                        </vector>
-                      </param>
-                      <param name="c">
-                        <integer value="1" static="true"/>
-                      </param>
-                      <param name="gamma_adjust">
-                        <real value="1.0000000000"/>
-                      </param>
-                      <param name="filename">
-                        <string>..\..\characters\Dragon\leftthigh.png</string>
-                      </param>
-                      <param name="time_offset">
-                        <time value="0s"/>
                       </param>
                     </layer>
                     <layer type="region" active="true" version="0.1" desc="path4073-4">

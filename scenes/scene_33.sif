@@ -48065,45 +48065,6 @@
         <y>0.0000000000</y>
       </vector>
     </param>
-    <param name="canvas">
-      <canvas end-time="5s">
-        <layer type="import" active="true" version="0.1" desc="sb7_0003.png">
-          <param name="z_depth">
-            <real value="0.0000000000"/>
-          </param>
-          <param name="amount">
-            <real value="1.0000000000"/>
-          </param>
-          <param name="blend_method">
-            <integer value="15"/>
-          </param>
-          <param name="tl">
-            <vector>
-              <x>-5.3333334923</x>
-              <y>4.0000000000</y>
-            </vector>
-          </param>
-          <param name="br">
-            <vector>
-              <x>5.3333334923</x>
-              <y>-4.0000000000</y>
-            </vector>
-          </param>
-          <param name="c">
-            <integer value="1" static="true"/>
-          </param>
-          <param name="gamma_adjust">
-            <real value="1.0000000000"/>
-          </param>
-          <param name="filename">
-            <string>C:\Users\dhingley\Downloads\sb7_0003.png</string>
-          </param>
-          <param name="time_offset">
-            <time value="0s"/>
-          </param>
-        </layer>
-      </canvas>
-    </param>
     <param name="zoom">
       <real value="1.0000000000"/>
     </param>

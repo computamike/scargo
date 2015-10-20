@@ -194,41 +194,6 @@
       <y>1.0000000000</y>
     </vector>
   </defs>
-  <layer type="import" active="false" version="0.1" desc="telescope BG.png">
-    <param name="z_depth">
-      <real value="0.0000000000"/>
-    </param>
-    <param name="amount">
-      <real value="1.0000000000"/>
-    </param>
-    <param name="blend_method">
-      <integer value="0" static="true"/>
-    </param>
-    <param name="tl">
-      <vector>
-        <x>-16.0000000000</x>
-        <y>6.4655170441</y>
-      </vector>
-    </param>
-    <param name="br">
-      <vector>
-        <x>16.0000000000</x>
-        <y>-11.5344829559</y>
-      </vector>
-    </param>
-    <param name="c">
-      <integer value="1" static="true"/>
-    </param>
-    <param name="gamma_adjust">
-      <real value="1.0000000000"/>
-    </param>
-    <param name="filename">
-      <string>../telescope BG.png</string>
-    </param>
-    <param name="time_offset">
-      <time value="0s"/>
-    </param>
-  </layer>
   <layer type="PasteCanvas" active="true" version="0.1" desc="BG">
     <param name="z_depth">
       <real value="0.0000000000"/>
