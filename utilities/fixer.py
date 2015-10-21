@@ -443,8 +443,22 @@ def CopyKdenLiveFileToMLT(kdenLive):
     meltFile = os.path.join(NewRoot, NewPath, SCRIPT + ".mlt")
     shutil.copy(filename, meltFile)
 
+def ClearWorklist(worklist, rootpath):
+    with open(worklist) as f:
+        for line in f:
+            base_file, ext = os.path.splitext(line)
+            print "Clearing Video for" + line
+            print "basefile="+base_file.strip()
+            print "ext = "+ ext.strip()
+            print "rootpath="+rootpath.strip()
 
-
+            # os.rename(filename, base_file + ".text")
+            video = os.path.join(rootpath, base_file + ".mp4")
+            exists = os.path.exists(video)
+            print video
+            print "... " + str(exists)
+            if (exists):
+                os.remove(video)
 
 try:
     parser = argparse.ArgumentParser(
@@ -533,6 +547,9 @@ try:
     SetProjectRoot(root, CurrentProjectPath)
     FixResources2(root, CurrentProjectPath)
 
+    if (WORKFILE is not None):
+        ClearWorklist(os.path.join(CurrentProjectPath, WORKFILE),os.getcwd())
+
     tree.write(os.path.join(CurrentProjectPath, filename))
     if (FIX_ONLY is False):
         for directoryroot, dirs, sourcefiles in \
@@ -545,15 +562,15 @@ try:
 
                 if (extension.upper() in VALID_EXTENSIONS):
                     VideoFile= os.path.join( directoryroot ,file.split(".")[0] +VIDEO_FORMAT)
-					newFilename = os.path.join(os.path.dirname(files),
-						prefix + VIDEO_FORMAT)
-					animaticVideFile = os.path.join(os.getcwd(), os.path.basename(newFilename))
+                    newFilename = os.path.join(os.path.dirname(files),
+                        prefix + VIDEO_FORMAT)
+                    animaticVideFile = os.path.join(os.getcwd(), os.path.basename(newFilename))
                     if (not os.path.isfile(VideoFile)):
                         fixerObject.RenderSynfigScene(files, WIDTH, HEIGHT, FRAME_NAME)
                         (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
                         fixerObject.CreateVideo(files, FRAME_NAME)
                         fixerObject.ClearFrames(files, FRAME_NAME)
-					FixClip(root, newFilename,KdenLiveSpeed)
+                        FixClip(root, newFilename,KdenLiveSpeed)
     tree.write(os.path.join(CurrentProjectPath, filename))
 
     # Fix the Production Scripts
@@ -575,4 +592,4 @@ except Exception as inst:
     print "".join(traceback.format_exception(sys.exc_info()[0], sys.exc_info()[1], sys.exc_info()[2]))
     print
     print "Printing the full traceback as if we had not caught it here..."
-    print format_exception(inst)    
+    print format_exception(inst)
