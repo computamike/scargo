@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<canvas version="0.9" width="1920" height="1080" xres="2834.645752" yres="2834.645752" view-box="-16.000000 9.000000 16.000000 -9.000000" antialias="1" fps="24.000" begin-time="0f" end-time="4s 22f" bgcolor="0.500000 0.500000 0.500000 1.000000">
+<canvas version="0.9" width="1920" height="1080" xres="2834.645752" yres="2834.645752" view-box="-16.000000 9.000000 16.000000 -9.000000" antialias="1" fps="24.000" begin-time="0f" end-time="4s 17f" bgcolor="0.500000 0.500000 0.500000 1.000000">
   <name>Synfig Animation 2</name>
   <defs>
     <animated guid="2714DEB3BCF699B09CF7C536180694A3" type="angle" id="CD_Body_Rotate">

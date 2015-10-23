@@ -6873,6 +6873,41 @@
                               <bool value="true"/>
                             </param>
                           </layer>
+                          <layer type="import" active="true" version="0.1" desc="right forearm.png">
+                            <param name="z_depth">
+                              <real value="0.0000000000"/>
+                            </param>
+                            <param name="amount">
+                              <real value="1.0000000000"/>
+                            </param>
+                            <param name="blend_method">
+                              <integer value="15"/>
+                            </param>
+                            <param name="tl">
+                              <vector>
+                                <x>-2.6886208057</x>
+                                <y>0.4954152405</y>
+                              </vector>
+                            </param>
+                            <param name="br">
+                              <vector>
+                                <x>0.4780458212</x>
+                                <y>-2.3712513447</y>
+                              </vector>
+                            </param>
+                            <param name="c">
+                              <integer value="1" static="true"/>
+                            </param>
+                            <param name="gamma_adjust">
+                              <real value="1.0000000000"/>
+                            </param>
+                            <param name="filename">
+                              <string>..\..\characters\Dragon\right forearm.png</string>
+                            </param>
+                            <param name="time_offset">
+                              <time value="0s"/>
+                            </param>
+                          </layer>
                           <layer type="rotate" active="true" version="0.1">
                             <param name="origin">
                               <vector>
@@ -22289,7 +22324,7 @@
                             </param>
                             <param name="canvas">
                               <canvas>
-                                <layer type="circle" active="true" version="0.1" desc="Circle012">
+                                <layer type="circle" active="false" version="0.1" desc="Circle012">
                                   <param name="z_depth">
                                     <real value="0.0000000000"/>
                                   </param>
