@@ -531,6 +531,17 @@ try:
     print("WorkFile           : " + str(WORKFILE))
 
     print (" ")
+    
+    
+    # What this script does
+    # ---- ---- ------ ----
+    # This script can perform a number of tasks and these tasks can be switched
+    # on or off through the use of command flags.
+    #
+    # 1. Fix the KdenLive file, re-writing it's project roots
+    # 2. Clears any movie files that exist for any scenes that are referenced 
+    # in the workfile
+    #
     # Find All files
     print ("Job started at     : " + time.strftime("%c"))
     if not os.path.exists(filename):
@@ -551,9 +562,11 @@ try:
         ClearWorklist(os.path.join(CurrentProjectPath, WORKFILE),os.getcwd())
 
     tree.write(os.path.join(CurrentProjectPath, filename))
+    
+    
     if (FIX_ONLY is False):
         for directoryroot, dirs, sourcefiles in \
-                                       os.walk(os.path.join(NewRoot, NewPath)):
+	    os.walk(os.path.join(NewRoot, NewPath)):
             for file in sourcefiles:
                 files = os.path.join(directoryroot, file)
                 (prefix, sep, extension) = os.path.basename(files).rpartition('.')
