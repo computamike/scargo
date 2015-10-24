@@ -15,23 +15,20 @@
 
 #You should have received a copy of the GNU General Public License along
 #with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
 import argparse
 from lxml import etree as ET
 import os
 import subprocess
-import json
 import jinja2
 import shutil
 from fractions import gcd
 import time
 import libfixer
-import sys, os
+import sys
 import traceback
 
 #--Methods.
-
+# - Many of these methods should move the lib file.
 
 def GetRootInformation(path):
     x = os.getcwd().split(os.sep)
@@ -58,28 +55,6 @@ def FilesAltered(cwd, Bzrfrom, bzrto):
     return filesToRender
 
 
-# Moving this to libfixer.py.  This library makes unit testing potentially easier
-#def RenderSynfigScene(scene):
-    #"""Renders a synfig scene to a series of png files."""
-    #print "Rendering Synfig Scene " + scene
-    #pathname = os.path.dirname(scene)
-
-    #lshw_cmd = [SYNFIG_RENDER,
-        #scene,
-        #'-t', 'cairo_png',
-        #'-w', str(WIDTH),
-        #'-h', str(HEIGHT),
-        #'-a', '15',
-        #'-T', '4',
-        #'-o', os.path.join(pathname, FRAME_NAME)
-        #]
-    #proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
-                                        #stderr=subprocess.PIPE)
-    #stdoutdata, stderrdata = proc.communicate()
-    #print "Render Scene Return Code = " + str(proc.returncode)
-    #return proc.returncode
-
-
 def CreateVideo(Scene):
     """Creates a video from a set of images in the form Form 'Frame.xxxx.png'
     -where xxx is a leading zero frame number"""
@@ -97,17 +72,6 @@ def CreateVideo(Scene):
     proc = subprocess.Popen(lshw_cmd,)
     stdoutdata, stderrdata = proc.communicate()
     return proc.returncode
-
-
-#def ClearFrames(Scene):
-    #"""Clears all frames from the scene generation"""
-    #import os
-    #import re
-    #pattern = FRAME_NAME.split(".")[0] + "\.\d+\." + FRAME_NAME.split(".")[1]
-    #pathname = os.path.dirname(Scene)
-    #for f in os.listdir(pathname):
-        #if re.search(pattern, f):
-            #os.remove(os.path.join(pathname, f))
 
 
 def CreateProducer(MediaInfoObject):
@@ -161,33 +125,6 @@ def CalculateKdenLiveLength( SynfigNumberOfFrames, SynfigFrameRate, KdenFrameRat
     result2 = int(round(result2, 0))
     return result2
 
-#def GetMediaInformation(File, ID, _in, _out, resource, name, KFR):
-    #"""Gets information about a media file - such as a rendered scene"""
-    #FFMPEG_BIN = 'avprobe'
-    #lshw_cmd = [FFMPEG_BIN,
-        #'-show_format',
-        #'-show_streams',
-        #'-loglevel', 'quiet',
-        #'-of', 'json',
-        #File]
-
-    #proc = subprocess.Popen(lshw_cmd, stdout=subprocess.PIPE,
-                                      #stderr=subprocess.PIPE)
-    #data = json.loads(proc.communicate()[0])
-    #data['id'] = ID
-    #data['in'] = _in
-    #data['out'] = _out
-    #data['resource'] = resource
-
-    #SynfigFramesRate = data["streams"][0]["fps"]
-    #SynfigFramesNumber = data["streams"][0]["nb_frames"]
-    #rescaledNumberFrames = CalculateKdenLiveLength(SynfigFramesNumber, SynfigFramesRate, KFR)
-    #data['NumerofFrames'] = rescaledNumberFrames
-    #data['resourcename'] = name
-    #filehash = CalculateFileHash(File)
-    #data['FileHash'] = filehash
-    #return data
-
 
 def FixResources(root, Prefix, newFilename):
     """Obsolete : this was a first attempt at fixing project resources in
@@ -205,7 +142,6 @@ def FixResources(root, Prefix, newFilename):
         clip.set('resource', os.path.join(Prefix,
                                           newFilename,
                                           prefix + sep + suffix))
-    #tree.write(filename)
 
 
 def findFile(BasePath, FileName):
@@ -214,21 +150,17 @@ def findFile(BasePath, FileName):
             files = os.path.join(directoryroot, file)
             if (os.path.basename(files) == FileName):
                 return files
-            #(prefix, sep, extension) = os.path.basename(files).rpartition('.')
-            #print  prefix + sep + extension + " ?= " + FileName
-            #print os.path.basename(files)
+
 
 def format_exception(e):
     exception_list = traceback.format_stack()
     exception_list = exception_list[:-2]
     exception_list.extend(traceback.format_tb(sys.exc_info()[2]))
     exception_list.extend(traceback.format_exception_only(sys.exc_info()[0], sys.exc_info()[1]))
-
     exception_str = "Traceback (most recent call last):\n"
     exception_str += "".join(exception_list)
     # Removing the last \n
     exception_str = exception_str[:-1]
-
     return exception_str
 
 
@@ -243,7 +175,6 @@ def FixResources2(root, CurrentProjectPath):
 
             fileat = findFile(CurrentProjectPath, prefix + sep + suffix)
             if fileat != None and fileat != "" :
-            	print "fileat = " + fileat
             	Fixed = clip.attrib["resource"].replace(ProjectPath, CurrentProjectPath)
                 clip.set('resource', fileat)
 
@@ -259,7 +190,6 @@ def FixResources2(root, CurrentProjectPath):
 
     for Producers in root.findall("./producer"):
         if ('resource' in clip.attrib):
-            #print "[I] Fixing Producer : " + Producers.attrib["resource"]
             if (Producers.find("property[@name='mlt_service']").
                                             text not in INVALID_PRODUCERTYPES):
                 resource = Producers.find("property[@name='resource']").text
@@ -297,6 +227,7 @@ def SetMltRoot(root, Val):
 
 def FixClip(root, newFilename,kdenrate):
     """Replaces a animatic frame with a rendered video - if required."""
+    print "Fixing Clip " + newFilename
     (destprefix, destsep, destsuffix) = os.path.basename(newFilename).rpartition('.')
     fixerObject = libfixer.FixerLibrary()
     for Producers in root.findall("./producer"):
@@ -304,48 +235,17 @@ def FixClip(root, newFilename,kdenrate):
         if (Producers.find("property[@name='mlt_service']").text not in INVALID_PRODUCERTYPES):
             clip = Producers.find("property[@name='resource']")
             if (clip != None):
-                (prefix, sep, suffix) = os.path.basename(clip.text).rpartition('.')
-                #mltRoot = GetMltRoot(root)
-                if (prefix.upper() == destprefix.upper()):
-                    #print mltRoot+prefix
-                    parent = clip.getparent()
-                    _id = parent.attrib["id"]
-                    _in = parent.attrib["in"]
-                    _out = parent.attrib["out"]
-                    foo = ET.fromstring(
-                        CreateProducer
-                        (
-                            fixerObject.GetMediaInformation(
-                                newFilename,
-                                _id,
-                                _in,
-                                _out,
-                                newFilename[1:],
-                                "",
-                                kdenrate
-                            )
-                        )
-                    )
-                    parent.getparent().replace(parent, foo)
-
-                    # Fix the Playlist:
-                    for PlayListEntry in root.findall("./playlist/entry[@id='" + _id + "']"):
-                        fooVar = fixerObject.GetMediaInformation(
-                            newFilename,
-                            _id,
-                            _in,
-                            _out,
-                            newFilename[1:],
-                            "",
-                            kdenrate
-                            )
-                        Varentry = CreateKdenlivePlaylistEntry(fooVar)
-
-                    for clip in root.findall("./kdenlivedoc/kdenlive_producer[@id='" + _id + "']"):
-                        groupID = clip.attrib["groupid"]
-                        groupName = clip.attrib["groupname"]
-                        foo2 = ET.fromstring(
-                            fixerObject.CreateKdenliveProducer
+                if (clip.text != None):
+                    (prefix, sep, suffix) = os.path.basename(clip.text).rpartition('.')
+                    #mltRoot = GetMltRoot(root)
+                    if (prefix.upper() == destprefix.upper()):
+                        #print mltRoot+prefix
+                        parent = clip.getparent()
+                        _id = parent.attrib["id"]
+                        _in = parent.attrib["in"]
+                        _out = parent.attrib["out"]
+                        foo = ET.fromstring(
+                            CreateProducer
                             (
                                 fixerObject.GetMediaInformation(
                                     newFilename,
@@ -355,16 +255,44 @@ def FixClip(root, newFilename,kdenrate):
                                     newFilename[1:],
                                     "",
                                     kdenrate
-                                ),
-                                groupName,
-                                groupID
+                                )
                             )
                         )
-                        clip.getparent().replace(clip,foo2)
-                        #kdenlive_producer duration="120" frame_size="640x480" in="0" analysisdata="" file_size="320239" groupid="5" aspect_ratio="1" out="119" groupname="Storyboard" file_hash="cfbd78a6591ff1b7c2760bfbc9881fc7" type="5" id="81" name="scene_13.png" resource="/home/mike/projects/github/scargo/scenes/scene_13.png"/>
+                        parent.getparent().replace(parent, foo)
 
+                    # Fix the Playlist:
+                        for PlayListEntry in root.findall("./playlist/entry[@id='" + _id + "']"):
+                            fooVar = fixerObject.GetMediaInformation(
+                                newFilename,
+                                _id,
+                                _in,
+                                _out,
+                                newFilename[1:],
+                                "",
+                                kdenrate
+                                )
+                            CreateKdenlivePlaylistEntry(fooVar)
 
-
+                        for clip in root.findall("./kdenlivedoc/kdenlive_producer[@id='" + _id + "']"):
+                            groupID = clip.attrib["groupid"]
+                            groupName = clip.attrib["groupname"]
+                            foo2 = ET.fromstring(
+                                fixerObject.CreateKdenliveProducer
+                                (
+                                    fixerObject.GetMediaInformation(
+                                        newFilename,
+                                        _id,
+                                        _in,
+                                        _out,
+                                        newFilename[1:],
+                                        "",
+                                        kdenrate
+                                    ),
+                                    groupName,
+                                    groupID
+                                )
+                            )
+                            clip.getparent().replace(clip,foo2)
     return root
 
 
@@ -376,7 +304,6 @@ def CalculateFileHash(filename):
         fileData = file.read(1000000)
         fileToHash.seek(1000000, 2)  # Seek last 1000000 bytes
         fileData = fileData + file.read(1000000)
-        #fileData.append(file.read(1000000))
     else:
         fileData = fileToHash.read()
     import hashlib
@@ -427,8 +354,6 @@ def CreateRenderShellScript(NewRoot, NewPath):
     TEMPLATE_FILE = "animatic.sh.template"
     template = templateEnv.get_template(TEMPLATE_FILE)
     print("Writing " + ShellScript)
-    #
-    # Specify any input variables to the template as a dictionary.
     templateVars = {"source": source_data}
     OutputText = template.render(templateVars)
     OutputText = OutputText
@@ -443,22 +368,22 @@ def CopyKdenLiveFileToMLT(kdenLive):
     meltFile = os.path.join(NewRoot, NewPath, SCRIPT + ".mlt")
     shutil.copy(filename, meltFile)
 
-def ClearWorklist(worklist, rootpath):
-    with open(worklist) as f:
-        for line in f:
-            base_file, ext = os.path.splitext(line)
-            print "Clearing Video for" + line
-            print "basefile="+base_file.strip()
-            print "ext = "+ ext.strip()
-            print "rootpath="+rootpath.strip()
 
-            # os.rename(filename, base_file + ".text")
-            video = os.path.join(rootpath, base_file + ".mp4")
-            exists = os.path.exists(video)
-            print video
-            print "... " + str(exists)
-            if (exists):
-                os.remove(video)
+def ClearWorklist(worklist, rootpath):
+    if os.path.exists(worklist):
+        with open(worklist) as f:
+            for line in f:
+                base_file, ext = os.path.splitext(line)
+                print "Clearing Video for" + line
+                print "basefile="+base_file.strip()
+                print "ext = "+ ext.strip()
+                print "rootpath="+rootpath.strip()
+                video = os.path.join(rootpath, base_file + ".mp4")
+                exists = os.path.exists(video)
+                print video
+                print "... " + str(exists)
+                if (exists):
+                    os.remove(video)
 
 try:
     parser = argparse.ArgumentParser(
@@ -531,6 +456,17 @@ try:
     print("WorkFile           : " + str(WORKFILE))
 
     print (" ")
+
+
+    # What this script does
+    # ---- ---- ------ ----
+    # This script can perform a number of tasks and these tasks can be switched
+    # on or off through the use of command flags.
+    #
+    # 1. Fix the KdenLive file, re-writing it's project roots
+    # 2. Clears any movie files that exist for any scenes that are referenced
+    # in the workfile
+    #
     # Find All files
     print ("Job started at     : " + time.strftime("%c"))
     if not os.path.exists(filename):
@@ -544,22 +480,20 @@ try:
     print("ProjectPath        :" + ProjectPath)
     print("CurrentProjectPath :" + CurrentProjectPath)
     print("mltRoot            :" + mltRoot)
+
     SetProjectRoot(root, CurrentProjectPath)
     FixResources2(root, CurrentProjectPath)
-
-    if (WORKFILE is not None):
-        ClearWorklist(os.path.join(CurrentProjectPath, WORKFILE),os.getcwd())
-
     tree.write(os.path.join(CurrentProjectPath, filename))
+
+
     if (FIX_ONLY is False):
+        if (WORKFILE is not None):
+            ClearWorklist(os.path.join(CurrentProjectPath, WORKFILE),os.getcwd())
         for directoryroot, dirs, sourcefiles in \
-                                       os.walk(os.path.join(NewRoot, NewPath)):
+            os.walk(os.path.join(NewRoot, NewPath)):
             for file in sourcefiles:
                 files = os.path.join(directoryroot, file)
                 (prefix, sep, extension) = os.path.basename(files).rpartition('.')
-                #if (extension.upper() in IMAGE_EXTENSIONS):
-                    #FixClip(root, files)
-
                 if (extension.upper() in VALID_EXTENSIONS):
                     VideoFile= os.path.join( directoryroot ,file.split(".")[0] +VIDEO_FORMAT)
                     newFilename = os.path.join(os.path.dirname(files),
@@ -570,7 +504,7 @@ try:
                         (prefix, sep, suffix) = os.path.basename(files).rpartition('.')
                         fixerObject.CreateVideo(files, FRAME_NAME)
                         fixerObject.ClearFrames(files, FRAME_NAME)
-                        FixClip(root, newFilename,KdenLiveSpeed)
+                    FixClip(root, newFilename,KdenLiveSpeed)
     tree.write(os.path.join(CurrentProjectPath, filename))
 
     # Fix the Production Scripts
