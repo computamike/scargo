@@ -562,9 +562,8 @@ try:
     
     
     if (FIX_ONLY is False):
-	if (WORKFILE is not None):
+        if (WORKFILE is not None):
 	    ClearWorklist(os.path.join(CurrentProjectPath, WORKFILE),os.getcwd())
-
         for directoryroot, dirs, sourcefiles in \
 	    os.walk(os.path.join(NewRoot, NewPath)):
             for file in sourcefiles:
