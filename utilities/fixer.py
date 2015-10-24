@@ -31,7 +31,7 @@ import sys, os
 import traceback
 
 #--Methods.
-
+# - Many of these methods should move the lib file.
 
 def GetRootInformation(path):
     x = os.getcwd().split(os.sep)
