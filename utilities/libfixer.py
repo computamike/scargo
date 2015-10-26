@@ -10,7 +10,7 @@ import jinja2
 #import shutil
 #from fractions import gcd
 #import time
-
+# Updated to LibFixer.py 3..4
 AVCONVERTER = "avconv"
 VIDEO_FORMAT = ".mp4"
 SYNFIG_RENDER = "synfig"
