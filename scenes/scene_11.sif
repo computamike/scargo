@@ -34247,7 +34247,7 @@
                 </vector>
               </waypoint>
               <waypoint time="3.83333325s" before="halt" after="clamped">
-                <vector guid="5FBB923D6F1F33299B618CB0BC469CAE">
+                <vector>
                   <x>-70.8195266724</x>
                   <y>-5.4371323586</y>
                 </vector>
@@ -34271,10 +34271,10 @@
     <param name="zoom">
       <animated type="real">
         <waypoint time="3.16666675s" before="clamped" after="clamped">
-          <real guid="31358F2576FD0BCBB1BDAEFB83A62991" value="-0.1500000000"/>
+          <real value="-0.1500000000"/>
         </waypoint>
         <waypoint time="3.83333325s" before="halt" after="clamped">
-          <real guid="DE9733D85B0F2F0ACF4BA7918B4D8358" value="-0.7000000000"/>
+          <real value="-0.7000000000"/>
         </waypoint>
       </animated>
     </param>
