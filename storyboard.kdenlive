@@ -352,7 +352,7 @@
   </entry>
   <blank length="2223"/>
   <entry in="0" out="58" producer="62_4"/>
-  <blank length="591"/>
+  <blank length="579"/>
   <entry in="0" out="8" producer="59_4"/>
  </playlist>
  <producer in="0" out="3897" id="1_3">
@@ -1187,7 +1187,7 @@
  </tractor>
  <kdenlivedoc profile="atsc_1080p_24" kdenliveversion="0.9.6" version="0.88" projectfolder="/home/dave/kdenlive">
   <customeffects/>
-  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="0" proxyminsize="1000" renderstartguide="-1" zoom="7" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="5112" proxyminsize="1000" renderstartguide="-1" zoom="3" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
   <documentmetadata/>
   <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
@@ -1314,12 +1314,6 @@ p, li { white-space: pre-wrap; }
   </kdenlive_producer>
   <kdenlive_producer audio_max="6" audiocodec="PCM signed 16-bit little-endian" channels="2" duration="1150" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="8453176" groupid="4" aspect_ratio="0" groupname="Audio" file_hash="901036b67c64c4e6b58c6ebf674c4069" type="1" id="76" name="161443__urbaneguerilla__grandfather-clock-tick-in-case-1.wav" resource="/home/dave/project/scargo/scargo/audio/161443__urbaneguerilla__grandfather-clock-tick-in-case-1.wav">
    <metaproperty tool="" name="meta.attr.encoder">Mixcraft 5.2 Build 152</metaproperty>
-  </kdenlive_producer>
-  <kdenlive_producer audio_max="57" id="77" pix_fmt="yuv420p" default_video="0" fps="25" analysisdata="" name="storyboard.kdenlive.mp4" videocodecid="h264" thumbnail="100" colorspace="601" videocodec="H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10" resource="/home/dave/Desktop/storyboard.kdenlive.mp4" default_audio="1" audiocodec="AAC (Advanced Audio Coding)" duration="4859" file_hash="ee538ebc9faa72efadb4bd74e47bf518" aspect_ratio="1" channels="2" frequency="48000" video_max="0" progressive="0" type="3" frame_size="640x360" file_size="4363311">
-   <metaproperty tool="" name="meta.attr.compatible_brands">isomiso2avc1mp41</metaproperty>
-   <metaproperty tool="" name="meta.attr.encoder">Lavf56.1.0</metaproperty>
-   <metaproperty tool="" name="meta.attr.major_brand">isom</metaproperty>
-   <metaproperty tool="" name="meta.attr.minor_version">512</metaproperty>
   </kdenlive_producer>
   <markers/>
   <groups/>
