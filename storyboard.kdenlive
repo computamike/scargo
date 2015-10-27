@@ -10,7 +10,7 @@
   <property name="mlt_service">colour</property>
  </producer>
  <playlist id="black_track">
-  <entry in="0" out="5112" producer="black"/>
+  <entry in="0" out="5183" producer="black"/>
  </playlist>
  <producer in="0" out="3877" id="60_6">
   <property name="mlt_type">producer</property>
@@ -160,8 +160,8 @@
   <blank length="99"/>
   <entry in="0" out="257" producer="74_5"/>
   <blank length="3017"/>
-  <entry in="0" out="847" producer="61_5">
-   <filter in="820" out="848" id="fadeout">
+  <entry in="0" out="918" producer="61_5">
+   <filter in="890" out="918" id="fadeout">
     <property name="track">0</property>
     <property name="window">75</property>
     <property name="max_gain">20dB</property>
@@ -1061,6 +1061,20 @@
   <property name="meta.media.height">1080</property>
   <property name="mlt_service">pixbuf</property>
  </producer>
+ <producer in="0" out="119" id="77">
+  <property name="mlt_type">producer</property>
+  <property name="length">120</property>
+  <property name="eof">pause</property>
+  <property name="resource">/media/dave/NO_NAME/Snail Tales/credits/credits8.png</property>
+  <property name="ttl">25</property>
+  <property name="aspect_ratio">1</property>
+  <property name="progressive">1</property>
+  <property name="seekable">1</property>
+  <property name="loop">1</property>
+  <property name="meta.media.width">1920</property>
+  <property name="meta.media.height">1080</property>
+  <property name="mlt_service">pixbuf</property>
+ </producer>
  <playlist id="playlist4">
   <entry in="0" out="129" producer="65_2"/>
   <entry in="0" out="94" producer="66"/>
@@ -1099,13 +1113,15 @@
   <entry in="0" out="72" producer="45"/>
   <entry in="0" out="105" producer="46"/>
   <entry in="0" out="329" producer="47"/>
-  <entry in="0" out="69" producer="67"/>
+  <blank length="13"/>
+  <entry in="13" out="69" producer="67"/>
   <entry in="0" out="62" producer="68"/>
   <entry in="0" out="66" producer="69"/>
   <entry in="0" out="54" producer="70"/>
   <entry in="0" out="60" producer="71"/>
-  <entry in="0" out="78" producer="72">
-   <filter in="50" out="78" id="fade_to_black">
+  <entry in="0" out="60" producer="72"/>
+  <entry in="0" out="119" producer="77">
+   <filter in="91" out="119" id="fade_to_black">
     <property name="track">0</property>
     <property name="start">1</property>
     <property name="mlt_type">filter</property>
@@ -1120,7 +1136,7 @@
  </playlist>
  <playlist id="playlist5"/>
  <playlist id="playlist6"/>
- <tractor title="Anonymous Submission" global_feed="1" in="0" out="5112" id="maintractor">
+ <tractor title="Anonymous Submission" global_feed="1" in="0" out="5183" id="maintractor">
   <property name="meta.volume">1</property>
   <track producer="black_track"/>
   <track hide="video" producer="playlist1"/>
@@ -1187,7 +1203,7 @@
  </tractor>
  <kdenlivedoc profile="atsc_1080p_24" kdenliveversion="0.9.6" version="0.88" projectfolder="/home/dave/kdenlive">
   <customeffects/>
-  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="5112" proxyminsize="1000" renderstartguide="-1" zoom="3" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
+  <documentproperties documentid="1371854461369" renderdestination="" renderrescalewidth="320" proxyextension="ts" generateproxy="0" proxyimageminsize="2000" rendertctype="0" verticalzoom="1" renderprofile="MPEG-4/AAC" renderrescaleheight="240" zonein="5" renderrescale="1" renderscanning="0" renderurl="/home/dave/Documents/Snail Tales/animatic.mp4" rendertwopass="0" renderplay="0" position="5183" proxyminsize="1000" renderstartguide="-1" zoom="4" renderratio="0" rendercategory="MPEG-4" zoneout="6" renderzone="0" renderendguide="-1" renderexportaudio="0" proxyparams="-f mpegts -acodec libmp3lame -ac 2 -ab 128k -ar 48000 -vcodec mpeg2video -g 5 -deinterlace -s 480x270 -vb 400k" enableproxy="0" generateimageproxy="0" renderguide="0" rendertcoverlay="0"/>
   <documentmetadata/>
   <documentnotes>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 &lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
@@ -1207,7 +1223,7 @@ p, li { white-space: pre-wrap; }
   <folder id="4" name="Audio"/>
   <folder id="5" name="Storyboard"/>
   <folder id="6" name="ident"/>
-  <folder id="7" name="credits"/>
+  <folder opened="1" id="7" name="credits"/>
   <kdenlive_producer audio_max="56" audiocodec="MP3 (MPEG audio layer 3)" channels="1" duration="3898" frame_size="720x576" frequency="44100" analysisdata="" file_size="2599161" groupid="4" aspect_ratio="0.000000" groupname="Audio" file_hash="2f190accfc4cd81603ec9d7cab68ca78" type="1" id="1" name="Cat Detective.mp3" resource="/home/dave/project/scargo/scargo/audio/Cat Detective.mp3"/>
   <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="329338" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="0fc56c0937474b66590a8796f74a0712" type="5" id="12" name="scene_1.png" resource="/home/dave/project/scargo/scargo/scenes/scene_1.png"/>
   <kdenlive_producer duration="125" frame_size="640x480" in="0" analysisdata="" file_size="313791" groupid="5" aspect_ratio="1.000000" out="124" groupname="Storyboard" file_hash="00a502179bc008ae1c4704f62aab6c4e" type="5" id="13" name="scene_2.png" resource="/home/dave/project/scargo/scargo/scenes/scene_2.png"/>
@@ -1287,11 +1303,11 @@ p, li { white-space: pre-wrap; }
   </kdenlive_producer>
   <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5389268" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="fba2f49eba75847a7e1e1a130eeb6c50" type="5" id="66" name="credits1.png" resource="/home/dave/project/scargo/scargo/credits1.png"/>
   <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5463311" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="3009a41d7c11e9f712aeff4870817610" type="5" id="67" name="credits2.png" resource="/home/dave/project/scargo/scargo/credits2.png"/>
-  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5407016" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="95a8aad68a2901c97c7f2132f35bce6d" type="5" id="68" name="credits3.png" resource="/home/dave/project/scargo/scargo/credits3.png"/>
-  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5341384" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="0165d519e714886e9dcfc1110410810d" type="5" id="69" name="credits4.png" resource="/home/dave/project/scargo/scargo/credits4.png"/>
-  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5423275" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="9eb3b796a0ae924d18887b0160e4e929" type="5" id="70" name="credits5.png" resource="/home/dave/project/scargo/scargo/credits5.png"/>
-  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5480650" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="0f1715ca1970a16b29abdc9d3cc58170" type="5" id="71" name="credits6.png" resource="/home/dave/project/scargo/scargo/credits6.png"/>
-  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5432234" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="1a3def92803ae8173704dd4309477362" type="5" id="72" name="credits7.png" resource="/home/dave/project/scargo/scargo/credits7.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5407282" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="d43ad046fa0c091b3f79ea9f92016294" type="5" id="68" name="credits3.png" resource="/home/dave/project/scargo/scargo/credits3.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5403884" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="0d6e991070df7bf9afea761daf35eb31" type="5" id="69" name="credits4.png" resource="/home/dave/project/scargo/scargo/credits4.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5327952" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="22ad302d6392d46aebd7dc7cef64de16" type="5" id="70" name="credits5.png" resource="/home/dave/project/scargo/scargo/credits5.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5393157" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="9d8409494dc333bef8be5d01090ec5dc" type="5" id="71" name="credits6.png" resource="/home/dave/project/scargo/scargo/credits6.png"/>
+  <kdenlive_producer duration="120" frame_size="1920x1080" in="0" analysisdata="" file_size="5574120" groupid="7" aspect_ratio="1" out="119" groupname="credits" file_hash="c386df2bc73e0a9920cef1ffc34f6933" type="5" id="72" name="credits7.png" resource="/home/dave/project/scargo/scargo/credits7.png"/>
   <kdenlive_producer audio_max="56" audiocodec="MP3 (MPEG audio layer 3)" channels="2" duration="5449" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="7265543" groupid="4" aspect_ratio="0" groupname="Audio" file_hash="e744bdbc7dc90ba245fb6cb18700eaab" type="1" id="73" name="Spy Glass.mp3" resource="/home/dave/project/scargo/scargo/audio/Spy Glass.mp3">
    <metaproperty tool="" name="meta.attr.TCM">Kevin MacLeod</metaproperty>
    <metaproperty tool="" name="meta.attr.album">Royalty Free</metaproperty>
@@ -1315,6 +1331,7 @@ p, li { white-space: pre-wrap; }
   <kdenlive_producer audio_max="6" audiocodec="PCM signed 16-bit little-endian" channels="2" duration="1150" frame_size="1920x1080" frequency="44100" analysisdata="" file_size="8453176" groupid="4" aspect_ratio="0" groupname="Audio" file_hash="901036b67c64c4e6b58c6ebf674c4069" type="1" id="76" name="161443__urbaneguerilla__grandfather-clock-tick-in-case-1.wav" resource="/home/dave/project/scargo/scargo/audio/161443__urbaneguerilla__grandfather-clock-tick-in-case-1.wav">
    <metaproperty tool="" name="meta.attr.encoder">Mixcraft 5.2 Build 152</metaproperty>
   </kdenlive_producer>
+  <kdenlive_producer duration="120" zone_out="60" frame_size="1920x1080" in="0" analysisdata="" file_size="5433498" groupid="7" aspect_ratio="1" out="119" zone_in="0" groupname="credits" file_hash="486650296b4a8ec6cc1f5d96d59f662b" type="5" id="77" name="credits8.png" resource="/media/dave/NO_NAME/Snail Tales/credits/credits8.png"/>
   <markers/>
   <groups/>
  </kdenlivedoc>
