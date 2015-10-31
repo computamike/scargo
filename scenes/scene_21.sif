@@ -35194,7 +35194,14 @@
                                                 <real value="0.0000000000"/>
                                               </param>
                                               <param name="amount">
-                                                <real value="1.0000000000"/>
+                                                <animated type="real">
+                                                  <waypoint time="7s" before="clamped" after="clamped">
+                                                    <real value="0.0000000000"/>
+                                                  </waypoint>
+                                                  <waypoint time="7.04166651s" before="clamped" after="clamped">
+                                                    <real value="1.0000000000"/>
+                                                  </waypoint>
+                                                </animated>
                                               </param>
                                               <param name="blend_method">
                                                 <integer value="0" static="true"/>
