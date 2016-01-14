@@ -4,6 +4,7 @@ SOURCE="{{source.Source}}"
 TARGET="{{source.Target}}"
 RENDERER="{{source.Renderer}}"
 MELT="{{source.Melt}}"
-PARAMETERS="-pid:5196 $MELT square_pal_wide avformat - $SOURCE $TARGET properties=x264-medium g=120 crf=20 ab=160k threads=1 real_time=-1 s={{source.Width}}x{{source.Height}}"
+PARAMETERS="$MELT atsc_1080p_24 avformat - $SOURCE $TARGET properties=x264-medium g=120 crf=20 ab=160k threads=1 real_time=-1 s={{source.Width}}x{{source.Height}}"
 $RENDERER $PARAMETERS
- 
+
+sync 
