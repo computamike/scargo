@@ -89,9 +89,9 @@ class FixerLibrary(object):
         fileToHash = open(filename, 'rb')
         if(size > (1000000 * 2)):
             fileToHash.seek(0)
-            fileData = file.read(1000000)
+            fileData = fileToHash.read(1000000)
             fileToHash.seek(1000000, 2)  # Seek last 1000000 bytes
-            fileData = fileData + file.read(1000000)
+            fileData = fileData + fileToHash.read(1000000)
             #fileData.append(file.read(1000000))
         else:
             fileData = fileToHash.read()
